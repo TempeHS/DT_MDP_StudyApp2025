@@ -1,0 +1,34 @@
+2024-11-29 04:22:52,239 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.29:5000
+2024-11-29 04:22:52,239 [33mPress CTRL+C to quit[0m
+2024-11-29 04:22:52,240  * Restarting with stat
+2024-11-29 04:22:52,473  * Debugger is active!
+2024-11-29 04:22:52,473  * Debugger PIN: 601-317-317
+2024-11-29 04:23:00,284 127.0.0.1 - - [29/Nov/2024 04:23:00] "GET / HTTP/1.1" 200 -
+2024-11-29 04:23:00,576 127.0.0.1 - - [29/Nov/2024 04:23:00] "[33mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2024-11-29 04:23:00,594 127.0.0.1 - - [29/Nov/2024 04:23:00] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2024-11-29 04:23:00,635 127.0.0.1 - - [29/Nov/2024 04:23:00] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-11-29 04:23:00,823 127.0.0.1 - - [29/Nov/2024 04:23:00] "[33mGET /static/js/serviceWorker.js HTTP/1.1[0m" 404 -
+2024-11-29 04:23:01,088 127.0.0.1 - - [29/Nov/2024 04:23:01] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2024-11-29 04:23:01,134 127.0.0.1 - - [29/Nov/2024 04:23:01] "[33mGET /static/images/favicon.png HTTP/1.1[0m" 404 -
+2024-11-29 04:23:01,178 {"csp-report":{"document-uri":"https://improved-fiesta-r95v9rr7649hxjjw-5000.app.github.dev/","referrer":"https://github.com/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://improved-fiesta-r95v9rr7649hxjjw-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2024-11-29 04:23:01,178 127.0.0.1 - - [29/Nov/2024 04:23:01] "POST /csp_report HTTP/1.1" 200 -
+2024-11-29 04:24:57,574 127.0.0.1 - - [29/Nov/2024 04:24:57] "GET / HTTP/1.1" 200 -
+2024-11-29 04:24:57,933 127.0.0.1 - - [29/Nov/2024 04:24:57] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-11-29 04:24:57,945 127.0.0.1 - - [29/Nov/2024 04:24:57] "[33mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2024-11-29 04:24:58,012 127.0.0.1 - - [29/Nov/2024 04:24:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-11-29 04:24:58,194 127.0.0.1 - - [29/Nov/2024 04:24:58] "[33mGET /static/js/serviceWorker.js HTTP/1.1[0m" 404 -
+2024-11-29 04:24:58,380 127.0.0.1 - - [29/Nov/2024 04:24:58] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2024-11-29 04:24:58,532 {"csp-report":{"document-uri":"https://improved-fiesta-r95v9rr7649hxjjw-5000.app.github.dev/?","referrer":"https://improved-fiesta-r95v9rr7649hxjjw-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://improved-fiesta-r95v9rr7649hxjjw-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2024-11-29 04:24:58,532 127.0.0.1 - - [29/Nov/2024 04:24:58] "POST /csp_report HTTP/1.1" 200 -
+2024-11-29 04:31:29,236 127.0.0.1 - - [29/Nov/2024 04:31:29] "GET / HTTP/1.1" 200 -
+2024-11-29 04:31:29,526 {"csp-report":{"document-uri":"https://improved-fiesta-r95v9rr7649hxjjw-5000.app.github.dev/?","referrer":"https://improved-fiesta-r95v9rr7649hxjjw-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://improved-fiesta-r95v9rr7649hxjjw-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2024-11-29 04:31:29,527 127.0.0.1 - - [29/Nov/2024 04:31:29] "POST /csp_report HTTP/1.1" 200 -
+2024-11-29 04:31:42,009 127.0.0.1 - - [29/Nov/2024 04:31:42] "GET /form.html HTTP/1.1" 200 -
+2024-11-29 04:31:42,069 127.0.0.1 - - [29/Nov/2024 04:31:42] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-11-29 04:31:42,259 127.0.0.1 - - [29/Nov/2024 04:31:42] "[33mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2024-11-29 04:31:42,260 127.0.0.1 - - [29/Nov/2024 04:31:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-11-29 04:31:42,506 127.0.0.1 - - [29/Nov/2024 04:31:42] "[33mGET /static/js/serviceWorker.js HTTP/1.1[0m" 404 -
+2024-11-29 04:31:42,761 127.0.0.1 - - [29/Nov/2024 04:31:42] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
