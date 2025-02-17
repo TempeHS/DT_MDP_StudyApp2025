@@ -67,6 +67,14 @@ def privacy():
     return render_template("/privacy.html")
 
 
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    return render_template("login.html")
+
+@app.route("/calendar.html", methods=["GET", "POST"])
+def calendar():
+    return render_template("calendar.html")
+
 # example CSRF protected form
 @app.route("/form.html", methods=["POST", "GET"])
 def form():
