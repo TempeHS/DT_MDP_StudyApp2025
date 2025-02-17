@@ -1,25 +1,13 @@
-@import url('https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css');
+*   {
 
-* {
-    /* existing styles */
 }
+body {
 
-body.custom-body {
-    background-color: #ebded4;
 }
-
 .container {
-    /* existing styles */
+
 }
 
 .row {
-    /* existing styles */
-}
-
-.navbar {
-    background-color: #a4b792;
-}
-
-footer.custom-footer {
-    background-color: #ab9685;
+    
 }
