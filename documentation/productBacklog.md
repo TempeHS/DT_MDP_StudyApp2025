@@ -10,6 +10,7 @@
 
 ## Homepage
 Design home page
+Create a functional and responsive sidebar
 
 ## Study Planner
 ### Calendar

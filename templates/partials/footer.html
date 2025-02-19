@@ -1,13 +1,11 @@
-<div class="container-fluid custom-footer">
-    <hr/>
-</div>
-<div class="container custom-footer">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <a href="privacy.html">Privacy Policy</a>
-        </div>
-        <div class="col-12 col-md-6">
-            <a href="form.html">Secure Form Template</a>
-        </div>
+<footer class="container-fluid">
+    <hr>
+    <div class="container custom-footer d-flex justify-content-center align-items-center">
+        <span class="text-muted">
+            &copy; MyHSC {% if current_route != 'privacy' %} |
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            {% endif %}
+        </span>
     </div>
-</div>
+    <div class="container mt-2 pt-4"></div>
+</footer>
