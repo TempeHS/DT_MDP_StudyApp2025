@@ -24,10 +24,13 @@ Create a functional and responsive sidebar
 ### Syllabus Tracking for Each Subject
 
 ## Account
+- Implement a Validate and Sanitise function for both Login and Signup
 ### Login
-
+- Implement a login function 
+- Link login function to signup page 
 ### Signup
-
+- Implement the sign in interface 
+- Set up database for user details 
 
 ### Profile
 
