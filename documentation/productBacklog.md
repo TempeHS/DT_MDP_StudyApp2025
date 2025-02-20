@@ -1,8 +1,9 @@
 # Product Development
-## General Requirements
-1. ~~Launch development environment~~
-3. Design signup/login page (interface only)
+1. Launch development environment
+2. Design home page
+3. Design signup/login page
 4. Set up database 
+<<<<<<< HEAD
 5. Store and encrypt user password
 
 - Colour scheme: ebded4 (beige), a4b792(olive green), e2edf1 (light blue)
@@ -45,3 +46,6 @@ Create a functional and responsive sidebar
 
 ## Information
 ### Information Options Page
+=======
+5. Store and encrypt user password
+>>>>>>> 466939144fbdf9caada8e933cd0e77a29612f4c3

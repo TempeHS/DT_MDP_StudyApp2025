@@ -1,9 +1,9 @@
-@import url('https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css');
+*   {
 
-* {
-    /* existing styles */
 }
+body {
 
+<<<<<<< HEAD
 body, html {
   margin: 0;
   padding: 0;
@@ -15,10 +15,11 @@ body.custom-body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+=======
+>>>>>>> 466939144fbdf9caada8e933cd0e77a29612f4c3
 }
-
 .container {
-    /* existing styles */
+
 }
 
 .custom-container {
@@ -53,6 +54,7 @@ body.custom-body {
 }
 
 .row {
+<<<<<<< HEAD
     /* existing styles */
 }
 
@@ -154,3 +156,7 @@ footer.custom-footer .footer-link:hover {
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+=======
+    
+}
+>>>>>>> 466939144fbdf9caada8e933cd0e77a29612f4c3
