@@ -66,24 +66,21 @@ def index():
 def privacy():
     return render_template("/privacy.html")
 
+@app.route("/home.html", methods=["GET"])
+def home():
+    return render_template("/home.html")
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
     return render_template("login.html")
 
+@app.route("/signup", methods=["GET", "POST"])
+def signup():
+    return render_template("signup.html")
+
 @app.route("/calendar.html", methods=["GET", "POST"])
 def calendar():
     return render_template("calendar.html")
-
-# example CSRF protected form
-@app.route("/form.html", methods=["POST", "GET"])
-def form():
-    if request.method == "POST":
-        email = request.form["email"]
-        text = request.form["text"]
-        return render_template("/form.html")
-    else:
-        return render_template("/form.html")
 
 
 # Endpoint for logging CSP violations

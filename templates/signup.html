@@ -1,25 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="signup-container">
-        <h2>Sign Up</h2>
-        <form action="/signup" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-            
-           </div>
+{% extends 'layoutsl.html' %} {% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <h1 class="display-1"></h1>
+  </div>
+  <div
+    class="container mt-5 mb-5"
+    style="margin-top: 200px; margin-bottom: 150px"
+  >
+    <div class="row">
+      <div class="col-md-6">EMPTY PLACEHOLDER</div>
+      <div class="col-md-6">
+        <div class="text-container">
+          <h2>Create your account</h2>
+        </div>
+        <form id="loginForm" method="POST" action="{{ url_for('login') }}">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="firstName">First Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              name="firstName"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="lastName">Last Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              name="lastName"
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Signup</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,21 +1,57 @@
-{% extends 'layout.html' %}
-{% block content %}
-<div class="container">
+{% extends 'layoutsl.html' %} {% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <h1 class="display-1"></h1>
+  </div>
+  <div
+    class="container mt-5 mb-5"
+    style="margin-top: 200px; margin-bottom: 150px"
+  >
     <div class="row">
-        <h1 class="display-1">Login</h1>
-    </div>
-    <div class="row">
-        <form method="POST" action="/login">
-            <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" name="username" required>
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+      <div class="col-md-6">
+        <div class="text-container">
+          <h2>Welcome to MyHSC</h2>
+          <p>
+            This website allows HSC students to effiectively track their studies
+            through features that are directly linked to the Stage 6 Syllabus.
+          </p>
+          <p>
+            Log in or create an account today to get started and unlock your
+            potential with this helpful tool!
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <form id="loginForm" method="POST" action="{{ url_for('login') }}">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <a href="{{ url_for('signup') }}">Sign Up</a>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
         </form>
+      </div>
     </div>
+  </div>
 </div>
 {% endblock %}
