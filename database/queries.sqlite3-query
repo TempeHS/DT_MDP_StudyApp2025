@@ -1,0 +1,3 @@
+-- database: ./data_source.db
+
+ALTER TABLE user_details ADD password text;

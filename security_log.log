@@ -6220,3 +6220,883 @@
 2025-02-25 02:52:43,697 127.0.0.1 - - [25/Feb/2025 02:52:43] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
 2025-02-25 02:52:43,701 127.0.0.1 - - [25/Feb/2025 02:52:43] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
 2025-02-25 02:52:43,982 127.0.0.1 - - [25/Feb/2025 02:52:43] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 00:15:08,698 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.163:5000
+2025-02-27 00:15:08,698 [33mPress CTRL+C to quit[0m
+2025-02-27 00:15:08,699  * Restarting with stat
+2025-02-27 00:15:09,147  * Debugger is active!
+2025-02-27 00:15:09,149  * Debugger PIN: 109-767-956
+2025-02-27 00:15:14,879 127.0.0.1 - - [27/Feb/2025 00:15:14] "GET /?vscodeBrowserReqId=1740615312717 HTTP/1.1" 200 -
+2025-02-27 00:15:18,881 127.0.0.1 - - [27/Feb/2025 00:15:18] "GET / HTTP/1.1" 200 -
+2025-02-27 00:15:18,954 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:15:18,954 127.0.0.1 - - [27/Feb/2025 00:15:18] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:15:19,157 127.0.0.1 - - [27/Feb/2025 00:15:19] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-27 00:15:19,174 127.0.0.1 - - [27/Feb/2025 00:15:19] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-02-27 00:15:19,195 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 00:15:19,196 127.0.0.1 - - [27/Feb/2025 00:15:19] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:15:19,216 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 00:15:19,216 127.0.0.1 - - [27/Feb/2025 00:15:19] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:15:19,241 127.0.0.1 - - [27/Feb/2025 00:15:19] "GET /static/js/popper.min.js HTTP/1.1" 200 -
+2025-02-27 00:15:19,279 127.0.0.1 - - [27/Feb/2025 00:15:19] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:15:19,357 127.0.0.1 - - [27/Feb/2025 00:15:19] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-02-27 00:15:19,398 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 00:15:19,399 127.0.0.1 - - [27/Feb/2025 00:15:19] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:15:24,170 127.0.0.1 - - [27/Feb/2025 00:15:24] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 00:15:24,234 127.0.0.1 - - [27/Feb/2025 00:15:24] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:15:24,234 127.0.0.1 - - [27/Feb/2025 00:15:24] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:15:24,238 127.0.0.1 - - [27/Feb/2025 00:15:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:15:24,242 127.0.0.1 - - [27/Feb/2025 00:15:24] "GET /static/icons/logo.png HTTP/1.1" 200 -
+2025-02-27 00:15:24,243 127.0.0.1 - - [27/Feb/2025 00:15:24] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:16:01,680 127.0.0.1 - - [27/Feb/2025 00:16:01] "GET /login HTTP/1.1" 200 -
+2025-02-27 00:16:01,742 127.0.0.1 - - [27/Feb/2025 00:16:01] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:16:01,748 127.0.0.1 - - [27/Feb/2025 00:16:01] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:16:01,750 127.0.0.1 - - [27/Feb/2025 00:16:01] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:16:01,750 127.0.0.1 - - [27/Feb/2025 00:16:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:16:04,665 127.0.0.1 - - [27/Feb/2025 00:16:04] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 00:16:04,715 127.0.0.1 - - [27/Feb/2025 00:16:04] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:16:04,730 127.0.0.1 - - [27/Feb/2025 00:16:04] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:16:04,731 127.0.0.1 - - [27/Feb/2025 00:16:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:16:04,733 127.0.0.1 - - [27/Feb/2025 00:16:04] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 00:16:04,733 127.0.0.1 - - [27/Feb/2025 00:16:04] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:18:46,770  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 00:18:46,810  * Restarting with stat
+2025-02-27 00:18:47,112  * Debugger is active!
+2025-02-27 00:18:47,114  * Debugger PIN: 109-767-956
+2025-02-27 00:18:47,720 127.0.0.1 - - [27/Feb/2025 00:18:47] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 00:18:48,137 127.0.0.1 - - [27/Feb/2025 00:18:48] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:18:48,181 127.0.0.1 - - [27/Feb/2025 00:18:48] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 00:18:48,184 127.0.0.1 - - [27/Feb/2025 00:18:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:18:48,230 127.0.0.1 - - [27/Feb/2025 00:18:48] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:18:48,254 127.0.0.1 - - [27/Feb/2025 00:18:48] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:18:48,483 127.0.0.1 - - [27/Feb/2025 00:18:48] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 00:18:53,957 127.0.0.1 - - [27/Feb/2025 00:18:53] "GET / HTTP/1.1" 200 -
+2025-02-27 00:18:54,007 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"img-src","effective-directive":"img-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://github.com/mdo.png","line-number":180,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:18:54,007 127.0.0.1 - - [27/Feb/2025 00:18:54] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:18:54,012 127.0.0.1 - - [27/Feb/2025 00:18:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:18:54,015 127.0.0.1 - - [27/Feb/2025 00:18:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:18:54,019 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:18:54,019 127.0.0.1 - - [27/Feb/2025 00:18:54] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:18:54,021 127.0.0.1 - - [27/Feb/2025 00:18:54] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:18:54,024 127.0.0.1 - - [27/Feb/2025 00:18:54] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 00:18:54,024 127.0.0.1 - - [27/Feb/2025 00:18:54] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:18:54,039 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 00:18:54,039 127.0.0.1 - - [27/Feb/2025 00:18:54] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:18:54,043 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 00:18:54,043 127.0.0.1 - - [27/Feb/2025 00:18:54] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:18:54,107 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 00:18:54,108 127.0.0.1 - - [27/Feb/2025 00:18:54] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:20:40,089 127.0.0.1 - - [27/Feb/2025 00:20:40] "GET / HTTP/1.1" 200 -
+2025-02-27 00:20:40,162 127.0.0.1 - - [27/Feb/2025 00:20:40] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:20:40,169 127.0.0.1 - - [27/Feb/2025 00:20:40] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:20:40,181 127.0.0.1 - - [27/Feb/2025 00:20:40] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 00:20:40,369 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:20:40,370 127.0.0.1 - - [27/Feb/2025 00:20:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:20:40,371 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"img-src","effective-directive":"img-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://github.com/mdo.png","line-number":180,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:20:40,371 127.0.0.1 - - [27/Feb/2025 00:20:40] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:20:40,372 127.0.0.1 - - [27/Feb/2025 00:20:40] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:20:40,378 127.0.0.1 - - [27/Feb/2025 00:20:40] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:20:40,398 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 00:20:40,398 127.0.0.1 - - [27/Feb/2025 00:20:40] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:20:40,399 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 00:20:40,399 127.0.0.1 - - [27/Feb/2025 00:20:40] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:20:40,468 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 00:20:40,468 127.0.0.1 - - [27/Feb/2025 00:20:40] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:20:48,190 127.0.0.1 - - [27/Feb/2025 00:20:48] "GET / HTTP/1.1" 200 -
+2025-02-27 00:20:48,244 127.0.0.1 - - [27/Feb/2025 00:20:48] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:20:48,245 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"img-src","effective-directive":"img-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://github.com/mdo.png","line-number":180,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:20:48,246 127.0.0.1 - - [27/Feb/2025 00:20:48] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:20:48,248 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:20:48,249 127.0.0.1 - - [27/Feb/2025 00:20:48] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:20:48,250 127.0.0.1 - - [27/Feb/2025 00:20:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:20:48,257 127.0.0.1 - - [27/Feb/2025 00:20:48] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:20:48,259 127.0.0.1 - - [27/Feb/2025 00:20:48] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:20:48,259 127.0.0.1 - - [27/Feb/2025 00:20:48] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 00:20:48,274 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 00:20:48,274 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 00:20:48,275 127.0.0.1 - - [27/Feb/2025 00:20:48] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:20:48,275 127.0.0.1 - - [27/Feb/2025 00:20:48] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:20:48,321 127.0.0.1 - - [27/Feb/2025 00:20:48] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 00:20:48,328 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 00:20:48,328 127.0.0.1 - - [27/Feb/2025 00:20:48] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:06,236 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 00:21:06,237 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 00:21:06,237 127.0.0.1 - - [27/Feb/2025 00:21:06] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:06,238 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"img-src","effective-directive":"img-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://github.com/mdo.png","line-number":180,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:21:06,239 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:21:06,239 127.0.0.1 - - [27/Feb/2025 00:21:06] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:06,239 127.0.0.1 - - [27/Feb/2025 00:21:06] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:06,239 127.0.0.1 - - [27/Feb/2025 00:21:06] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:06,319 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 00:21:06,319 127.0.0.1 - - [27/Feb/2025 00:21:06] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:14,188 127.0.0.1 - - [27/Feb/2025 00:21:14] "GET / HTTP/1.1" 200 -
+2025-02-27 00:21:14,246 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:21:14,247 127.0.0.1 - - [27/Feb/2025 00:21:14] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:14,248 127.0.0.1 - - [27/Feb/2025 00:21:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:21:14,248 127.0.0.1 - - [27/Feb/2025 00:21:14] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 00:21:14,250 127.0.0.1 - - [27/Feb/2025 00:21:14] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:21:14,251 127.0.0.1 - - [27/Feb/2025 00:21:14] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:21:14,262 127.0.0.1 - - [27/Feb/2025 00:21:14] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:21:14,266 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"img-src","effective-directive":"img-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://github.com/mdo.png","line-number":180,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:21:14,267 127.0.0.1 - - [27/Feb/2025 00:21:14] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:14,294 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 00:21:14,294 127.0.0.1 - - [27/Feb/2025 00:21:14] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:14,295 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 00:21:14,296 127.0.0.1 - - [27/Feb/2025 00:21:14] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 00:21:14,296 127.0.0.1 - - [27/Feb/2025 00:21:14] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:14,320 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 00:21:14,320 127.0.0.1 - - [27/Feb/2025 00:21:14] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:14,321  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 00:21:14,367  * Restarting with stat
+2025-02-27 00:21:14,601  * Debugger is active!
+2025-02-27 00:21:14,601  * Debugger PIN: 109-767-956
+2025-02-27 00:21:20,584 127.0.0.1 - - [27/Feb/2025 00:21:20] "GET / HTTP/1.1" 200 -
+2025-02-27 00:21:20,631 127.0.0.1 - - [27/Feb/2025 00:21:20] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:21:20,632 127.0.0.1 - - [27/Feb/2025 00:21:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:21:20,633 127.0.0.1 - - [27/Feb/2025 00:21:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:21:20,635 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:21:20,636 127.0.0.1 - - [27/Feb/2025 00:21:20] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:21:20,637 127.0.0.1 - - [27/Feb/2025 00:21:20] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:20,637 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":68,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:21:20,638 127.0.0.1 - - [27/Feb/2025 00:21:20] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:20,660 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 00:21:20,660 127.0.0.1 - - [27/Feb/2025 00:21:20] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:20,661 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 00:21:20,661 127.0.0.1 - - [27/Feb/2025 00:21:20] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:20,722 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 00:21:20,723 127.0.0.1 - - [27/Feb/2025 00:21:20] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:21:34,206  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 00:21:34,245  * Restarting with stat
+2025-02-27 00:21:34,487  * Debugger is active!
+2025-02-27 00:21:34,487  * Debugger PIN: 109-767-956
+2025-02-27 00:22:16,027  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 00:22:16,066  * Restarting with stat
+2025-02-27 00:22:16,305  * Debugger is active!
+2025-02-27 00:22:16,306  * Debugger PIN: 109-767-956
+2025-02-27 00:22:16,995 127.0.0.1 - - [27/Feb/2025 00:22:16] "GET / HTTP/1.1" 200 -
+2025-02-27 00:22:17,054 127.0.0.1 - - [27/Feb/2025 00:22:17] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:22:17,062 127.0.0.1 - - [27/Feb/2025 00:22:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:22:17,067 127.0.0.1 - - [27/Feb/2025 00:22:17] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:22:17,068 127.0.0.1 - - [27/Feb/2025 00:22:17] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:22:17,069 127.0.0.1 - - [27/Feb/2025 00:22:17] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 00:22:17,071 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"img-src","effective-directive":"img-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://github.com/mdo.png","line-number":180,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:22:17,072 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 00:22:17,072 127.0.0.1 - - [27/Feb/2025 00:22:17] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:22:17,072 127.0.0.1 - - [27/Feb/2025 00:22:17] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:22:17,094 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 00:22:17,095 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 00:22:17,096 127.0.0.1 - - [27/Feb/2025 00:22:17] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:22:17,096 127.0.0.1 - - [27/Feb/2025 00:22:17] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:22:17,114 127.0.0.1 - - [27/Feb/2025 00:22:17] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 00:22:17,141 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 00:22:17,141 127.0.0.1 - - [27/Feb/2025 00:22:17] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 00:22:18,884 127.0.0.1 - - [27/Feb/2025 00:22:18] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 00:22:18,951 127.0.0.1 - - [27/Feb/2025 00:22:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:22:18,954 127.0.0.1 - - [27/Feb/2025 00:22:18] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:22:18,956 127.0.0.1 - - [27/Feb/2025 00:22:18] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 00:22:18,960 127.0.0.1 - - [27/Feb/2025 00:22:18] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:22:18,962 127.0.0.1 - - [27/Feb/2025 00:22:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:22:19,646 127.0.0.1 - - [27/Feb/2025 00:22:19] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 00:22:19,690 127.0.0.1 - - [27/Feb/2025 00:22:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:22:19,691 127.0.0.1 - - [27/Feb/2025 00:22:19] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:22:19,691 127.0.0.1 - - [27/Feb/2025 00:22:19] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:22:19,691 127.0.0.1 - - [27/Feb/2025 00:22:19] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:22:19,692 127.0.0.1 - - [27/Feb/2025 00:22:19] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 00:22:19,742 127.0.0.1 - - [27/Feb/2025 00:22:19] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 00:22:47,803 127.0.0.1 - - [27/Feb/2025 00:22:47] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 00:22:47,848 127.0.0.1 - - [27/Feb/2025 00:22:47] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 00:22:47,853 127.0.0.1 - - [27/Feb/2025 00:22:47] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:22:47,854 127.0.0.1 - - [27/Feb/2025 00:22:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:22:47,857 127.0.0.1 - - [27/Feb/2025 00:22:47] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:22:47,859 127.0.0.1 - - [27/Feb/2025 00:22:47] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:22:47,898 127.0.0.1 - - [27/Feb/2025 00:22:47] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 00:22:47,985  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 00:22:48,029  * Restarting with stat
+2025-02-27 00:22:48,325  * Debugger is active!
+2025-02-27 00:22:48,326  * Debugger PIN: 109-767-956
+2025-02-27 00:22:50,712  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 00:22:50,756  * Restarting with stat
+2025-02-27 00:22:51,004  * Debugger is active!
+2025-02-27 00:22:51,005  * Debugger PIN: 109-767-956
+2025-02-27 00:22:51,985 127.0.0.1 - - [27/Feb/2025 00:22:51] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 00:22:52,035 127.0.0.1 - - [27/Feb/2025 00:22:52] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:22:52,037 127.0.0.1 - - [27/Feb/2025 00:22:52] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:22:52,041 127.0.0.1 - - [27/Feb/2025 00:22:52] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:22:52,042 127.0.0.1 - - [27/Feb/2025 00:22:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:22:52,043 127.0.0.1 - - [27/Feb/2025 00:22:52] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 00:22:52,124 127.0.0.1 - - [27/Feb/2025 00:22:52] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 00:23:26,210 127.0.0.1 - - [27/Feb/2025 00:23:26] "GET /login HTTP/1.1" 200 -
+2025-02-27 00:23:26,261 127.0.0.1 - - [27/Feb/2025 00:23:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:23:26,268 127.0.0.1 - - [27/Feb/2025 00:23:26] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:23:26,270 127.0.0.1 - - [27/Feb/2025 00:23:26] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:23:26,271 127.0.0.1 - - [27/Feb/2025 00:23:26] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:23:27,059 127.0.0.1 - - [27/Feb/2025 00:23:27] "GET /signup HTTP/1.1" 200 -
+2025-02-27 00:23:27,105 127.0.0.1 - - [27/Feb/2025 00:23:27] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:23:27,109 127.0.0.1 - - [27/Feb/2025 00:23:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:23:27,110 127.0.0.1 - - [27/Feb/2025 00:23:27] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:23:27,111 127.0.0.1 - - [27/Feb/2025 00:23:27] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:34:58,552  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 00:34:58,601  * Restarting with stat
+2025-02-27 00:34:58,844  * Debugger is active!
+2025-02-27 00:34:58,844  * Debugger PIN: 109-767-956
+2025-02-27 00:43:25,116  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 00:43:25,155  * Restarting with stat
+2025-02-27 00:43:25,415  * Debugger is active!
+2025-02-27 00:43:25,416  * Debugger PIN: 109-767-956
+2025-02-27 00:44:56,389  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 00:44:56,426  * Restarting with stat
+2025-02-27 00:44:56,667  * Debugger is active!
+2025-02-27 00:44:56,667  * Debugger PIN: 109-767-956
+2025-02-27 00:45:02,084 127.0.0.1 - - [27/Feb/2025 00:45:02] "GET /signup HTTP/1.1" 200 -
+2025-02-27 00:45:02,312 127.0.0.1 - - [27/Feb/2025 00:45:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:45:02,333 127.0.0.1 - - [27/Feb/2025 00:45:02] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:45:02,344 127.0.0.1 - - [27/Feb/2025 00:45:02] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:45:02,352 127.0.0.1 - - [27/Feb/2025 00:45:02] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:45:02,573 127.0.0.1 - - [27/Feb/2025 00:45:02] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 00:45:13,882 127.0.0.1 - - [27/Feb/2025 00:45:13] "GET /signup HTTP/1.1" 200 -
+2025-02-27 00:45:13,918 127.0.0.1 - - [27/Feb/2025 00:45:13] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 00:45:13,919 127.0.0.1 - - [27/Feb/2025 00:45:13] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 00:45:13,920 127.0.0.1 - - [27/Feb/2025 00:45:13] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 00:45:13,921 127.0.0.1 - - [27/Feb/2025 00:45:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:45:13,967 127.0.0.1 - - [27/Feb/2025 00:45:13] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 00:45:32,011 127.0.0.1 - - [27/Feb/2025 00:45:32] "[35m[1mPOST /signup HTTP/1.1[0m" 500 -
+2025-02-27 00:45:32,063 127.0.0.1 - - [27/Feb/2025 00:45:32] "GET /signup?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-02-27 00:45:32,064 127.0.0.1 - - [27/Feb/2025 00:45:32] "GET /signup?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-02-27 00:45:32,219 127.0.0.1 - - [27/Feb/2025 00:45:32] "GET /signup?__debugger__=yes&cmd=resource&f=console.png&s=5CVmZpo0AdqSdXAsY1bX HTTP/1.1" 200 -
+2025-02-27 00:45:32,252 127.0.0.1 - - [27/Feb/2025 00:45:32] "GET /signup?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-02-27 00:46:47,550  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 00:46:47,591  * Restarting with stat
+2025-02-27 00:46:47,839  * Debugger is active!
+2025-02-27 00:46:47,839  * Debugger PIN: 109-767-956
+2025-02-27 00:46:48,667 127.0.0.1 - - [27/Feb/2025 00:46:48] "[35m[1mPOST /signup HTTP/1.1[0m" 500 -
+2025-02-27 00:46:48,718 127.0.0.1 - - [27/Feb/2025 00:46:48] "[36mGET /signup?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:46:48,874 127.0.0.1 - - [27/Feb/2025 00:46:48] "[36mGET /signup?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-27 00:46:48,903 127.0.0.1 - - [27/Feb/2025 00:46:48] "GET /signup?__debugger__=yes&cmd=resource&f=console.png&s=D6uaNTiW3DscWdprSCqZ HTTP/1.1" 200 -
+2025-02-27 00:46:48,930 127.0.0.1 - - [27/Feb/2025 00:46:48] "[36mGET /signup?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-27 00:48:56,907  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 00:48:56,947  * Restarting with stat
+2025-02-27 00:48:57,197  * Debugger is active!
+2025-02-27 00:48:57,198  * Debugger PIN: 109-767-956
+2025-02-27 00:48:58,288 127.0.0.1 - - [27/Feb/2025 00:48:58] "[35m[1mPOST /signup HTTP/1.1[0m" 500 -
+2025-02-27 00:48:58,525 127.0.0.1 - - [27/Feb/2025 00:48:58] "[36mGET /signup?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:48:58,537 127.0.0.1 - - [27/Feb/2025 00:48:58] "[36mGET /signup?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-27 00:48:58,726 127.0.0.1 - - [27/Feb/2025 00:48:58] "GET /signup?__debugger__=yes&cmd=resource&f=console.png&s=pnkt6QqG5OLgEwOIWMx1 HTTP/1.1" 200 -
+2025-02-27 00:48:58,949 127.0.0.1 - - [27/Feb/2025 00:48:58] "[36mGET /signup?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-27 00:49:05,325  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 00:49:05,362  * Restarting with stat
+2025-02-27 00:49:05,616  * Debugger is active!
+2025-02-27 00:49:05,616  * Debugger PIN: 109-767-956
+2025-02-27 00:49:06,789 127.0.0.1 - - [27/Feb/2025 00:49:06] "[35m[1mPOST /signup HTTP/1.1[0m" 500 -
+2025-02-27 00:49:06,834 127.0.0.1 - - [27/Feb/2025 00:49:06] "[36mGET /signup?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-27 00:49:06,834 127.0.0.1 - - [27/Feb/2025 00:49:06] "[36mGET /signup?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-27 00:49:06,861 127.0.0.1 - - [27/Feb/2025 00:49:06] "GET /signup?__debugger__=yes&cmd=resource&f=console.png&s=tWx0wou55FObz7obpP6H HTTP/1.1" 200 -
+2025-02-27 00:49:06,884 127.0.0.1 - - [27/Feb/2025 00:49:06] "[36mGET /signup?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-27 02:59:50,397 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.114:5000
+2025-02-27 02:59:50,399 [33mPress CTRL+C to quit[0m
+2025-02-27 02:59:50,399  * Restarting with stat
+2025-02-27 02:59:50,637  * Debugger is active!
+2025-02-27 02:59:50,638  * Debugger PIN: 222-250-957
+2025-02-27 02:59:56,073 127.0.0.1 - - [27/Feb/2025 02:59:56] "GET / HTTP/1.1" 200 -
+2025-02-27 02:59:56,117 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 02:59:56,117 127.0.0.1 - - [27/Feb/2025 02:59:56] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 02:59:56,316 127.0.0.1 - - [27/Feb/2025 02:59:56] "GET /static/icons/logo.png HTTP/1.1" 200 -
+2025-02-27 02:59:56,316 127.0.0.1 - - [27/Feb/2025 02:59:56] "GET /static/js/popper.min.js HTTP/1.1" 200 -
+2025-02-27 02:59:56,359 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"img-src","effective-directive":"img-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://github.com/mdo.png","line-number":180,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 02:59:56,360 127.0.0.1 - - [27/Feb/2025 02:59:56] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-02-27 02:59:56,360 127.0.0.1 - - [27/Feb/2025 02:59:56] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 02:59:56,372 127.0.0.1 - - [27/Feb/2025 02:59:56] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-27 02:59:56,375 127.0.0.1 - - [27/Feb/2025 02:59:56] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 02:59:56,390 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 02:59:56,390 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 02:59:56,391 127.0.0.1 - - [27/Feb/2025 02:59:56] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 02:59:56,391 127.0.0.1 - - [27/Feb/2025 02:59:56] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 02:59:56,408 127.0.0.1 - - [27/Feb/2025 02:59:56] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-02-27 02:59:56,442 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 02:59:56,443 127.0.0.1 - - [27/Feb/2025 02:59:56] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:00:06,374 127.0.0.1 - - [27/Feb/2025 03:00:06] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 03:00:06,407 127.0.0.1 - - [27/Feb/2025 03:00:06] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:00:06,409 127.0.0.1 - - [27/Feb/2025 03:00:06] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:00:06,410 127.0.0.1 - - [27/Feb/2025 03:00:06] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 03:00:06,410 127.0.0.1 - - [27/Feb/2025 03:00:06] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:00:06,411 127.0.0.1 - - [27/Feb/2025 03:00:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:00:29,590  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 03:00:29,631  * Restarting with stat
+2025-02-27 03:00:29,877  * Debugger is active!
+2025-02-27 03:00:29,877  * Debugger PIN: 222-250-957
+2025-02-27 03:00:33,769 127.0.0.1 - - [27/Feb/2025 03:00:33] "GET / HTTP/1.1" 200 -
+2025-02-27 03:00:33,800 127.0.0.1 - - [27/Feb/2025 03:00:33] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:00:33,804 127.0.0.1 - - [27/Feb/2025 03:00:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:00:33,808 127.0.0.1 - - [27/Feb/2025 03:00:33] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:00:33,808 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:00:33,810 127.0.0.1 - - [27/Feb/2025 03:00:33] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:00:33,814 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"img-src","effective-directive":"img-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://github.com/mdo.png","line-number":180,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:00:33,814 127.0.0.1 - - [27/Feb/2025 03:00:33] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 03:00:33,814 127.0.0.1 - - [27/Feb/2025 03:00:33] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:00:33,815 127.0.0.1 - - [27/Feb/2025 03:00:33] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:00:33,830 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 03:00:33,831 127.0.0.1 - - [27/Feb/2025 03:00:33] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:00:33,833 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 03:00:33,833 127.0.0.1 - - [27/Feb/2025 03:00:33] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:00:33,879 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 03:00:33,880 127.0.0.1 - - [27/Feb/2025 03:00:33] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:00:39,655  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 03:00:39,699  * Restarting with stat
+2025-02-27 03:00:39,946  * Debugger is active!
+2025-02-27 03:00:39,946  * Debugger PIN: 222-250-957
+2025-02-27 03:02:39,513  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 03:02:39,558  * Restarting with stat
+2025-02-27 03:02:39,815  * Debugger is active!
+2025-02-27 03:02:39,815  * Debugger PIN: 222-250-957
+2025-02-27 03:04:03,979 127.0.0.1 - - [27/Feb/2025 03:04:03] "GET / HTTP/1.1" 200 -
+2025-02-27 03:04:04,026 127.0.0.1 - - [27/Feb/2025 03:04:04] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:04:04,031 127.0.0.1 - - [27/Feb/2025 03:04:04] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 03:04:04,221 127.0.0.1 - - [27/Feb/2025 03:04:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:04:04,227 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:04:04,227 127.0.0.1 - - [27/Feb/2025 03:04:04] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:04:04,230 127.0.0.1 - - [27/Feb/2025 03:04:04] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:04:04,241 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 03:04:04,241 127.0.0.1 - - [27/Feb/2025 03:04:04] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:04:04,241 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 03:04:04,242 127.0.0.1 - - [27/Feb/2025 03:04:04] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:04:04,301 127.0.0.1 - - [27/Feb/2025 03:04:04] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:04:04,303 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"img-src","effective-directive":"img-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://github.com/mdo.png","line-number":180,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:04:04,303 127.0.0.1 - - [27/Feb/2025 03:04:04] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:04:04,378 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 03:04:04,378 127.0.0.1 - - [27/Feb/2025 03:04:04] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:04:10,965 127.0.0.1 - - [27/Feb/2025 03:04:10] "GET /login HTTP/1.1" 200 -
+2025-02-27 03:04:11,001 127.0.0.1 - - [27/Feb/2025 03:04:11] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:04:11,002 127.0.0.1 - - [27/Feb/2025 03:04:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:04:11,003 127.0.0.1 - - [27/Feb/2025 03:04:11] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:04:11,004 127.0.0.1 - - [27/Feb/2025 03:04:11] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:04:13,694 127.0.0.1 - - [27/Feb/2025 03:04:13] "GET /signup HTTP/1.1" 200 -
+2025-02-27 03:04:13,729 127.0.0.1 - - [27/Feb/2025 03:04:13] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:04:13,730 127.0.0.1 - - [27/Feb/2025 03:04:13] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:04:13,732 127.0.0.1 - - [27/Feb/2025 03:04:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:04:13,733 127.0.0.1 - - [27/Feb/2025 03:04:13] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:05:17,480  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 03:05:17,535  * Restarting with stat
+2025-02-27 03:05:17,779  * Debugger is active!
+2025-02-27 03:05:17,780  * Debugger PIN: 222-250-957
+2025-02-27 03:06:26,209  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 03:06:26,251  * Restarting with stat
+2025-02-27 03:06:26,513  * Debugger is active!
+2025-02-27 03:06:26,513  * Debugger PIN: 222-250-957
+2025-02-27 03:06:37,463 127.0.0.1 - - [27/Feb/2025 03:06:37] "GET / HTTP/1.1" 200 -
+2025-02-27 03:06:37,527 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":68,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:06:37,527 127.0.0.1 - - [27/Feb/2025 03:06:37] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:06:37,713 127.0.0.1 - - [27/Feb/2025 03:06:37] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:06:37,716 127.0.0.1 - - [27/Feb/2025 03:06:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:06:37,738 127.0.0.1 - - [27/Feb/2025 03:06:37] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:06:37,776 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:06:37,777 127.0.0.1 - - [27/Feb/2025 03:06:37] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:06:37,786 127.0.0.1 - - [27/Feb/2025 03:06:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:06:37,807 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 03:06:37,807 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 03:06:37,808 127.0.0.1 - - [27/Feb/2025 03:06:37] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:06:37,808 127.0.0.1 - - [27/Feb/2025 03:06:37] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:06:37,857 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 03:06:37,857 127.0.0.1 - - [27/Feb/2025 03:06:37] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:21:43,280 127.0.0.1 - - [27/Feb/2025 03:21:43] "GET /?vscodeBrowserReqId=1740626501343 HTTP/1.1" 200 -
+2025-02-27 03:21:49,636 127.0.0.1 - - [27/Feb/2025 03:21:49] "GET / HTTP/1.1" 200 -
+2025-02-27 03:21:49,727 127.0.0.1 - - [27/Feb/2025 03:21:49] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:21:49,729 127.0.0.1 - - [27/Feb/2025 03:21:49] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:21:49,901 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":68,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:21:49,902 127.0.0.1 - - [27/Feb/2025 03:21:49] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:21:49,911 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:21:49,911 127.0.0.1 - - [27/Feb/2025 03:21:49] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:21:49,939 127.0.0.1 - - [27/Feb/2025 03:21:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:21:49,948 127.0.0.1 - - [27/Feb/2025 03:21:49] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:21:50,008 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 03:21:50,009 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 03:21:50,009 127.0.0.1 - - [27/Feb/2025 03:21:50] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:21:50,009 127.0.0.1 - - [27/Feb/2025 03:21:50] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:21:50,104 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 03:21:50,105 127.0.0.1 - - [27/Feb/2025 03:21:50] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:22:22,417 127.0.0.1 - - [27/Feb/2025 03:22:22] "GET /signup HTTP/1.1" 200 -
+2025-02-27 03:22:22,503 127.0.0.1 - - [27/Feb/2025 03:22:22] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:22:22,505 127.0.0.1 - - [27/Feb/2025 03:22:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:22:22,505 127.0.0.1 - - [27/Feb/2025 03:22:22] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:22:22,505 127.0.0.1 - - [27/Feb/2025 03:22:22] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:22:31,890 127.0.0.1 - - [27/Feb/2025 03:22:31] "[35m[1mPOST /signup HTTP/1.1[0m" 500 -
+2025-02-27 03:22:31,968 127.0.0.1 - - [27/Feb/2025 03:22:31] "[36mGET /signup?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:22:31,968 127.0.0.1 - - [27/Feb/2025 03:22:31] "[36mGET /signup?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-27 03:22:32,045 127.0.0.1 - - [27/Feb/2025 03:22:32] "GET /signup?__debugger__=yes&cmd=resource&f=console.png&s=On58eVz5pevGNM1nVbtD HTTP/1.1" 200 -
+2025-02-27 03:22:32,083 127.0.0.1 - - [27/Feb/2025 03:22:32] "[36mGET /signup?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-27 03:24:34,488  * Detected change in '/workspaces/DT_MDP_StudyApp2025/database_manager.py', reloading
+2025-02-27 03:24:34,539  * Restarting with stat
+2025-02-27 03:24:34,780  * Debugger is active!
+2025-02-27 03:24:34,780  * Debugger PIN: 222-250-957
+2025-02-27 03:24:36,007 127.0.0.1 - - [27/Feb/2025 03:24:36] "[35m[1mPOST /signup HTTP/1.1[0m" 500 -
+2025-02-27 03:24:36,220 127.0.0.1 - - [27/Feb/2025 03:24:36] "[36mGET /signup?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-27 03:24:36,225 127.0.0.1 - - [27/Feb/2025 03:24:36] "[36mGET /signup?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:24:36,418 127.0.0.1 - - [27/Feb/2025 03:24:36] "GET /signup?__debugger__=yes&cmd=resource&f=console.png&s=zmFXMlxJHps3TAKDa3dw HTTP/1.1" 200 -
+2025-02-27 03:24:36,615 127.0.0.1 - - [27/Feb/2025 03:24:36] "[36mGET /signup?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-27 03:27:03,107  * Detected change in '/workspaces/DT_MDP_StudyApp2025/database_manager.py', reloading
+2025-02-27 03:27:03,147  * Restarting with stat
+2025-02-27 03:27:03,391  * Debugger is active!
+2025-02-27 03:27:03,392  * Debugger PIN: 222-250-957
+2025-02-27 03:27:04,529 127.0.0.1 - - [27/Feb/2025 03:27:04] "[35m[1mPOST /signup HTTP/1.1[0m" 500 -
+2025-02-27 03:27:04,798 127.0.0.1 - - [27/Feb/2025 03:27:04] "[36mGET /signup?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-27 03:27:04,802 127.0.0.1 - - [27/Feb/2025 03:27:04] "[36mGET /signup?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:27:05,008 127.0.0.1 - - [27/Feb/2025 03:27:05] "GET /signup?__debugger__=yes&cmd=resource&f=console.png&s=txhDe7Zm7feD9n2K4fQV HTTP/1.1" 200 -
+2025-02-27 03:27:05,210 127.0.0.1 - - [27/Feb/2025 03:27:05] "[36mGET /signup?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-27 03:27:18,873  * Detected change in '/workspaces/DT_MDP_StudyApp2025/database_manager.py', reloading
+2025-02-27 03:27:18,930  * Restarting with stat
+2025-02-27 03:27:19,186  * Debugger is active!
+2025-02-27 03:27:19,186  * Debugger PIN: 222-250-957
+2025-02-27 03:27:44,907  * Detected change in '/workspaces/DT_MDP_StudyApp2025/database_manager.py', reloading
+2025-02-27 03:27:44,948  * Restarting with stat
+2025-02-27 03:27:45,199  * Debugger is active!
+2025-02-27 03:27:45,200  * Debugger PIN: 222-250-957
+2025-02-27 03:27:56,315  * Detected change in '/workspaces/DT_MDP_StudyApp2025/database_manager.py', reloading
+2025-02-27 03:27:56,356  * Restarting with stat
+2025-02-27 03:27:56,614  * Debugger is active!
+2025-02-27 03:27:56,614  * Debugger PIN: 222-250-957
+2025-02-27 03:27:58,040 127.0.0.1 - - [27/Feb/2025 03:27:58] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2025-02-27 03:27:58,213 127.0.0.1 - - [27/Feb/2025 03:27:58] "GET /login HTTP/1.1" 200 -
+2025-02-27 03:27:58,269 127.0.0.1 - - [27/Feb/2025 03:27:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:27:58,270 127.0.0.1 - - [27/Feb/2025 03:27:58] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:27:58,275 127.0.0.1 - - [27/Feb/2025 03:27:58] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:27:58,277 127.0.0.1 - - [27/Feb/2025 03:27:58] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:28:10,829 127.0.0.1 - - [27/Feb/2025 03:28:10] "GET /login HTTP/1.1" 200 -
+2025-02-27 03:28:10,883 127.0.0.1 - - [27/Feb/2025 03:28:10] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:28:10,885 127.0.0.1 - - [27/Feb/2025 03:28:10] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:28:10,889 127.0.0.1 - - [27/Feb/2025 03:28:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:28:10,890 127.0.0.1 - - [27/Feb/2025 03:28:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:28:19,099 127.0.0.1 - - [27/Feb/2025 03:28:19] "GET /signup HTTP/1.1" 200 -
+2025-02-27 03:28:19,174 127.0.0.1 - - [27/Feb/2025 03:28:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:28:19,178 127.0.0.1 - - [27/Feb/2025 03:28:19] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:28:19,179 127.0.0.1 - - [27/Feb/2025 03:28:19] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:28:19,180 127.0.0.1 - - [27/Feb/2025 03:28:19] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:28:20,776 127.0.0.1 - - [27/Feb/2025 03:28:20] "GET /login HTTP/1.1" 200 -
+2025-02-27 03:28:20,854 127.0.0.1 - - [27/Feb/2025 03:28:20] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:28:20,856 127.0.0.1 - - [27/Feb/2025 03:28:20] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:28:20,861 127.0.0.1 - - [27/Feb/2025 03:28:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:28:20,862 127.0.0.1 - - [27/Feb/2025 03:28:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:28:33,314 127.0.0.1 - - [27/Feb/2025 03:28:33] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 03:28:33,400 127.0.0.1 - - [27/Feb/2025 03:28:33] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:28:33,402 127.0.0.1 - - [27/Feb/2025 03:28:33] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:28:33,406 127.0.0.1 - - [27/Feb/2025 03:28:33] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:28:33,408 127.0.0.1 - - [27/Feb/2025 03:28:33] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 03:28:33,413 127.0.0.1 - - [27/Feb/2025 03:28:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:28:33,644 127.0.0.1 - - [27/Feb/2025 03:28:33] "GET /signup HTTP/1.1" 200 -
+2025-02-27 03:28:33,703 127.0.0.1 - - [27/Feb/2025 03:28:33] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:28:33,704 127.0.0.1 - - [27/Feb/2025 03:28:33] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:28:33,705 127.0.0.1 - - [27/Feb/2025 03:28:33] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:28:33,710 127.0.0.1 - - [27/Feb/2025 03:28:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:28:46,044 127.0.0.1 - - [27/Feb/2025 03:28:46] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2025-02-27 03:28:46,072 127.0.0.1 - - [27/Feb/2025 03:28:46] "GET /login HTTP/1.1" 200 -
+2025-02-27 03:28:46,149 127.0.0.1 - - [27/Feb/2025 03:28:46] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:28:46,154 127.0.0.1 - - [27/Feb/2025 03:28:46] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:28:46,160 127.0.0.1 - - [27/Feb/2025 03:28:46] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:28:46,161 127.0.0.1 - - [27/Feb/2025 03:28:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:30:15,844 127.0.0.1 - - [27/Feb/2025 03:30:15] "GET /signup HTTP/1.1" 200 -
+2025-02-27 03:30:15,899 127.0.0.1 - - [27/Feb/2025 03:30:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:30:16,080 127.0.0.1 - - [27/Feb/2025 03:30:16] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:30:16,092 127.0.0.1 - - [27/Feb/2025 03:30:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:30:16,094 127.0.0.1 - - [27/Feb/2025 03:30:16] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:30:33,927 127.0.0.1 - - [27/Feb/2025 03:30:33] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2025-02-27 03:30:33,954 127.0.0.1 - - [27/Feb/2025 03:30:33] "GET /login HTTP/1.1" 200 -
+2025-02-27 03:30:34,057 127.0.0.1 - - [27/Feb/2025 03:30:34] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:30:34,058 127.0.0.1 - - [27/Feb/2025 03:30:34] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:30:34,059 127.0.0.1 - - [27/Feb/2025 03:30:34] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:30:34,060 127.0.0.1 - - [27/Feb/2025 03:30:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:30:43,163 127.0.0.1 - - [27/Feb/2025 03:30:43] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-02-27 03:30:43,211 127.0.0.1 - - [27/Feb/2025 03:30:43] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-02-27 03:30:43,212 127.0.0.1 - - [27/Feb/2025 03:30:43] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-02-27 03:30:43,248 127.0.0.1 - - [27/Feb/2025 03:30:43] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=NX1gG103IIHouAO78dVe HTTP/1.1" 200 -
+2025-02-27 03:30:43,340 127.0.0.1 - - [27/Feb/2025 03:30:43] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-02-27 03:31:43,865 127.0.0.1 - - [27/Feb/2025 03:31:43] "GET /?vscodeBrowserReqId=1740627105725 HTTP/1.1" 200 -
+2025-02-27 03:31:48,770 127.0.0.1 - - [27/Feb/2025 03:31:48] "GET / HTTP/1.1" 200 -
+2025-02-27 03:31:48,872 127.0.0.1 - - [27/Feb/2025 03:31:48] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:31:48,874 127.0.0.1 - - [27/Feb/2025 03:31:48] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:31:48,875 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":68,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:31:48,877 127.0.0.1 - - [27/Feb/2025 03:31:48] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:31:48,878 127.0.0.1 - - [27/Feb/2025 03:31:48] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:31:48,878 127.0.0.1 - - [27/Feb/2025 03:31:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:31:48,904 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 03:31:48,904 127.0.0.1 - - [27/Feb/2025 03:31:48] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:31:48,966 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 03:31:48,967 127.0.0.1 - - [27/Feb/2025 03:31:48] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:31:49,047 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 03:31:49,048 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:31:49,048 127.0.0.1 - - [27/Feb/2025 03:31:49] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:31:49,049 127.0.0.1 - - [27/Feb/2025 03:31:49] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:31:52,958 127.0.0.1 - - [27/Feb/2025 03:31:52] "GET /login HTTP/1.1" 200 -
+2025-02-27 03:31:53,013 127.0.0.1 - - [27/Feb/2025 03:31:53] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:31:53,014 127.0.0.1 - - [27/Feb/2025 03:31:53] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:31:53,015 127.0.0.1 - - [27/Feb/2025 03:31:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:31:53,016 127.0.0.1 - - [27/Feb/2025 03:31:53] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:32:02,063 127.0.0.1 - - [27/Feb/2025 03:32:02] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-02-27 03:32:02,115 127.0.0.1 - - [27/Feb/2025 03:32:02] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:32:02,116 127.0.0.1 - - [27/Feb/2025 03:32:02] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-27 03:32:02,166 127.0.0.1 - - [27/Feb/2025 03:32:02] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png&s=NX1gG103IIHouAO78dVe HTTP/1.1[0m" 304 -
+2025-02-27 03:32:02,190 127.0.0.1 - - [27/Feb/2025 03:32:02] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-27 03:32:42,043  * Detected change in '/workspaces/DT_MDP_StudyApp2025/database_manager.py', reloading
+2025-02-27 03:32:42,083  * Restarting with stat
+2025-02-27 03:32:42,359  * Debugger is active!
+2025-02-27 03:32:42,359  * Debugger PIN: 222-250-957
+2025-02-27 03:32:46,387 127.0.0.1 - - [27/Feb/2025 03:32:46] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-02-27 03:32:46,426 127.0.0.1 - - [27/Feb/2025 03:32:46] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-27 03:32:46,428 127.0.0.1 - - [27/Feb/2025 03:32:46] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:32:46,455 127.0.0.1 - - [27/Feb/2025 03:32:46] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=YXczMjCwmTS00rnlCTGu HTTP/1.1" 200 -
+2025-02-27 03:32:46,487 127.0.0.1 - - [27/Feb/2025 03:32:46] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-27 03:32:53,488  * Detected change in '/workspaces/DT_MDP_StudyApp2025/database_manager.py', reloading
+2025-02-27 03:32:53,529  * Restarting with stat
+2025-02-27 03:32:53,779  * Debugger is active!
+2025-02-27 03:32:53,780  * Debugger PIN: 222-250-957
+2025-02-27 03:40:03,950  * Detected change in '/workspaces/DT_MDP_StudyApp2025/database_manager.py', reloading
+2025-02-27 03:40:03,999  * Restarting with stat
+2025-02-27 03:40:04,248  * Debugger is active!
+2025-02-27 03:40:04,249  * Debugger PIN: 222-250-957
+2025-02-27 03:40:19,938  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 03:40:19,983  * Restarting with stat
+2025-02-27 03:40:20,239  * Debugger is active!
+2025-02-27 03:40:20,240  * Debugger PIN: 222-250-957
+2025-02-27 03:40:20,940 127.0.0.1 - - [27/Feb/2025 03:40:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-27 03:40:21,169 127.0.0.1 - - [27/Feb/2025 03:40:21] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 03:40:21,238 127.0.0.1 - - [27/Feb/2025 03:40:21] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 03:40:21,399 127.0.0.1 - - [27/Feb/2025 03:40:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:40:21,441 127.0.0.1 - - [27/Feb/2025 03:40:21] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:40:21,446 127.0.0.1 - - [27/Feb/2025 03:40:21] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:40:21,505 127.0.0.1 - - [27/Feb/2025 03:40:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:41:24,199 127.0.0.1 - - [27/Feb/2025 03:41:24] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 03:41:24,245 127.0.0.1 - - [27/Feb/2025 03:41:24] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 03:41:24,262 127.0.0.1 - - [27/Feb/2025 03:41:24] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:41:24,263 127.0.0.1 - - [27/Feb/2025 03:41:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:41:24,269 127.0.0.1 - - [27/Feb/2025 03:41:24] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:41:24,401 127.0.0.1 - - [27/Feb/2025 03:41:24] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:41:24,434 127.0.0.1 - - [27/Feb/2025 03:41:24] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 03:41:28,433 127.0.0.1 - - [27/Feb/2025 03:41:28] "GET /login HTTP/1.1" 200 -
+2025-02-27 03:41:28,487 127.0.0.1 - - [27/Feb/2025 03:41:28] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:41:28,491 127.0.0.1 - - [27/Feb/2025 03:41:28] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:41:28,491 127.0.0.1 - - [27/Feb/2025 03:41:28] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:41:28,492 127.0.0.1 - - [27/Feb/2025 03:41:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:41:30,374 127.0.0.1 - - [27/Feb/2025 03:41:30] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 03:41:32,518 127.0.0.1 - - [27/Feb/2025 03:41:32] "GET / HTTP/1.1" 200 -
+2025-02-27 03:41:32,575 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","line-number":16,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:41:32,576 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:41:32,576 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","line-number":16,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:41:32,577 127.0.0.1 - - [27/Feb/2025 03:41:32] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:41:32,577 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":68,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:41:32,577 127.0.0.1 - - [27/Feb/2025 03:41:32] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:41:32,578 127.0.0.1 - - [27/Feb/2025 03:41:32] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:41:32,578 127.0.0.1 - - [27/Feb/2025 03:41:32] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:41:32,596 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 03:41:32,597 127.0.0.1 - - [27/Feb/2025 03:41:32] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:48:44,643  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 03:48:44,697  * Restarting with stat
+2025-02-27 03:48:44,945  * Debugger is active!
+2025-02-27 03:48:44,946  * Debugger PIN: 222-250-957
+2025-02-27 03:48:46,105 127.0.0.1 - - [27/Feb/2025 03:48:46] "GET /login HTTP/1.1" 200 -
+2025-02-27 03:48:46,355 127.0.0.1 - - [27/Feb/2025 03:48:46] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:48:46,360 127.0.0.1 - - [27/Feb/2025 03:48:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:48:46,378 127.0.0.1 - - [27/Feb/2025 03:48:46] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:48:46,413 127.0.0.1 - - [27/Feb/2025 03:48:46] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:48:46,621 127.0.0.1 - - [27/Feb/2025 03:48:46] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 03:48:47,825 127.0.0.1 - - [27/Feb/2025 03:48:47] "GET / HTTP/1.1" 200 -
+2025-02-27 03:48:47,880 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","line-number":16,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:48:47,882 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":68,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:48:47,882 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:48:47,882 127.0.0.1 - - [27/Feb/2025 03:48:47] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:48:47,882 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","line-number":16,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:48:47,883 127.0.0.1 - - [27/Feb/2025 03:48:47] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:48:47,883 127.0.0.1 - - [27/Feb/2025 03:48:47] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:48:47,883 127.0.0.1 - - [27/Feb/2025 03:48:47] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:48:47,908 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 03:48:47,909 127.0.0.1 - - [27/Feb/2025 03:48:47] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:48:49,583 127.0.0.1 - - [27/Feb/2025 03:48:49] "GET / HTTP/1.1" 200 -
+2025-02-27 03:48:49,628 127.0.0.1 - - [27/Feb/2025 03:48:49] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:48:49,629 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:48:49,630 127.0.0.1 - - [27/Feb/2025 03:48:49] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:48:49,634 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":68,"source-file":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-02-27 03:48:49,635 127.0.0.1 - - [27/Feb/2025 03:48:49] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:48:49,641 127.0.0.1 - - [27/Feb/2025 03:48:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:48:49,642 127.0.0.1 - - [27/Feb/2025 03:48:49] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:48:49,642 127.0.0.1 - - [27/Feb/2025 03:48:49] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:48:49,666 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-02-27 03:48:49,667 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-02-27 03:48:49,667 127.0.0.1 - - [27/Feb/2025 03:48:49] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:48:49,667 127.0.0.1 - - [27/Feb/2025 03:48:49] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:48:49,679 127.0.0.1 - - [27/Feb/2025 03:48:49] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 03:48:49,708 {"csp-report":{"document-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/","referrer":"https://fluffy-train-44p94ggqvp63w94.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fluffy-train-44p94ggqvp63w94-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-02-27 03:48:49,708 127.0.0.1 - - [27/Feb/2025 03:48:49] "POST /csp_report HTTP/1.1" 200 -
+2025-02-27 03:49:03,363  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 03:49:03,403  * Restarting with stat
+2025-02-27 03:49:03,650  * Debugger is active!
+2025-02-27 03:49:03,651  * Debugger PIN: 222-250-957
+2025-02-27 03:49:05,727 127.0.0.1 - - [27/Feb/2025 03:49:05] "GET / HTTP/1.1" 200 -
+2025-02-27 03:49:05,786 127.0.0.1 - - [27/Feb/2025 03:49:05] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:49:05,788 127.0.0.1 - - [27/Feb/2025 03:49:05] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:49:05,791 127.0.0.1 - - [27/Feb/2025 03:49:05] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:49:05,791 127.0.0.1 - - [27/Feb/2025 03:49:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:49:05,879 127.0.0.1 - - [27/Feb/2025 03:49:05] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 03:51:52,211 127.0.0.1 - - [27/Feb/2025 03:51:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-27 03:51:52,433 127.0.0.1 - - [27/Feb/2025 03:51:52] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-02-27 03:51:52,443 127.0.0.1 - - [27/Feb/2025 03:51:52] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-02-27 03:51:52,664 127.0.0.1 - - [27/Feb/2025 03:51:52] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=5BITq0Wnds0Rl76YcPz6 HTTP/1.1" 200 -
+2025-02-27 03:51:52,855 127.0.0.1 - - [27/Feb/2025 03:51:52] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-02-27 03:52:02,749 127.0.0.1 - - [27/Feb/2025 03:52:02] "GET / HTTP/1.1" 200 -
+2025-02-27 03:52:02,793 127.0.0.1 - - [27/Feb/2025 03:52:02] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:52:02,794 127.0.0.1 - - [27/Feb/2025 03:52:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:52:02,795 127.0.0.1 - - [27/Feb/2025 03:52:02] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:52:02,795 127.0.0.1 - - [27/Feb/2025 03:52:02] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:52:03,011 127.0.0.1 - - [27/Feb/2025 03:52:03] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 03:52:28,213 127.0.0.1 - - [27/Feb/2025 03:52:28] "GET /signup HTTP/1.1" 200 -
+2025-02-27 03:52:28,278 127.0.0.1 - - [27/Feb/2025 03:52:28] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:52:28,279 127.0.0.1 - - [27/Feb/2025 03:52:28] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:52:28,281 127.0.0.1 - - [27/Feb/2025 03:52:28] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:52:28,282 127.0.0.1 - - [27/Feb/2025 03:52:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:52:40,421 127.0.0.1 - - [27/Feb/2025 03:52:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-27 03:52:40,450 127.0.0.1 - - [27/Feb/2025 03:52:40] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 03:52:40,535 127.0.0.1 - - [27/Feb/2025 03:52:40] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:52:40,537 127.0.0.1 - - [27/Feb/2025 03:52:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:52:40,539 127.0.0.1 - - [27/Feb/2025 03:52:40] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:52:40,540 127.0.0.1 - - [27/Feb/2025 03:52:40] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:52:40,544 127.0.0.1 - - [27/Feb/2025 03:52:40] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 03:53:24,956 127.0.0.1 - - [27/Feb/2025 03:53:24] "[33mGET /profile.html HTTP/1.1[0m" 404 -
+2025-02-27 03:53:25,029 127.0.0.1 - - [27/Feb/2025 03:53:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-27 03:54:06,771 127.0.0.1 - - [27/Feb/2025 03:54:06] "[33mGET /profile.html HTTP/1.1[0m" 404 -
+2025-02-27 03:55:21,040 127.0.0.1 - - [27/Feb/2025 03:55:21] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 03:55:21,267 127.0.0.1 - - [27/Feb/2025 03:55:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:55:21,290 127.0.0.1 - - [27/Feb/2025 03:55:21] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 03:55:21,305 127.0.0.1 - - [27/Feb/2025 03:55:21] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:55:21,313 127.0.0.1 - - [27/Feb/2025 03:55:21] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:55:21,331 127.0.0.1 - - [27/Feb/2025 03:55:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:55:21,403 127.0.0.1 - - [27/Feb/2025 03:55:21] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 03:55:23,368 127.0.0.1 - - [27/Feb/2025 03:55:23] "[33mGET /profile.html HTTP/1.1[0m" 404 -
+2025-02-27 03:55:25,540 127.0.0.1 - - [27/Feb/2025 03:55:25] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 03:56:47,420  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-27 03:56:47,476  * Restarting with stat
+2025-02-27 03:56:47,723  * Debugger is active!
+2025-02-27 03:56:47,723  * Debugger PIN: 222-250-957
+2025-02-27 03:58:58,370 127.0.0.1 - - [27/Feb/2025 03:58:58] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 03:58:58,667 127.0.0.1 - - [27/Feb/2025 03:58:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 03:58:58,680 127.0.0.1 - - [27/Feb/2025 03:58:58] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 03:58:58,681 127.0.0.1 - - [27/Feb/2025 03:58:58] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 03:58:58,770 127.0.0.1 - - [27/Feb/2025 03:58:58] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 03:58:58,772 127.0.0.1 - - [27/Feb/2025 03:58:58] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 03:58:58,863 127.0.0.1 - - [27/Feb/2025 03:58:58] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 03:58:59,973 127.0.0.1 - - [27/Feb/2025 03:58:59] "[33mGET /profile.html HTTP/1.1[0m" 404 -
+2025-02-27 03:59:01,578 127.0.0.1 - - [27/Feb/2025 03:59:01] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 04:00:33,756 127.0.0.1 - - [27/Feb/2025 04:00:33] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 04:00:33,990 127.0.0.1 - - [27/Feb/2025 04:00:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 04:00:34,011 127.0.0.1 - - [27/Feb/2025 04:00:34] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 04:00:34,018 127.0.0.1 - - [27/Feb/2025 04:00:34] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 04:00:34,049 127.0.0.1 - - [27/Feb/2025 04:00:34] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 04:00:34,055 127.0.0.1 - - [27/Feb/2025 04:00:34] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 04:00:34,092 127.0.0.1 - - [27/Feb/2025 04:00:34] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 04:00:35,412 127.0.0.1 - - [27/Feb/2025 04:00:35] "GET /profile HTTP/1.1" 200 -
+2025-02-27 04:00:35,461 127.0.0.1 - - [27/Feb/2025 04:00:35] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 04:00:35,461 127.0.0.1 - - [27/Feb/2025 04:00:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 04:00:35,462 127.0.0.1 - - [27/Feb/2025 04:00:35] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 04:00:35,463 127.0.0.1 - - [27/Feb/2025 04:00:35] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 04:00:37,102 127.0.0.1 - - [27/Feb/2025 04:00:37] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 04:00:57,889 127.0.0.1 - - [27/Feb/2025 04:00:57] "GET /home.html HTTP/1.1" 200 -
+2025-02-27 04:00:57,938 127.0.0.1 - - [27/Feb/2025 04:00:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 04:00:57,938 127.0.0.1 - - [27/Feb/2025 04:00:57] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 04:00:57,940 127.0.0.1 - - [27/Feb/2025 04:00:57] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 04:00:57,941 127.0.0.1 - - [27/Feb/2025 04:00:57] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 04:00:57,942 127.0.0.1 - - [27/Feb/2025 04:00:57] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 04:00:57,985 127.0.0.1 - - [27/Feb/2025 04:00:57] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 04:01:00,041 127.0.0.1 - - [27/Feb/2025 04:01:00] "GET /profile HTTP/1.1" 200 -
+2025-02-27 04:01:00,105 127.0.0.1 - - [27/Feb/2025 04:01:00] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 04:01:00,106 127.0.0.1 - - [27/Feb/2025 04:01:00] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 04:01:00,108 127.0.0.1 - - [27/Feb/2025 04:01:00] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 04:01:00,110 127.0.0.1 - - [27/Feb/2025 04:01:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 04:01:00,112 127.0.0.1 - - [27/Feb/2025 04:01:00] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 04:01:11,551 127.0.0.1 - - [27/Feb/2025 04:01:11] "GET /profile HTTP/1.1" 200 -
+2025-02-27 04:01:11,598 127.0.0.1 - - [27/Feb/2025 04:01:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 04:01:11,599 127.0.0.1 - - [27/Feb/2025 04:01:11] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 04:01:11,600 127.0.0.1 - - [27/Feb/2025 04:01:11] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 04:01:11,601 127.0.0.1 - - [27/Feb/2025 04:01:11] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 04:01:11,602 127.0.0.1 - - [27/Feb/2025 04:01:11] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 04:01:11,673 127.0.0.1 - - [27/Feb/2025 04:01:11] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-27 04:01:38,572 127.0.0.1 - - [27/Feb/2025 04:01:38] "GET /profile HTTP/1.1" 200 -
+2025-02-27 04:01:38,621 127.0.0.1 - - [27/Feb/2025 04:01:38] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-27 04:01:38,626 127.0.0.1 - - [27/Feb/2025 04:01:38] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-27 04:01:38,626 127.0.0.1 - - [27/Feb/2025 04:01:38] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-27 04:01:38,626 127.0.0.1 - - [27/Feb/2025 04:01:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-27 04:01:38,627 127.0.0.1 - - [27/Feb/2025 04:01:38] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-27 04:01:38,718 127.0.0.1 - - [27/Feb/2025 04:01:38] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-28 03:28:18,151 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.3.106:5000
+2025-02-28 03:28:18,151 [33mPress CTRL+C to quit[0m
+2025-02-28 03:28:18,152  * Restarting with stat
+2025-02-28 03:28:18,458  * Debugger is active!
+2025-02-28 03:28:18,463  * Debugger PIN: 872-322-182
+2025-02-28 03:28:23,545 127.0.0.1 - - [28/Feb/2025 03:28:23] "GET /?vscodeBrowserReqId=1740713302173 HTTP/1.1" 200 -
+2025-02-28 03:28:23,781 127.0.0.1 - - [28/Feb/2025 03:28:23] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:28:24,042 127.0.0.1 - - [28/Feb/2025 03:28:24] "GET / HTTP/1.1" 200 -
+2025-02-28 03:28:24,305 127.0.0.1 - - [28/Feb/2025 03:28:24] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-02-28 03:28:24,315 127.0.0.1 - - [28/Feb/2025 03:28:24] "GET /static/js/popper.min.js HTTP/1.1" 200 -
+2025-02-28 03:28:24,325 127.0.0.1 - - [28/Feb/2025 03:28:24] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-28 03:28:24,509 127.0.0.1 - - [28/Feb/2025 03:28:24] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:30:48,072 127.0.0.1 - - [28/Feb/2025 03:30:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-28 03:30:48,272 127.0.0.1 - - [28/Feb/2025 03:30:48] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:30:48,347 127.0.0.1 - - [28/Feb/2025 03:30:48] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:30:48,495 127.0.0.1 - - [28/Feb/2025 03:30:48] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:30:48,514 127.0.0.1 - - [28/Feb/2025 03:30:48] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:30:48,542 127.0.0.1 - - [28/Feb/2025 03:30:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:30:48,550 127.0.0.1 - - [28/Feb/2025 03:30:48] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:30:52,658 127.0.0.1 - - [28/Feb/2025 03:30:52] "GET /login HTTP/1.1" 200 -
+2025-02-28 03:30:52,711 127.0.0.1 - - [28/Feb/2025 03:30:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:30:52,713 127.0.0.1 - - [28/Feb/2025 03:30:52] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:30:52,714 127.0.0.1 - - [28/Feb/2025 03:30:52] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:30:52,716 127.0.0.1 - - [28/Feb/2025 03:30:52] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:31:13,725 127.0.0.1 - - [28/Feb/2025 03:31:13] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:31:13,799 127.0.0.1 - - [28/Feb/2025 03:31:13] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:31:13,800 127.0.0.1 - - [28/Feb/2025 03:31:13] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:31:13,803 127.0.0.1 - - [28/Feb/2025 03:31:13] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:31:13,805 127.0.0.1 - - [28/Feb/2025 03:31:13] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:31:13,806 127.0.0.1 - - [28/Feb/2025 03:31:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:31:15,380 127.0.0.1 - - [28/Feb/2025 03:31:15] "GET / HTTP/1.1" 200 -
+2025-02-28 03:31:15,457 127.0.0.1 - - [28/Feb/2025 03:31:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:31:15,459 127.0.0.1 - - [28/Feb/2025 03:31:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:31:15,461 127.0.0.1 - - [28/Feb/2025 03:31:15] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:31:15,461 127.0.0.1 - - [28/Feb/2025 03:31:15] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:32:10,464 127.0.0.1 - - [28/Feb/2025 03:32:10] "GET / HTTP/1.1" 200 -
+2025-02-28 03:32:10,513 127.0.0.1 - - [28/Feb/2025 03:32:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:32:10,514 127.0.0.1 - - [28/Feb/2025 03:32:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:32:10,515 127.0.0.1 - - [28/Feb/2025 03:32:10] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:32:10,518 127.0.0.1 - - [28/Feb/2025 03:32:10] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:34:10,748 127.0.0.1 - - [28/Feb/2025 03:34:10] "GET / HTTP/1.1" 200 -
+2025-02-28 03:34:10,977 127.0.0.1 - - [28/Feb/2025 03:34:10] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:34:10,979 127.0.0.1 - - [28/Feb/2025 03:34:10] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:34:11,004 127.0.0.1 - - [28/Feb/2025 03:34:11] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:34:11,010 127.0.0.1 - - [28/Feb/2025 03:34:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:36:08,765 127.0.0.1 - - [28/Feb/2025 03:36:08] "GET /profile HTTP/1.1" 200 -
+2025-02-28 03:36:08,857 127.0.0.1 - - [28/Feb/2025 03:36:08] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:36:09,046 127.0.0.1 - - [28/Feb/2025 03:36:09] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:36:09,048 127.0.0.1 - - [28/Feb/2025 03:36:09] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:36:09,052 127.0.0.1 - - [28/Feb/2025 03:36:09] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:36:09,078 127.0.0.1 - - [28/Feb/2025 03:36:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:36:36,841 127.0.0.1 - - [28/Feb/2025 03:36:36] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:36:36,875 127.0.0.1 - - [28/Feb/2025 03:36:36] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:36:36,886 127.0.0.1 - - [28/Feb/2025 03:36:36] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:36:36,887 127.0.0.1 - - [28/Feb/2025 03:36:36] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:36:36,889 127.0.0.1 - - [28/Feb/2025 03:36:36] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:36:36,890 127.0.0.1 - - [28/Feb/2025 03:36:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:36:36,950 127.0.0.1 - - [28/Feb/2025 03:36:36] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-28 03:36:37,680 127.0.0.1 - - [28/Feb/2025 03:36:37] "GET /profile HTTP/1.1" 200 -
+2025-02-28 03:36:37,728 127.0.0.1 - - [28/Feb/2025 03:36:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:36:37,729 127.0.0.1 - - [28/Feb/2025 03:36:37] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:36:37,729 127.0.0.1 - - [28/Feb/2025 03:36:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:36:37,730 127.0.0.1 - - [28/Feb/2025 03:36:37] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:36:37,732 127.0.0.1 - - [28/Feb/2025 03:36:37] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:36:51,677 127.0.0.1 - - [28/Feb/2025 03:36:51] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:36:51,721 127.0.0.1 - - [28/Feb/2025 03:36:51] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:36:51,722 127.0.0.1 - - [28/Feb/2025 03:36:51] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:36:51,723 127.0.0.1 - - [28/Feb/2025 03:36:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:36:51,724 127.0.0.1 - - [28/Feb/2025 03:36:51] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:36:51,725 127.0.0.1 - - [28/Feb/2025 03:36:51] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:36:52,747 127.0.0.1 - - [28/Feb/2025 03:36:52] "[33mGET /home HTTP/1.1[0m" 404 -
+2025-02-28 03:36:54,119 127.0.0.1 - - [28/Feb/2025 03:36:54] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:36:54,953 127.0.0.1 - - [28/Feb/2025 03:36:54] "[33mGET /home HTTP/1.1[0m" 404 -
+2025-02-28 03:37:04,004 127.0.0.1 - - [28/Feb/2025 03:37:04] "[33mGET /home HTTP/1.1[0m" 404 -
+2025-02-28 03:37:39,958 127.0.0.1 - - [28/Feb/2025 03:37:39] "[33mGET /home HTTP/1.1[0m" 404 -
+2025-02-28 03:37:57,487  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-28 03:37:57,528  * Restarting with stat
+2025-02-28 03:37:57,765  * Debugger is active!
+2025-02-28 03:37:57,765  * Debugger PIN: 872-322-182
+2025-02-28 03:38:24,496 127.0.0.1 - - [28/Feb/2025 03:38:24] "[33mGET /home.html HTTP/1.1[0m" 404 -
+2025-02-28 03:38:26,482 127.0.0.1 - - [28/Feb/2025 03:38:26] "[33mGET /home.html HTTP/1.1[0m" 404 -
+2025-02-28 03:38:27,521 127.0.0.1 - - [28/Feb/2025 03:38:27] "[33mGET /home.html HTTP/1.1[0m" 404 -
+2025-02-28 03:38:32,025 127.0.0.1 - - [28/Feb/2025 03:38:32] "[33mGET /home.html HTTP/1.1[0m" 404 -
+2025-02-28 03:38:36,198 127.0.0.1 - - [28/Feb/2025 03:38:36] "GET / HTTP/1.1" 200 -
+2025-02-28 03:38:36,245 127.0.0.1 - - [28/Feb/2025 03:38:36] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:38:36,249 127.0.0.1 - - [28/Feb/2025 03:38:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:38:36,250 127.0.0.1 - - [28/Feb/2025 03:38:36] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:38:36,251 127.0.0.1 - - [28/Feb/2025 03:38:36] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:38:36,355 127.0.0.1 - - [28/Feb/2025 03:38:36] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-28 03:38:42,568 127.0.0.1 - - [28/Feb/2025 03:38:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-28 03:38:42,588 127.0.0.1 - - [28/Feb/2025 03:38:42] "[33mGET /home.html HTTP/1.1[0m" 404 -
+2025-02-28 03:38:49,581  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-28 03:38:49,623  * Restarting with stat
+2025-02-28 03:38:49,857  * Debugger is active!
+2025-02-28 03:38:49,857  * Debugger PIN: 872-322-182
+2025-02-28 03:38:50,325 127.0.0.1 - - [28/Feb/2025 03:38:50] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:38:50,365 127.0.0.1 - - [28/Feb/2025 03:38:50] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:38:50,380 127.0.0.1 - - [28/Feb/2025 03:38:50] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:38:50,380 127.0.0.1 - - [28/Feb/2025 03:38:50] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:38:50,382 127.0.0.1 - - [28/Feb/2025 03:38:50] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:38:50,383 127.0.0.1 - - [28/Feb/2025 03:38:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:38:52,898 127.0.0.1 - - [28/Feb/2025 03:38:52] "GET /login HTTP/1.1" 200 -
+2025-02-28 03:38:52,944 127.0.0.1 - - [28/Feb/2025 03:38:52] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:38:52,946 127.0.0.1 - - [28/Feb/2025 03:38:52] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:38:52,947 127.0.0.1 - - [28/Feb/2025 03:38:52] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:38:52,948 127.0.0.1 - - [28/Feb/2025 03:38:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:38:58,413 127.0.0.1 - - [28/Feb/2025 03:38:58] "[33mGET /home HTTP/1.1[0m" 404 -
+2025-02-28 03:39:47,463 127.0.0.1 - - [28/Feb/2025 03:39:47] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:39:47,501 127.0.0.1 - - [28/Feb/2025 03:39:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:39:47,502 127.0.0.1 - - [28/Feb/2025 03:39:47] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:39:47,503 127.0.0.1 - - [28/Feb/2025 03:39:47] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:39:47,504 127.0.0.1 - - [28/Feb/2025 03:39:47] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:39:47,506 127.0.0.1 - - [28/Feb/2025 03:39:47] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:39:47,567 127.0.0.1 - - [28/Feb/2025 03:39:47] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-28 03:39:59,884 127.0.0.1 - - [28/Feb/2025 03:39:59] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:39:59,919 127.0.0.1 - - [28/Feb/2025 03:39:59] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:39:59,922 127.0.0.1 - - [28/Feb/2025 03:39:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:39:59,923 127.0.0.1 - - [28/Feb/2025 03:39:59] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:39:59,924 127.0.0.1 - - [28/Feb/2025 03:39:59] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:39:59,925 127.0.0.1 - - [28/Feb/2025 03:39:59] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:39:59,979 127.0.0.1 - - [28/Feb/2025 03:39:59] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-28 03:40:01,424 127.0.0.1 - - [28/Feb/2025 03:40:01] "GET /profile HTTP/1.1" 200 -
+2025-02-28 03:40:01,471 127.0.0.1 - - [28/Feb/2025 03:40:01] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:40:01,471 127.0.0.1 - - [28/Feb/2025 03:40:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:40:01,472 127.0.0.1 - - [28/Feb/2025 03:40:01] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:40:01,473 127.0.0.1 - - [28/Feb/2025 03:40:01] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:40:01,474 127.0.0.1 - - [28/Feb/2025 03:40:01] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:40:43,949  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-28 03:40:43,989  * Restarting with stat
+2025-02-28 03:40:44,294  * Debugger is active!
+2025-02-28 03:40:44,295  * Debugger PIN: 872-322-182
+2025-02-28 03:41:04,013  * Detected change in '/workspaces/DT_MDP_StudyApp2025/main.py', reloading
+2025-02-28 03:41:04,051  * Restarting with stat
+2025-02-28 03:41:04,285  * Debugger is active!
+2025-02-28 03:41:04,286  * Debugger PIN: 872-322-182
+2025-02-28 03:41:07,400 127.0.0.1 - - [28/Feb/2025 03:41:07] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:41:07,448 127.0.0.1 - - [28/Feb/2025 03:41:07] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:41:07,449 127.0.0.1 - - [28/Feb/2025 03:41:07] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:41:07,451 127.0.0.1 - - [28/Feb/2025 03:41:07] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:41:07,587 127.0.0.1 - - [28/Feb/2025 03:41:07] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:41:07,603 127.0.0.1 - - [28/Feb/2025 03:41:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:41:07,774 127.0.0.1 - - [28/Feb/2025 03:41:07] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-28 03:41:09,903 127.0.0.1 - - [28/Feb/2025 03:41:09] "GET /profile HTTP/1.1" 200 -
+2025-02-28 03:41:10,054 127.0.0.1 - - [28/Feb/2025 03:41:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:41:10,063 127.0.0.1 - - [28/Feb/2025 03:41:10] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:41:10,067 127.0.0.1 - - [28/Feb/2025 03:41:10] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:41:10,068 127.0.0.1 - - [28/Feb/2025 03:41:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:41:10,072 127.0.0.1 - - [28/Feb/2025 03:41:10] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:41:11,505 127.0.0.1 - - [28/Feb/2025 03:41:11] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:41:12,120 127.0.0.1 - - [28/Feb/2025 03:41:12] "[33mGET /home HTTP/1.1[0m" 404 -
+2025-02-28 03:41:44,798 127.0.0.1 - - [28/Feb/2025 03:41:44] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:41:44,838 127.0.0.1 - - [28/Feb/2025 03:41:44] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:41:44,843 127.0.0.1 - - [28/Feb/2025 03:41:44] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:41:44,847 127.0.0.1 - - [28/Feb/2025 03:41:44] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:41:44,849 127.0.0.1 - - [28/Feb/2025 03:41:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:41:44,850 127.0.0.1 - - [28/Feb/2025 03:41:44] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:41:44,923 127.0.0.1 - - [28/Feb/2025 03:41:44] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-02-28 03:41:47,261 127.0.0.1 - - [28/Feb/2025 03:41:47] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:41:47,301 127.0.0.1 - - [28/Feb/2025 03:41:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:41:47,304 127.0.0.1 - - [28/Feb/2025 03:41:47] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:41:47,305 127.0.0.1 - - [28/Feb/2025 03:41:47] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:41:47,305 127.0.0.1 - - [28/Feb/2025 03:41:47] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:41:47,307 127.0.0.1 - - [28/Feb/2025 03:41:47] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:41:49,573 127.0.0.1 - - [28/Feb/2025 03:41:49] "GET /home.html HTTP/1.1" 200 -
+2025-02-28 03:41:49,617 127.0.0.1 - - [28/Feb/2025 03:41:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:41:49,618 127.0.0.1 - - [28/Feb/2025 03:41:49] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:41:49,619 127.0.0.1 - - [28/Feb/2025 03:41:49] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-02-28 03:41:49,619 127.0.0.1 - - [28/Feb/2025 03:41:49] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:41:49,620 127.0.0.1 - - [28/Feb/2025 03:41:49] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-02-28 03:41:52,706 127.0.0.1 - - [28/Feb/2025 03:41:52] "GET /signup HTTP/1.1" 200 -
+2025-02-28 03:41:52,750 127.0.0.1 - - [28/Feb/2025 03:41:52] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-02-28 03:41:52,751 127.0.0.1 - - [28/Feb/2025 03:41:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-28 03:41:52,753 127.0.0.1 - - [28/Feb/2025 03:41:52] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-02-28 03:41:52,754 127.0.0.1 - - [28/Feb/2025 03:41:52] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
