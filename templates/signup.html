@@ -13,7 +13,7 @@
         <div class="text-container">
           <h2>Create your account</h2>
         </div>
-        <form id="loginForm" method="POST" action="{{ url_for('login') }}">
+        <form id="loginForm" method="POST" action="/signup">
           <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
           <div class="mb-3">
             <label for="email" class="form-label">Email:</label>
@@ -27,23 +27,23 @@
             />
           </div>
           <div class="mb-3">
-            <label for="firstName">First Name:</label>
+            <label for="first_name">First Name:</label>
             <input
               type="text"
               class="form-control"
-              id="firstName"
-              name="firstName"
+              id="first_name"
+              name="first_name"
               placeholder="Enter your first name"
               required
             />
           </div>
           <div class="mb-3">
-            <label for="lastName">Last Name:</label>
+            <label for="last_name">Last Name:</label>
             <input
               type="text"
               class="form-control"
-              id="lastName"
-              name="lastName"
+              id="last_name"
+              name="last_name"
               placeholder="Enter your last name"
               required
             />

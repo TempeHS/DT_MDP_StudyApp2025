@@ -1,14 +1,10 @@
-from flask import Flask
-from flask import redirect
-from flask import render_template
-from flask import request
-from flask import jsonify
+from flask import Flask, redirect, render_template, request
 import requests
 from flask_wtf import CSRFProtect
 from flask_csp.csp import csp_header
 import logging
-
-import userManagement as dbHandler
+import sqlite3
+import database_manager as dbHandler
 
 # Code snippet for logging a message
 # app.logger.critical("message")
@@ -26,7 +22,6 @@ app = Flask(__name__)
 app.secret_key = b"_53oi3uriq9pifpff;apl"
 csrf = CSRFProtect(app)
 
-
 # Redirect index.html to domain root for consistent UX
 @app.route("/index", methods=["GET"])
 @app.route("/index.htm", methods=["GET"])
@@ -36,52 +31,55 @@ csrf = CSRFProtect(app)
 def root():
     return redirect("/", 302)
 
-
 @app.route("/", methods=["POST", "GET"])
-@csp_header(
-    {
-        # Server Side CSP is consistent with meta CSP in layout.html
-        "base-uri": "'self'",
-        "default-src": "'self'",
-        "style-src": "'self'",
-        "script-src": "'self'",
-        "img-src": "'self' data:",
-        "media-src": "'self'",
-        "font-src": "'self'",
-        "object-src": "'self'",
-        "child-src": "'self'",
-        "connect-src": "'self'",
-        "worker-src": "'self'",
-        "report-uri": "/csp_report",
-        "frame-ancestors": "'none'",
-        "form-action": "'self'",
-        "frame-src": "'none'",
-    }
-)
 def index():
-    return render_template("/index.html")
-
+    return render_template("login.html")
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
-    return render_template("/privacy.html")
+    return render_template("privacy.html")
 
 @app.route("/home.html", methods=["GET"])
 def home():
-    return render_template("/home.html")
+    return render_template("home.html")
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+        
+        # Check if user exists in user_database and verify password
+        user = dbHandler.check_credentials(email, password)
+        if user:
+            # Credentials are correct, redirect to profile or home page
+            return redirect("/home.html")
+        else:
+            # Credentials are incorrect, show error message
+            return render_template("login.html", error="Invalid email or password")
+    
     return render_template("login.html")
 
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
+    if request.method == "POST":
+        email = request.form.get("email")
+        first_name = request.form.get("first_name")
+        last_name = request.form.get("last_name")
+        password = request.form.get("password")
+        # Stores user details in user_details database
+        dbHandler.insertDetails(email, first_name, last_name, password)
+
+        return redirect("/login")
     return render_template("signup.html")
 
 @app.route("/calendar.html", methods=["GET", "POST"])
 def calendar():
     return render_template("calendar.html")
 
+@app.route('/profile', methods=["GET"])
+def profile():
+    return render_template("profile.html")
 
 # Endpoint for logging CSP violations
 @app.route("/csp_report", methods=["POST"])
@@ -89,7 +87,6 @@ def calendar():
 def csp_report():
     app.logger.critical(request.data.decode())
     return "done"
-
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
