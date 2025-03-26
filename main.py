@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template, request
+from flask import Flask, redirect, render_template, request, session, Blueprint
 import requests
 from flask_wtf import CSRFProtect
 from flask_csp.csp import csp_header
@@ -21,6 +21,20 @@ logging.basicConfig(
 app = Flask(__name__)
 app.secret_key = b"_53oi3uriq9pifpff;apl"
 csrf = CSRFProtect(app)
+
+# Define the blogpages blueprint
+blogpages = Blueprint('blogpages', __name__, template_folder='templates/blogpages')
+
+@blogpages.route('/blogs')
+def blogs():
+    return render_template('blogs.html')
+
+@blogpages.route('/study')
+def study():
+    return render_template('study.html')
+
+# Register the blueprint
+app.register_blueprint(blogpages, url_prefix='/')
 
 # Redirect index.html to domain root for consistent UX
 @app.route("/index", methods=["GET"])
@@ -52,6 +66,12 @@ def login():
         # Check if user exists in user_database and verify password
         user = dbHandler.check_credentials(email, password)
         if user:
+            # Store user details in session
+            session['user'] = {
+                'email': user['email'],
+                'first_name': user['first_name'],
+                'last_name': user['last_name']
+            }
             # Credentials are correct, redirect to profile or home page
             return redirect("/home.html")
         else:
@@ -79,7 +99,11 @@ def calendar():
 
 @app.route('/profile', methods=["GET"])
 def profile():
-    return render_template("profile.html")
+    user = session.get('user')
+    if user:
+        return render_template("profile.html", user=user)
+    else:
+        return redirect("/login")
 
 # Endpoint for logging CSP violations
 @app.route("/csp_report", methods=["POST"])

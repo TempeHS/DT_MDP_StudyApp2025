@@ -123,11 +123,11 @@ body.custom-body {
 }
 
 .custom-content {
-  margin-left: 280px; /* Adjust the margin to match the sidebar width */
+  margin-left: 300px;
   padding: 20px; /* Add padding for better spacing */
-  flex-grow: 1; /* Ensure the content takes up the remaining space 
-  */
+  flex-grow: 1; /* Ensure the content takes up the remaining space */
   font-family: "Work Sans", sans-serif;
+  transition: margin-left 0.3s;
 }
 
 .row {
@@ -242,4 +242,71 @@ footer.custom-footer .footer-link:hover {
 
 .full-width {
   width: 100%;
+}
+
+/* Default sidebar styles */
+.sidebar {
+  width: 250px;
+  transition: width 0.3s;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 1060; /* Ensure the sidebar is above the navbar */
+  overflow-y: auto;
+  height: 100vh; /* Full height */
+}
+
+/* Make text responsive */
+.sidebar .nav-link {
+  font-size: 1.2vw; /* Decrease the font size */
+}
+
+/* Ensure the dropdown menu is positioned correctly */
+.sidebar .dropdown-menu {
+  position: relative;
+  width: 100%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100px;
+  }
+  .sidebar .nav-link {
+    font-size: 1.5vw; /* Decrease the font size */
+  }
+  .custom-content {
+    margin-left: 100px; /* Adjust the margin to match the sidebar width */
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 50px;
+  }
+  .sidebar .nav-link {
+    font-size: 2vw; /* Decrease the font size */
+  }
+  .custom-content {
+    margin-left: 50px; /* Adjust the margin to match the sidebar width */
+  }
+}
+
+/* Additional styles for responsive sidebar */
+.sidebar.collapsed {
+  width: 50px;
+}
+
+.custom-dropdown-menu {
+  background-color: #e2edf1;
+}
+
+.custom-modal-bg {
+  background-color: #e2edf1;
+}
+
+.blue-card {
+  background-color: #e2edf1; /* Bootstrap primary blue color */
+  color: black; /* Change text color to black */
 }
