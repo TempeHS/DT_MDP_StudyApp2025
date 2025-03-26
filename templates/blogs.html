@@ -1,0 +1,56 @@
+{% extends 'layout.html' %} {% block content %} {% include
+"partials/svg_symbols.html" %} {% include "partials/sidebar.html" %}
+<div class="container custom-content">
+  <h1>Blogs</h1>
+  <div class="row g-4">
+    <div class="col-md-6 custom-card">
+      <div class="card blue-card">
+        <div class="card-body">
+          <h5 class="card-title">Study Strategies</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="/study" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 custom-card">
+      <div class="card blue-card">
+        <div class="card-body">
+          <h5 class="card-title">Exam Strategies</h5>
+          <p class="card-text">
+            Some more example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere else</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 custom-card">
+      <div class="card blue-card">
+        <div class="card-body">
+          <h5 class="card-title">Time Management</h5>
+          <p class="card-text">
+            Learn how to manage your time effectively to maximize your study
+            efficiency.
+          </p>
+          <a href="#" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 custom-card">
+      <div class="card blue-card">
+        <div class="card-body">
+          <h5 class="card-title">Stress Management</h5>
+          <p class="card-text">
+            Discover techniques to manage stress and stay focused during your
+            studies.
+          </p>
+          <a href="#" class="btn btn-primary">Discover more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
