@@ -11,6 +11,40 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+      </ul>
+      <!-- Centered Brand -->
+      <a
+        href="/"
+        class="navbar-brand mx-auto text-white text-decoration-none d-flex align-items-center"
+      >
+        <img
+          src="{{ url_for('static', filename='icons/logo.png') }}"
+          alt="Logo"
+          width="40"
+          height="32"
+          class="me-2"
+        />
+        <span class="fs-4">MyHSC</span>
+      </a>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a href="/profile" class="nav-link"></a>
+        </li>
+        <li class="nav-item">
+          <a href="/login" class="nav-link text-dark text-center"></a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

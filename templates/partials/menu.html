@@ -12,19 +12,99 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/blogs">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Calendar</a>
+        </li>
+        <!-- Dropdown for Study -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="dropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Study
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Flashcards</a></li>
+            <li><a class="dropdown-item" href="#">[Placeholder]</a></li>
+            <li><a class="dropdown-item" href="#">Syllabus Tracking</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Centered Brand -->
+      <a
+        href="/"
+        class="navbar-brand mx-auto text-white text-decoration-none d-flex align-items-center"
+      >
+        <img
+          src="{{ url_for('static', filename='icons/logo.png') }}"
+          alt="Logo"
+          width="40"
+          height="32"
+          class="me-2"
+        />
+        <span class="fs-4">MyHSC</span>
+      </a>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="/login">Login</a>
+          <a href="/home.html" class="nav-link" title="Home">Home</a>
         </li>
+        <!-- Profile Modal Trigger -->
         <li class="nav-item">
-          <a class="nav-link" href="/signup">Signup</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/home.html"
-            >Home</a
+          <button
+            type="button"
+            class="btn btn-link nav-link"
+            data-bs-toggle="modal"
+            data-bs-target="#profileModal"
           >
+            &#x1F464;
+          </button>
+        </li>
+        <li class="nav-item">
+          <a href="/login" class="nav-link text-dark text-center">&#x23FB;</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<!-- Profile Modal -->
+<div
+  class="modal fade"
+  id="profileModal"
+  tabindex="-1"
+  aria-labelledby="profileModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content custom-modal-bg">
+      <div class="modal-header">
+        <h5 class="modal-title" id="profileModalLabel">My Profile</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>First Name:</strong> {{ user.first_name }}</p>
+        <p><strong>Last Name:</strong> {{ user.last_name }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <a href="/logout" class="btn btn-primary">Logout</a>
+      </div>
+    </div>
+  </div>
+</div>

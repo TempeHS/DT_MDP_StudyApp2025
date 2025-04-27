@@ -42,7 +42,18 @@
           Calendar
         </a>
       </li>
-      <!-- Organisation Tools Option-->
+      <!-- Profile Option-->
+      <li>
+        <a href="/profile" class="nav-link text-white">
+          <svg class="bi pe-none me-2" width="16" height="16">
+            <use xlink:href="#people-circle" />
+          </svg>
+          Profile
+        </a>
+      </li>
+      <hr class="solid" />
+
+      <!-- Study Tools-->
       <li class="nav-item">
         <a
           class="nav-link text-white"
@@ -53,20 +64,30 @@
           <svg class="bi pe-none me-2" width="16" height="16">
             <use xlink:href="#grid" />
           </svg>
-          Tools
+          Study Tools
         </a>
       </li>
 
-      <!-- Profile Option-->
-      <li>
-        <a href="/profile" class="nav-link text-white">
+      <!--Blogs-->
+      <li class="nav-item">
+        <a
+          class="nav-link text-white"
+          href="/blogs"
+          id="organisationToolsLink"
+          role="button"
+        >
           <svg class="bi pe-none me-2" width="16" height="16">
-            <use xlink:href="#people-circle" />
+            <use xlink:href="#grid" />
           </svg>
-          Profile
+          Blogs
         </a>
       </li>
     </ul>
+    <hr />
+    <!-- Logout Button -->
+    <div class="d-flex justify-content-start mt-3">
+      <a href="/login" class="btn btn-outline-secondary text-white">Logout</a>
+    </div>
   </div>
 </div>
 
@@ -81,7 +102,9 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content custom-modal-bg">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Tools</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          Interactive Study Tools
+        </h1>
         <button
           type="button"
           class="btn-close"
@@ -91,16 +114,13 @@
       </div>
       <div class="modal-body">
         <div class="row">
-          <!-- Blogs Option-->
+          <!-- Placeholder Option-->
           <div class="col-md-6 custom-card">
             <div class="card" style="width: 18rem">
               <div class="card-body">
-                <h5 class="card-title">Blogs</h5>
-                <p class="card-text">
-                  Expand your knowledge with our range of blogs from study
-                  techniques to exam strategies to ace your HSC!
-                </p>
-                <a href="/blogs" class="btn btn-primary">Go</a>
+                <h5 class="card-title">Flashcards</h5>
+                <p class="card-text">[placeholder text]</p>
+                <a href="#" class="btn btn-primary">Go</a>
               </div>
             </div>
           </div>
@@ -108,12 +128,8 @@
           <div class="col-md-6 custom-card">
             <div class="card" style="width: 18rem">
               <div class="card-body">
-                <h5 class="card-title">Study Tools</h5>
-                <p class="card-text">
-                  Maximise your study efficiency with our interactive study
-                  tools! From flashcards to syllabus tracking personalised for
-                  your own subjects.
-                </p>
+                <h5 class="card-title">Syllabus Tracking</h5>
+                <p class="card-text">[placeholder text]</p>
                 <a href="#" class="btn btn-primary">Go</a>
               </div>
             </div>
@@ -124,7 +140,6 @@
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Close
         </button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
