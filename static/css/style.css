@@ -5,6 +5,11 @@
   font-family: "Work Sans", sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body,
 html {
   margin: 0;
@@ -19,6 +24,10 @@ body.custom-body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+header .navbar {
+  margin: 0;
 }
 
 .login-container {
@@ -135,8 +144,17 @@ body.custom-body {
 }
 
 .navbar {
+  margin: 0;
+  padding: 0;
+  position: fixed; /* Ensure it stays at the top */
+  top: 0;
+  width: 100%; /* Make it span the full width */
+  z-index: 1050; /* Ensure it stays above other elements */
   background-color: #ebded4;
-  z-index: 1040; /* Ensure the navbar is below the sidebar */
+}
+
+.navbar-brand {
+  margin-left: -20px; /* Adjust the value as needed */
 }
 
 footer.custom-footer {
@@ -231,82 +249,17 @@ footer.custom-footer .footer-link:hover {
   z-index: 1500;
 }
 
+.bd-mode-toggle .bi {
+  width: 1em;
+  height: 1em;
+}
+
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
 }
 
-.full-height {
-  height: 100vh;
-  object-fit: cover;
-}
-
-.full-width {
-  width: 100%;
-}
-
-/* Default sidebar styles */
-.sidebar {
-  width: 250px;
-  transition: width 0.3s;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  z-index: 1060; /* Ensure the sidebar is above the navbar */
-  overflow-y: auto;
-  height: 100vh; /* Full height */
-}
-
-/* Make text responsive */
-.sidebar .nav-link {
-  font-size: 1.2vw; /* Decrease the font size */
-}
-
-/* Ensure the dropdown menu is positioned correctly */
-.sidebar .dropdown-menu {
-  position: relative;
-  width: 100%;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .sidebar {
-    width: 100px;
-  }
-  .sidebar .nav-link {
-    font-size: 1.5vw; /* Decrease the font size */
-  }
-  .custom-content {
-    margin-left: 100px; /* Adjust the margin to match the sidebar width */
-  }
-}
-
-/* Media query for very small screens */
-@media (max-width: 480px) {
-  .sidebar {
-    width: 50px;
-  }
-  .sidebar .nav-link {
-    font-size: 2vw; /* Decrease the font size */
-  }
-  .custom-content {
-    margin-left: 50px; /* Adjust the margin to match the sidebar width */
-  }
-}
-
-/* Additional styles for responsive sidebar */
-.sidebar.collapsed {
-  width: 50px;
-}
-
-.custom-dropdown-menu {
-  background-color: #e2edf1;
-}
-
+/* Custom modal background color */
 .custom-modal-bg {
-  background-color: #e2edf1;
-}
-
-.blue-card {
-  background-color: #e2edf1; /* Bootstrap primary blue color */
-  color: black; /* Change text color to black */
+  background-color: #e2edf1 !important; /* Set the background color */
+  color: black; /* Optional: Adjust text color for better contrast */
 }

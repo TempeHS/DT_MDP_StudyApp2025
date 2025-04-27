@@ -8,7 +8,12 @@
     style="margin-top: 200px; margin-bottom: 150px"
   >
     <div class="row">
-      <div class="col-md-6">EMPTY PLACEHOLDER</div>
+      <div class="col-md-6">
+        Take control of your study journey through the HSC with MyHSC today!
+        Sign up now to access personalised study and organisational tools,
+        interactive flashcards, goal setting and syllabus tracking features to
+        helo you stay ahead. Ease into the HSC one step at a time!
+      </div>
       <div class="col-md-6">
         <div class="text-container">
           <h2>Create your account</h2>
@@ -58,6 +63,9 @@
               placeholder="Enter your password"
               required
             />
+            <!-- Checkbox to toggle password visibility -->
+            <input type="checkbox" onclick="togglePasswordVisibility()" /> Show
+            Password
           </div>
           <button type="submit" class="btn btn-primary">Signup</button>
         </form>
@@ -65,4 +73,15 @@
     </div>
   </div>
 </div>
+
+<script>
+  function togglePasswordVisibility() {
+    var passwordInput = document.getElementById("password");
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+    } else {
+      passwordInput.type = "password";
+    }
+  }
+</script>
 {% endblock %}

@@ -1,9 +1,7 @@
 from flask import Flask, redirect, render_template, request, session, Blueprint
-import requests
 from flask_wtf import CSRFProtect
 from flask_csp.csp import csp_header
 import logging
-import sqlite3
 import database_manager as dbHandler
 
 # Code snippet for logging a message
@@ -33,6 +31,14 @@ def blogs():
 def study():
     return render_template('study.html')
 
+@blogpages.route('/addressverb.html')
+def verb():
+    return render_template('addressverb.html')
+
+@blogpages.route('/wheredoistart.html')
+def wheredoistart():
+    return render_template('wheredoistart.html')
+
 # Register the blueprint
 app.register_blueprint(blogpages, url_prefix='/')
 
@@ -53,9 +59,17 @@ def index():
 def privacy():
     return render_template("privacy.html")
 
+@app.route("/about.html", methods=["GET"])
+def about():
+    return render_template("about.html")
+
 @app.route("/home.html", methods=["GET"])
 def home():
-    return render_template("home.html")
+    user = session.get('user')  # Retrieve user data from the session
+    if user:
+        return render_template("home.html", user=user)
+    else:
+        return redirect("/login")  # Redirect to login if no user is logged in
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
