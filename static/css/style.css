@@ -263,3 +263,20 @@ footer.custom-footer .footer-link:hover {
   background-color: #e2edf1 !important; /* Set the background color */
   color: black; /* Optional: Adjust text color for better contrast */
 }
+
+.custom-grey-border {
+  border-color: grey !important;
+}
+
+.btn-secondary {
+  background-color: #a4b792 !important;
+  border-color: #a4b792 !important;
+  color: #fff !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #8fa382 !important;
+  border-color: #8fa382 !important;
+  color: #fff !important;
+}

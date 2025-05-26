@@ -1,0 +1,88 @@
+{% extends 'layout.html' %} {% block content %} {% include
+"partials/svg_symbols.html" %}
+<style>
+  .container {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Horizontally center the child element */
+    align-items: center; /* Vertically center the child element */
+  }
+  .centered-text {
+    text-align: center; /* Center the text within its container */
+  }
+  .button {
+    border-radius: 8px;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    background-color: #a4b792;
+    color: #fff;
+    border: none;
+    transition: background 0.2s;
+  }
+  .button:hover,
+  .button:focus {
+    background-color: #8fa382;
+    color: #fff;
+  }
+</style>
+<div class="container">
+  <div class="centered-text">
+    <h1>Stopwatch</h1>
+    <span id="seconds" style="font-size: 4rem">00</span>:<span
+      id="tens"
+      style="font-size: 4rem"
+      >00</span
+    >
+    <br />
+    <button class="button" id="button-start">Start</button>
+    <button class="button" id="button-stop">Stop</button>
+    <button class="button" id="button-reset">Reset</button>
+  </div>
+</div>
+
+<script>
+  let startTime = null;
+  let elapsed = 0;
+  let timerInterval = null;
+
+  const appendTens = document.getElementById("tens");
+  const appendSeconds = document.getElementById("seconds");
+  const buttonStart = document.getElementById("button-start");
+  const buttonStop = document.getElementById("button-stop");
+  const buttonReset = document.getElementById("button-reset");
+
+  function updateDisplay(ms) {
+    const totalSeconds = Math.floor(ms / 1000);
+    const displayTens = Math.floor((ms % 1000) / 10);
+    appendSeconds.innerHTML =
+      totalSeconds < 10 ? "0" + totalSeconds : totalSeconds;
+    appendTens.innerHTML = displayTens < 10 ? "0" + displayTens : displayTens;
+  }
+
+  function startStopwatch() {
+    if (timerInterval) return;
+    startTime = Date.now() - elapsed;
+    timerInterval = setInterval(function () {
+      elapsed = Date.now() - startTime;
+      updateDisplay(elapsed);
+    }, 10);
+  }
+
+  function stopStopwatch() {
+    clearInterval(timerInterval);
+    timerInterval = null;
+  }
+
+  function resetStopwatch() {
+    stopStopwatch();
+    elapsed = 0;
+    updateDisplay(0);
+  }
+
+  buttonStart.onclick = startStopwatch;
+  buttonStop.onclick = stopStopwatch;
+  buttonReset.onclick = resetStopwatch;
+  updateDisplay(0);
+</script>
+{% endblock %}

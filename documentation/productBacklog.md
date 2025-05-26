@@ -42,6 +42,9 @@ Implement:
 
 ### Select Course Subjects
 
+- Create a form that asks users for which subjects they are completing
+- Store the list of subjects in a database that links to the current user logged in
+
 ### Syllabus Tracking for Each Subject
 
 ## Account

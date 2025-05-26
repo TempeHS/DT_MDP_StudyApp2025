@@ -1,13 +1,32 @@
-{% extends 'layout1.html' %} {% block content %} {% include
-"partials/svg_symbols.html" %}
+{% extends 'layout.html' %} 
+{% block content %}
+{% include "partials/svg_symbols.html" %}
+<style>
+  table.table-bordered > :not(caption) > * > * {
+    border-color: #8e99a2 !important; /* Even darker grey */
+    border-width: 2px !important;  /* Thicker for visibility, optional */
+  }
+  table.table-bordered tr {
+    border-color: #8e99a2 !important;
+  }
+</style>
 
-  <main class="container d-flex justify-content-center">
-    <div class="row g-5" style="margin-left: 20px;">
+<div class="container-fluid custom-content m-0 p-0">
+  <header class="border-bottom lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="btn btn-sm btn-outline-secondary" href="/home.html">Home</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="row g-5">
       <div class="col-md-8">
         <article class="blog-post">
-          <h2 class="display-5 link-body-emphasis mb-1">Addressing the Verb</h2>
+          <h1>Addressing the Verb</h1>
+          <div class="border-bottom mt-0 custom-grey-border"></div>
           <p class="blog-post-meta">April 21, 2025 by <a href="#">MyHSC</a></p>
-
           <p>
             Do you find yourself unable to gain full marks when answering an exam question? Maybe its because you have not addressed what the key verb is asking of you. 
             Below is a table of 5 the NESA key verbs, mark range, what they are asking and some synonyms that may appear in the exam: 
@@ -15,7 +34,7 @@
           <hr />
           <p>
 <table class="table table-bordered">
-  <thead>
+  <head>
     <tr>
       <th scope="col">Verb</th>
       <td class="table-success">Identify &#x1F50E;</td>
@@ -101,7 +120,101 @@
           </p>
         </article>
       </div>
+
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem">
+          <div class="p-4 mb-3 rounded custom-light-blue">
+            <h4 class="fst-italic"></h4>
+          </div>
+
+          <div>
+            <h4 class="fst-italic">Recent posts</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                  href="wheredoistart.html"
+                >
+                  <img
+                    src="{{ url_for('static', filename='images/procrastination_logo.png') }}"
+                    alt="Where do I start?"
+                    class="bd-placeholder-img"
+                    style="width: 96px; height: 96px; object-fit: cover;"
+                  />
+                  <div class="col-lg-8">
+                    <h6 class="mb-0">Where do I start?</h6>
+                    <small class="text-body-secondary">April 10, 2025</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                  href="decon_eq.html"
+                >
+                  <svg
+                    class="bd-placeholder-img"
+                    width="100%"
+                    height="96"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    preserveAspectRatio="xMidYMid slice"
+                  >
+                    <rect width="100%" height="100%" fill="#777" />
+                  </svg>
+                  <div class="col-lg-8">
+                    <h6 class="mb-0">Deconstructing Exam Questions</h6>
+                    <small class="text-body-secondary">January 14, 2024</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                  href="cube.html"
+                >
+                <img
+                src="{{ url_for('static', filename='images/CUBE.png') }}"
+                alt="C.U.B.E."
+                class="bd-placeholder-img"
+                style="width: 96px; height: 96px; object-fit: cover"
+              />
+                  <div class="col-lg-8">
+                    <h6 class="mb-0">C.U.B.E.</h6>
+                    <small class="text-body-secondary">May 06 2025</small>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="p-4 mb-3 rounded custom-light-blue">
+              <h4 class="fst-italic">MyHSC</h4>
+              <p class="mb-0">
+                MyHSC is a platform for Year 12 students to take control of
+                their HSC and learn more study strategies, exam techniques and
+                tools to help them succeed in their final year of highschool.
+              </p>
+            </div>
+          </div>
+          <div class="p-4">
+            <h4 class="fst-italic">Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li>
+                <a
+                  href="https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/Understanding-the-curriculum/syllabuses-a-z"
+                  >NESA Stage 6 Syllabus</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/resources/hsc-exam-papers"
+                  >NESA Offical Past Papers</a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        {% endblock %}
+      </div>
     </div>
   </main>
-</div>
-{% endblock %} 
