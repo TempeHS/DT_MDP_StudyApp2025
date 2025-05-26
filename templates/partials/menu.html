@@ -1,5 +1,19 @@
 <nav class="navbar navbar-expand-lg" style="background-color: #a4b792">
   <div class="container-fluid">
+    <!-- Add ms-3 to move the brand to the right -->
+    <a
+      href="home.html"
+      class="navbar-brand text-white text-decoration-none d-flex align-items-center ms-3"
+    >
+      <img
+        src="{{ url_for('static', filename='icons/logo.png') }}"
+        alt="Logo"
+        width="40"
+        height="32"
+        class="me-2"
+      />
+      <span class="fs-4">MyHSC</span>
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -12,12 +26,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <!-- All nav links moved to the right -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a href="/home.html" class="nav-link" title="Home">Home</a>
+        </li>
+        <!-- Blogs -->
         <li class="nav-item">
           <a class="nav-link" href="/blogs">Blogs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Calendar</a>
         </li>
         <!-- Dropdown for Study -->
         <li class="nav-item dropdown">
@@ -33,28 +49,11 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <li><a class="dropdown-item" href="#">Flashcards</a></li>
-            <li><a class="dropdown-item" href="#">[Placeholder]</a></li>
+            <li>
+              <a class="dropdown-item" href="/stopwatch.html">Stopwatch</a>
+            </li>
             <li><a class="dropdown-item" href="#">Syllabus Tracking</a></li>
           </ul>
-        </li>
-      </ul>
-      <!-- Centered Brand -->
-      <a
-        href="/"
-        class="navbar-brand mx-auto text-white text-decoration-none d-flex align-items-center"
-      >
-        <img
-          src="{{ url_for('static', filename='icons/logo.png') }}"
-          alt="Logo"
-          width="40"
-          height="32"
-          class="me-2"
-        />
-        <span class="fs-4">MyHSC</span>
-      </a>
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a href="/home.html" class="nav-link" title="Home">Home</a>
         </li>
         <!-- Profile Modal Trigger -->
         <li class="nav-item">

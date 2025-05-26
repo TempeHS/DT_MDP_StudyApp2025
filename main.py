@@ -25,19 +25,43 @@ blogpages = Blueprint('blogpages', __name__, template_folder='templates/blogpage
 
 @blogpages.route('/blogs')
 def blogs():
-    return render_template('blogs.html')
+    user = session.get('user')  # Retrieve user data from the session
+    if user:
+        return render_template('blogs.html', user=user)
+    else:
+        return redirect("/login")  # Redirect to login if no user is logged in
 
-@blogpages.route('/study')
-def study():
-    return render_template('study.html')
+@blogpages.route('/decon_eq.html')
+def deconstruct():
+    user = session.get('user')  # Retrieve user data from the session
+    if user:
+        return render_template('decon_eq.html', user=user)
+    else:
+        return redirect("/login")  # Redirect to login if no user is logged in
+    
+@blogpages.route('/cube.html')
+def cube():
+    user = session.get('user')  # Retrieve user data from the session
+    if user:
+        return render_template('cube.html', user=user)
+    else:
+        return redirect("/login")  # Redirect to login if no user is logged in
 
 @blogpages.route('/addressverb.html')
 def verb():
-    return render_template('addressverb.html')
+    user = session.get('user')  # Retrieve user data from the session
+    if user:
+        return render_template('addressverb.html', user=user)
+    else:
+        return redirect("/login")  # Redirect to login if no user is logged in
 
 @blogpages.route('/wheredoistart.html')
 def wheredoistart():
-    return render_template('wheredoistart.html')
+    user = session.get('user')  # Retrieve user data from the session
+    if user:
+        return render_template('wheredoistart.html', user=user)
+    else:
+        return redirect("/login")  # Redirect to login if no user is logged in
 
 # Register the blueprint
 app.register_blueprint(blogpages, url_prefix='/')
@@ -118,6 +142,14 @@ def profile():
         return render_template("profile.html", user=user)
     else:
         return redirect("/login")
+    
+@app.route("/stopwatch.html", methods=["GET"])
+def stopwatch():
+    user = session.get('user')  # Retrieve user data from the session
+    if user:
+        return render_template('stopwatch.html', user=user)
+    else:
+        return redirect("/login")  # Redirect to login if no user is logged in
 
 # Endpoint for logging CSP violations
 @app.route("/csp_report", methods=["POST"])
