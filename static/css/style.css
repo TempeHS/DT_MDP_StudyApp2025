@@ -157,13 +157,44 @@ header .navbar {
   margin-left: -20px; /* Adjust the value as needed */
 }
 
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.2s;
+  z-index: 1;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: 0;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after {
+  transform: scaleX(1);
+}
+
 footer.custom-footer {
   background-color: #ab9685;
   padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: auto; /* Push the footer to the bottom */
+  margin-top: auto;
 }
 
 footer.custom-footer .footer-link {

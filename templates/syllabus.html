@@ -1,0 +1,31 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container mt-5 pt-5">
+  <h1>Syllabus tracking</h1>
+  <div id="entries-container">
+    {% for entry in syllabus_entries %}
+    <div class="card mb-3 entry-card">
+      <div class="card-body">
+        <h5 class="card-title">
+          <strong>Subject:</strong> {{ entry.subject }}
+        </h5>
+        <p class="card-text">
+          <strong>Module Number:</strong> {{ entry.module_number }}
+        </p>
+        <p class="card-text">
+          <strong>Module Name:</strong> {{ entry.module_name }}
+        </p>
+        <p class="card-text"><strong>Topic:</strong> {{ entry.topic }}</p>
+        <p class="card-text">
+          <strong>Inquiry Question:</strong> {{ entry.inquiry_question }}
+        </p>
+        <p class="card-text"><strong>Syllabus:</strong> {{ entry.syllabus }}</p>
+      </div>
+    </div>
+    {% endfor %} {% if not syllabus_entries %}
+    <div class="alert alert-info mt-3">
+      No syllabus content found for this subject.
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

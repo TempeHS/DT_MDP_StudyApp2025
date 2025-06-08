@@ -1,3 +1,40 @@
 -- database: ./data_source.db
 
-ALTER TABLE user_details ADD password text;
+
+--Mod 5 Topic 1
+--('Biology', '5', 'Heredity', 'Reproduction', 'How does reproduction ensure the continuity of a species?', 'explain the mechanisms of reproduction that ensure the continuity of a species, by analysing sexual and asexual methods of reproduction in a variety of organisms'),
+--('Biology', '5', 'Heredity', 'Reproduction', 'How does reproduction ensure the continuity of a species?','Analyse the features of fertilisation, implantation and hormonal control of pregnancy and birth in mammals'),
+--('Biology', '5', 'Heredity', 'Reproduction', 'How does reproduction ensure the continuity of a species?', 'Evaluate the impact of scientific knowledge on the manipulation of plant and animall reproduction in agriculture');
+
+--Mod 5 Topic 2 
+--('Biology', '5', 'Heredity', 'Cell Replication', 'How important is it for genetic material to be replicated exactly?', 'Model the processes involved in cell replication'),
+--('Biology', '5', 'Heredity', 'Cell Replication', 'How important is it for genetic material to be replicated exactly?', 'Assess the effet of the cell replication processes on the continuity of species');
+
+--Mod 5 Topic 3
+--('Biology', '5', 'Heredity', 'DNA and Polypeptide Synthesis', 'Why is polypeptide syntehsis important?', 'Construct appropriate representations to model and compare the forms in which DNA exists in
+--eukaryotes and prokaryotes'),
+--('Biology', '5', 'Heredity', 'DNA and Polypeptide Synthesis', 'Why is polypeptide syntehsis important?', 'Model the process of polypeptide synthesis'),
+--('Biology', '5', 'Heredity', 'DNA and Polypeptide Synthesis', 'Why is polypeptide syntehsis important?', 'Investigate the structure and function of protein in living things');
+
+
+--Mod 5 Topic 4
+--('Biology', '5', 'Heredity', 'Genetic Variation', 'How can the genetic similarities and differences within and between species be compared?', 'Conduct practical investigations to predict variations in the genotype of offspring by modelling
+--meiosis, including the crossing over of homologous chromosomes, fertilisation and mutations'),
+--('Biology', '5', 'Heredity', 'Genetic Variation', 'How can the genetic similarities and differences within and between species be compared?', 'Model the formation of new combinations of genotypes produced during meiosis'),
+--('Biology', '5', 'Heredity', 'Genetic Variation', 'How can the genetic similarities and differences within and between species be compared?', 'Collect, record and present data to represent frequencies of characteristics in a population, in
+--order to identify trends, patterns, relationships and limitations in data');
+
+--Mod 5 Topic 5
+--('Biology', '5', 'Heredity', 'Inheritance Patterns in a Population', 'Can population genetic patterns be predicted with any accuracy?','Investigate the use of technologies to determine inheritance patterns in a population using'),
+--('Biology', '5', 'Heredity', 'Inheritance Patterns in a Population', 'Can population genetic patterns be predicted with any accuracy?','Investigate the use of data analysis from a large-scale collaborative project to identify trends,
+--patterns and relationships');
+
+--INSERT INTO syllabus (subject, module_number, module_name, topic, inquiry_q, syllabus)
+--VALUES
+
+--('Biology', '5', 'Heredity', '', '', ''),
+
+
+
+
+

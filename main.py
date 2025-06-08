@@ -1,8 +1,10 @@
-from flask import Flask, redirect, render_template, request, session, Blueprint
+from flask import Flask, redirect, render_template, request, session, Blueprint, jsonify
 from flask_wtf import CSRFProtect
 from flask_csp.csp import csp_header
 import logging
 import database_manager as dbHandler
+import json
+import sqlite3
 
 # Code snippet for logging a message
 # app.logger.critical("message")
@@ -81,7 +83,11 @@ def index():
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
-    return render_template("privacy.html")
+    user = session.get('user')  # Retrieve user data from the session
+    if user:
+        return render_template("privacy.html", user=user)
+    else:
+        return redirect("/login")  # Redirect to login if no user is logged in
 
 @app.route("/about.html", methods=["GET"])
 def about():
@@ -104,18 +110,12 @@ def login():
         # Check if user exists in user_database and verify password
         user = dbHandler.check_credentials(email, password)
         if user:
-            # Store user details in session
-            session['user'] = {
-                'email': user['email'],
-                'first_name': user['first_name'],
-                'last_name': user['last_name']
-            }
+            session['user'] = user
             # Credentials are correct, redirect to profile or home page
             return redirect("/home.html")
         else:
             # Credentials are incorrect, show error message
             return render_template("login.html", error="Invalid email or password")
-    
     return render_template("login.html")
 
 @app.route("/signup", methods=["GET", "POST"])
@@ -125,10 +125,40 @@ def signup():
         first_name = request.form.get("first_name")
         last_name = request.form.get("last_name")
         password = request.form.get("password")
-        # Stores user details in user_details database
-        dbHandler.insertDetails(email, first_name, last_name, password)
+        subjects = [
+    request.form.get('subject1'),
+    request.form.get('subject2'),
+    request.form.get('subject3'),
+    request.form.get('subject4'),
+    request.form.get('subject5'),
+    request.form.get('subject6')
+]
+        # Pad the subjects list to always have 6 items (fill with None)
+        subjects += [None] * (6 - len(subjects))
 
-        return redirect("/login")
+        conn = get_db()
+        cur = conn.cursor()
+        cur.execute(
+            "INSERT INTO user_details (email, first_name, last_name, password, subject1, subject2, subject3, subject4, subject5, subject6) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            (email, first_name, last_name, password, *subjects[:6])
+        )
+        user_id = cur.lastrowid  # Get the new user's id
+        conn.commit()
+        conn.close()
+
+        session['user'] = {
+            'id': user_id,
+            'email': email,
+            'first_name': first_name,
+            'last_name': last_name,
+            'subject1': subjects[0],
+            'subject2': subjects[1],
+            'subject3': subjects[2],
+            'subject4': subjects[3],
+            'subject5': subjects[4],
+            'subject6': subjects[5]
+        }
+        return redirect('/home.html')
     return render_template("signup.html")
 
 @app.route("/calendar.html", methods=["GET", "POST"])
@@ -150,6 +180,25 @@ def stopwatch():
         return render_template('stopwatch.html', user=user)
     else:
         return redirect("/login")  # Redirect to login if no user is logged in
+
+@app.route("/flashcards.html", methods=["GET"])
+def flashcards():
+    user = session.get('user')  # Retrieve user data from the session
+    if user:
+        return render_template("flashcards.html", user=user)
+    else:
+        return redirect("/login")  # Redirect to login if no user is logged in
+
+@app.route("/syllabus.html", methods=["GET"])
+def syllabus():
+    user = session.get('user')
+    if user:
+        return render_template("syllabus.html", user=user)
+    else:
+        return redirect("/login")
+
+def get_db():
+    return sqlite3.connect('./database/data_source.db')
 
 # Endpoint for logging CSP violations
 @app.route("/csp_report", methods=["POST"])

@@ -1,9 +1,9 @@
 {% extends 'layout.html' %} {% block content %}
-<link
-  href="{{ url_for('static', filename='css/carousel.css') }}"
-  rel="stylesheet"
-/>
 <main>
+  <link
+    href="{{ url_for('static', filename='css/carousel.css') }}"
+    rel="stylesheet"
+  />
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button
@@ -64,16 +64,20 @@
           aria-hidden="true"
           preserveAspectRatio="xMidYMid slice"
         >
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          <rect width="100%" height="100%" fill="#909c89" />
         </svg>
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
+            <h1>Stopwatch</h1>
             <p>
-              Some representative placeholder content for the second slide of
-              the carousel.
+              Use our simple distraction-less interface stopwatch to time your
+              study sessions and boost productivity!
             </p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <p>
+              <a class="btn btn-lg btn-secondary" href="stopwatch.html"
+                >Learn more</a
+              >
+            </p>
           </div>
         </div>
       </div>
@@ -86,7 +90,7 @@
           aria-hidden="true"
           preserveAspectRatio="xMidYMid slice"
         >
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          <rect width="100%" height="100%" fill="#909c89" />
         </svg>
         <div class="container">
           <div class="carousel-caption text-end">
@@ -95,7 +99,9 @@
               Some representative placeholder content for the third slide of
               this carousel.
             </p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <p>
+              <a class="btn btn-lg btn-secondary" href="#">Browse gallery</a>
+            </p>
           </div>
         </div>
       </div>
@@ -119,7 +125,22 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+  <!-- Welcome message for logged-in users -->
+  {% if user %}
+  <h2
+    style="
+      color: black;
+      text-align: left;
+      margin-top: 20px;
+      margin-left: 40px;
+      padding: 16px 32px;
+      border-radius: 8px;
+      width: fit-content;
+    "
+  >
+    Welcome back, {{ user.first_name }}!
+  </h2>
+  {% endif %}
   <div class="container marketing">
     <div class="row">
       <div class="col-lg-4">

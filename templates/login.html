@@ -22,6 +22,12 @@
         </div>
       </div>
       <div class="col-md-6">
+        <!-- Display warning if login failed -->
+        {% if error %}
+          <div class="alert alert-danger" role="alert">
+            Incorrect username or password
+          </div>
+        {% endif %}
         <form id="loginForm" method="POST" action="{{ url_for('login') }}">
           <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
           <div class="mb-3">
