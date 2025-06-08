@@ -14,11 +14,11 @@ def check_credentials(email, password):
     conn = sql.connect('database/data_source.db')
     cursor = conn.cursor()
     cursor.execute(
-        "SELECT * FROM user_details WHERE email = ? AND password = ?", (email, password)
+        "SELECT id, email, first_name, last_name, password FROM user_details WHERE email = ? AND password = ?", 
+        (email, password)
     )
     user = cursor.fetchone()
     conn.close()
-    
     if user:
         user_dict = {
             "id": user[0],
@@ -29,3 +29,4 @@ def check_credentials(email, password):
         }
         return user_dict
     return None
+

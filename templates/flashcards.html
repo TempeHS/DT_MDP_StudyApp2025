@@ -1,0 +1,219 @@
+{% extends 'layout.html' %} {% block content %}
+<h1 class="text-center mt-5">Flashcards</h1>
+<style>
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 2, 0.6, 1);
+    transform-style: preserve-3d;
+  }
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+  }
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  .nav-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    background: #a4b792;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .nav-btn:hover {
+    background: #8ca77a;
+  }
+</style>
+
+<div
+  class="d-flex justify-content-center align-items-center w-100"
+  style="min-height: 70vh; position: relative"
+>
+  <div
+    class="card shadow"
+    style="
+      background-color: #ebded4;
+      border: none;
+      border-radius: 1.25rem;
+      min-width: 500px;
+      max-width: 1000px;
+      min-height: 200px;
+      position: relative;
+    "
+  >
+    <div
+      class="card-header w-100 text-center"
+      style="font-weight: bold"
+      id="card-header"
+    >
+      Module 5: Heredity
+    </div>
+    <div class="card-body p-0" style="height: 300px; position: relative">
+      <div class="flip-card" id="flashcard" style="height: 100%">
+        <div class="flip-card-inner" style="height: 100%">
+          <!-- Front -->
+          <div
+            class="flip-card-front d-flex flex-column justify-content-center align-items-center h-100"
+          >
+            <h5 class="card-title text-center w-100 m-0" id="card-question">
+              Q.1: What is homeostasis?
+            </h5>
+          </div>
+          <!-- Back -->
+          <div
+            class="flip-card-back d-flex flex-column justify-content-center align-items-center h-100"
+          >
+            <h5 class="card-title text-center w-100 m-0" id="card-answer">
+              Homeostasis is the process by which living organisms maintain a
+              stable internal environment despite changes in external
+              conditions.
+            </h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="nav-btn"
+        id="prev-btn"
+        title="Previous card"
+        style="left: 20px; right: auto"
+      >
+        &#8592;
+      </button>
+      <button class="nav-btn" id="next-btn" title="Next card">&rarr;</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Flashcard data
+  const flashcards = [
+    {
+      header: "Module 5: Heredity",
+      question: "Q.1: What is homeostasis?",
+      answer:
+        "Homeostasis is the process by which living organisms maintain a stable internal environment despite changes in external conditions.",
+    },
+    {
+      header: "Module 5: Heredity",
+      question:
+        "Q.2: Name three key components of a homeostatic feedback system.",
+      answer: "A: Receptor, control centre, effector.",
+    },
+    {
+      header: "Module 5: Heredity",
+      question: "Q.3: What role do receptors play in homeostasis?",
+      answer:
+        "A: Receptors detect changes in the internal environment and send information to the control centre.",
+    },
+    {
+      header: "Module 5: Heredity",
+      question: "Q.4: What is negative feedback? ",
+      answer:
+        "A: Negative feedback is a process that counteracts a change in a physiological variable, helping to restore it to its set point. ",
+    },
+    {
+      header: "Module 5: Heredity",
+      question:
+        "Q.5: Give an example of a negative feedback mechanism in the human body.",
+      answer:
+        "A: Regulation of body temperature; when body temperature rises, mechanisms such as sweating are activated to cool down the body. ",
+    },
+    {
+      header: "Module 5: Heredity",
+      question:
+        "Q.6: What is the role of the hypothalamus in thermoregulation?",
+      answer:
+        "A: The hypothalamus acts as the control centre for temperature regulation, detecting body temperature changes and initiating responses to maintain homeostasis. ",
+    },
+    {
+      header: "Module 5: Heredity",
+      question: "Q.7: What is osmoregulation?",
+      answer:
+        "A: Osmoregulation is the process by which organisms regulate the balance of water and electrolytes in their bodies.",
+    },
+    {
+      header: "Module 5: Heredity",
+      question: "Q.8: How do kidneys contribute to homeostasis?",
+      answer:
+        "A: Kidneys filter blood, removing waste and excess substances while regulating water and electrolyte balance.",
+    },
+    {
+      header: "Module 5: Heredity",
+      question:
+        "Q.9: What is the difference between endotherms and ectotherms?",
+      answer:
+        "A: Endotherms generate their own heat to maintain body temperature, while ectotherms rely on external sources for heat.",
+    },
+    {
+      header: "Module 5: Heredity",
+      question: "Q.10: Explain the term 'metabolism.'",
+      answer:
+        "A: Metabolism refers to all the chemical reactions that occur within an organism to maintain life, including energy production and consumption.",
+    },
+  ];
+
+  let currentIndex = 0;
+  const card = document.getElementById("flashcard");
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+  const cardHeader = document.getElementById("card-header");
+  const cardQuestion = document.getElementById("card-question");
+  const cardAnswer = document.getElementById("card-answer");
+
+  // Flip card on click
+  card.addEventListener("click", function () {
+    card.classList.toggle("flipped");
+  });
+
+  // Show next card
+  nextBtn.addEventListener("click", function (e) {
+    e.stopPropagation(); // Prevent flip on button click
+    card.classList.remove("flipped");
+    currentIndex = (currentIndex + 1) % flashcards.length;
+    updateCard();
+  });
+
+  // Show previous card
+  prevBtn.addEventListener("click", function (e) {
+    e.stopPropagation(); // Prevent flip on button click
+    card.classList.remove("flipped");
+    currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
+    updateCard();
+  });
+
+  function updateCard() {
+    cardHeader.textContent = flashcards[currentIndex].header;
+    cardQuestion.textContent = flashcards[currentIndex].question;
+    cardAnswer.textContent = flashcards[currentIndex].answer;
+  }
+</script>
+{% endblock %}

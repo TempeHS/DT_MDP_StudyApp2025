@@ -12,13 +12,13 @@
         Take control of your study journey through the HSC with MyHSC today!
         Sign up now to access personalised study and organisational tools,
         interactive flashcards, goal setting and syllabus tracking features to
-        helo you stay ahead. Ease into the HSC one step at a time!
+        help you stay ahead. Ease into the HSC one step at a time!
       </div>
       <div class="col-md-6">
         <div class="text-container">
           <h2>Create your account</h2>
         </div>
-        <form id="loginForm" method="POST" action="/signup">
+        <form id="signupForm" method="POST" action="/signup">
           <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
           <div class="mb-3">
             <label for="email" class="form-label">Email:</label>
@@ -63,9 +63,70 @@
               placeholder="Enter your password"
               required
             />
-            <!-- Checkbox to toggle password visibility -->
             <input type="checkbox" onclick="togglePasswordVisibility()" /> Show
             Password
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Choose 5 or 6 subjects:</label>
+            <div class="row g-2">
+              {% for i in range(1, 7) %}
+              <div class="col-12 col-md-6">
+                <select
+                  name="subject{{i}}"
+                  id="subject{{i}}"
+                  class="form-control mb-2 subject-select"
+                  {{ 'required' if i != 6 else '' }}
+                >
+                  <option value="" disabled selected>
+                    Select subject {{i}}
+                  </option>
+                  <option value="Ancient History">Ancient History</option>
+                  <option value="Biology">Biology</option>
+                  <option value="Business Studies">Business Studies</option>
+                  <option value="Chemistry">Chemistry</option>
+                  <option value="Design and Technology">
+                    Design and Technology
+                  </option>
+                  <option value="Drama">Drama</option>
+                  <option value="Economics">Economics</option>
+                  <option value="English Advanced">English Advanced</option>
+                  <option value="English Standard">English Standard</option>
+                  <option value="English Extension 1">
+                    English Extension 1
+                  </option>
+                  <option value="English Extension 2">
+                    English Extension 2
+                  </option>
+                  <option value="Hospitality">Hospitality</option>
+                  <option value="Legal Studies">Legal Studies</option>
+                  <option value="Mathematics Standard 2">
+                    Mathematics Standard 2
+                  </option>
+                  <option value="Mathematics Advanced">
+                    Mathematics Advanced
+                  </option>
+                  <option value="Mathematics Extension 1">
+                    Mathematics Extension 1
+                  </option>
+                  <option value="Mathematics Extension 2">
+                    Mathematics Extension 2
+                  </option>
+                  <option value="Modern History">Modern History</option>
+                  <option value="Music 1">Music 1</option>
+                  <option value="Music 2">Music 2</option>
+                  <option value="PDHPE">PDHPE</option>
+                  <option value="Physics">Physics</option>
+                  <option value="Society and Culture">
+                    Society and Culture
+                  </option>
+                  <option value="Visual Arts">Visual Arts</option>
+                </select>
+              </div>
+              {% endfor %}
+            </div>
+            <small class="form-text text-muted"
+              >Select at least 5 subjects</small
+            >
           </div>
           <button type="submit" class="btn btn-primary">Signup</button>
         </form>
@@ -73,6 +134,44 @@
     </div>
   </div>
 </div>
+
+<style>
+  .subject-tag {
+    display: inline-flex;
+    align-items: center;
+    background: #e6f0ea;
+    color: #2d3a2e;
+    border-radius: 16px;
+    padding: 6px 14px 6px 14px;
+    margin: 4px 8px 4px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #b6e1c2;
+    transition: background 0.2s;
+  }
+  .subject-tag .remove-tag {
+    margin-left: 8px;
+    color: #b71c1c;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .subject-tag .remove-tag:hover {
+    color: #f44336;
+  }
+  .custom-select-arrow {
+    position: relative;
+  }
+  .custom-select-arrow select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #fff
+      url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>")
+      no-repeat right 12px center/20px 20px;
+    padding-right: 40px;
+  }
+</style>
 
 <script>
   function togglePasswordVisibility() {
@@ -83,5 +182,83 @@
       passwordInput.type = "password";
     }
   }
+
+  // Subject selection logic
+  const dropdown = document.getElementById("subject-dropdown");
+  const selectedDiv = document.getElementById("selected-subjects");
+  const hiddenInput = document.getElementById("subjects");
+  let selectedSubjects = [];
+
+  dropdown.addEventListener("change", function () {
+    const subject = this.value;
+    if (subject && !selectedSubjects.includes(subject)) {
+      selectedSubjects.push(subject);
+      renderSubjects();
+    }
+    // Reset dropdown to placeholder
+    this.selectedIndex = 0;
+  });
+
+  function renderSubjects() {
+    selectedDiv.innerHTML = "";
+    selectedSubjects.forEach((subject) => {
+      const tag = document.createElement("span");
+      tag.className = "subject-tag";
+      tag.textContent = subject;
+      const remove = document.createElement("span");
+      remove.className = "remove-tag";
+      remove.textContent = "×";
+      remove.onclick = function () {
+        selectedSubjects = selectedSubjects.filter((s) => s !== subject);
+        renderSubjects();
+      };
+      tag.appendChild(remove);
+      selectedDiv.appendChild(tag);
+    });
+    // Update hidden input with comma-separated subjects
+    hiddenInput.value = selectedSubjects.join(",");
+    // Set required attribute based on selection
+    hiddenInput.required = selectedSubjects.length > 0;
+  }
+
+  // Prevent duplicate subject selection
+  document.querySelectorAll(".subject-select").forEach(function (select) {
+    select.addEventListener("change", function () {
+      const selectedValues = Array.from(
+        document.querySelectorAll(".subject-select")
+      )
+        .map((s) => s.value)
+        .filter((v) => v !== "");
+      document.querySelectorAll(".subject-select").forEach(function (s) {
+        Array.from(s.options).forEach(function (opt) {
+          if (
+            opt.value &&
+            opt.value !== s.value &&
+            selectedValues.includes(opt.value)
+          ) {
+            opt.disabled = true;
+          } else {
+            opt.disabled = false;
+          }
+        });
+      });
+    });
+  });
+
+  // Prevent form submission if less than 5 unique subjects are selected
+  document
+    .getElementById("signupForm")
+    .addEventListener("submit", function (e) {
+      const selectedValues = Array.from(
+        document.querySelectorAll(".subject-select")
+      )
+        .map((s) => s.value)
+        .filter((v) => v !== "");
+      const uniqueValues = Array.from(new Set(selectedValues));
+      if (uniqueValues.length < 5) {
+        alert("You must select at least 5 different subjects.");
+        e.preventDefault();
+      }
+    });
 </script>
 {% endblock %}

@@ -1,6 +1,5 @@
 <nav class="navbar navbar-expand-lg" style="background-color: #a4b792">
   <div class="container-fluid">
-    <!-- Add ms-3 to move the brand to the right -->
     <a
       href="home.html"
       class="navbar-brand text-white text-decoration-none d-flex align-items-center ms-3"
@@ -26,7 +25,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- All nav links moved to the right -->
+      <!-- Nav links -->
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a href="/home.html" class="nav-link" title="Home">Home</a>
@@ -34,6 +33,9 @@
         <!-- Blogs -->
         <li class="nav-item">
           <a class="nav-link" href="/blogs">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="syllabus.html">Syllabus Tracking</a>
         </li>
         <!-- Dropdown for Study -->
         <li class="nav-item dropdown">
@@ -48,11 +50,12 @@
             Study
           </a>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Flashcards</a></li>
+            <li>
+              <a class="dropdown-item" href="/flashcards.html">Flashcards</a>
+            </li>
             <li>
               <a class="dropdown-item" href="/stopwatch.html">Stopwatch</a>
             </li>
-            <li><a class="dropdown-item" href="#">Syllabus Tracking</a></li>
           </ul>
         </li>
         <!-- Profile Modal Trigger -->
@@ -107,3 +110,16 @@
     </div>
   </div>
 </div>
+
+<style>
+  .subject-tag {
+    display: inline-block;
+    background: #e6f0ea;
+    color: #2d3a2e;
+    border-radius: 12px;
+    padding: 4px 12px;
+    margin: 2px 4px 2px 0;
+    font-size: 0.95em;
+    border: 1px solid #b6e1c2;
+  }
+</style>
