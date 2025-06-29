@@ -1,0 +1,336 @@
+{% extends 'layout.html' %} 
+{% block content %}
+<style>
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-image: url("/static/images/loginpage.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+  }
+  .timer-outer {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .main {
+    background-color: transparent;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(164, 183, 146, 0.15);
+    padding: 20px 30px;
+    width: 600px;
+    max-width: 95vw;
+    height: 400px;
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .timer-svg-wrapper {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .timer-svg {
+    transform: rotate(-90deg);
+  }
+  .timer-time {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
+    color: #6b8e23;
+    font-weight: bold;
+    letter-spacing: 2px;
+    user-select: none;
+  }
+  .timer-input-bar {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .timer-input-bar select {
+    width: 70px;
+    padding: 6px 10px;
+    border: 1px solid #a4b792;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #333;
+    background: #f8faf7;
+    outline: none;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .timer-input-bar label {
+    font-weight: 500;
+    color: #6b8e23;
+  }
+  .timer-input-bar button {
+    background-color: #a4b792;
+    color: #333;
+    border: none;
+    padding: 7px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .timer-input-bar button:hover {
+    background-color: #6b8e23;
+    color: #fff;
+  }
+  .colon-separator {
+    font-size: 1.5rem;
+    color: #6b8e23;
+    font-weight: bold;
+    margin: 0 2px;
+    user-select: none;
+  }
+  .control-buttons {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+  }
+  .control-buttons button {
+    background-color: #8b5c2a !important;
+    color: #fff !important;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .control-buttons button:hover {
+    background-color: #6b3f13 !important;
+    color: #fff !important;
+  }
+</style>
+<div class="timer-outer">
+  <div class="timer-container">
+    <h1 class="mb-4" style="color: #6b8e23">Timer</h1>
+    <div class="main">
+      <form class="timer-input-bar" onsubmit="setCustomTime(event)">
+        <label for="customHours" class="me-2">Set Time:</label>
+        <select id="customHours" onchange="updateTimeFromInputs()">
+          {% for h in range(0,6) %}
+          <option value="{{ h }}">{{ "%02d"|format(h) }}</option>
+          {% endfor %}
+        </select>
+        <span class="colon-separator">:</span>
+        <select id="customMinutes" onchange="updateTimeFromInputs()">
+          {% for m in range(0,60) %}
+          <option value="{{ m }}" {% if m == 15 %}selected{% endif %}>{{ "%02d"|format(m) }}</option>
+          {% endfor %}
+        </select>
+        <span class="colon-separator">:</span>
+        <select id="customSeconds" onchange="updateTimeFromInputs()">
+          {% for s in range(0,60) %}
+          <option value="{{ s }}">{{ "%02d"|format(s) }}</option>
+          {% endfor %}
+        </select>
+      </form>
+      <div class="timer-svg-wrapper">
+        <svg class="timer-svg" width="220" height="220">
+          <circle
+            cx="110"
+            cy="110"
+            r="100"
+            stroke="#e0e5d8"
+            stroke-width="12"
+            fill="none"
+          />
+          <circle
+            id="timer-progress"
+            cx="110"
+            cy="110"
+            r="100"
+            stroke="#a4b792"
+            stroke-width="12"
+            fill="none"
+            stroke-linecap="round"
+            stroke-dasharray="628.32"
+            stroke-dashoffset="0"
+          />
+        </svg>
+        <div class="timer-time" id="timer">00:15:00</div>
+      </div>
+      <div class="control-buttons">
+        <button id="pauseResumeBtn" onclick="togglePauseResume()" style="background-color: #8B5C2A; color: #fff;">Pause</button>
+        <button type="button" onclick="startTimer()" style="background-color: #8B5C2A; color: #fff;">Start</button>
+        <button onclick="restartTimer()" style="background-color: #8B5C2A; color: #fff;">Restart</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  let timer;
+  let hours = 0;
+  let minutes = 15;
+  let seconds = 0;
+  let isPaused = false;
+  let enteredTime = { hours: 0, minutes: 15, seconds: 0 };
+  let totalSeconds = 15 * 60;
+  let remainingSeconds = 15 * 60;
+
+  function getTotalSeconds(h, m, s) {
+    return h * 3600 + m * 60 + s;
+  }
+
+  function startTimer() {
+    clearInterval(timer);
+    timer = setInterval(updateTimer, 1000);
+    isPaused = false;
+    document.getElementById("pauseResumeBtn").textContent = "Pause";
+  }
+
+  function updateTimer() {
+    const timerElement = document.getElementById("timer");
+    timerElement.textContent = formatTime(hours, minutes, seconds);
+
+    if (hours === 0 && minutes === 0 && seconds === 0) {
+      clearInterval(timer);
+      setProgressCircle(0);
+      alert("Time is up! Take a break.");
+    } else if (!isPaused) {
+      if (seconds > 0) {
+        seconds--;
+      } else if (minutes > 0) {
+        seconds = 59;
+        minutes--;
+      } else if (hours > 0) {
+        seconds = 59;
+        minutes = 59;
+        hours--;
+      }
+      remainingSeconds = getTotalSeconds(hours, minutes, seconds);
+      setProgressCircle(remainingSeconds / totalSeconds);
+    }
+  }
+
+  function formatTime(hours, minutes, seconds) {
+    return (
+      String(hours).padStart(2, "0") +
+      ":" +
+      String(minutes).padStart(2, "0") +
+      ":" +
+      String(seconds).padStart(2, "0")
+    );
+  }
+
+  function setProgressCircle(ratio) {
+    const circle = document.getElementById("timer-progress");
+    const circumference = 2 * Math.PI * 100;
+    const offset = circumference * (1 - ratio);
+    circle.style.strokeDashoffset = offset;
+  }
+
+  function togglePauseResume() {
+    const pauseResumeButton = document.getElementById("pauseResumeBtn");
+    isPaused = !isPaused;
+
+    if (isPaused) {
+      clearInterval(timer);
+      pauseResumeButton.textContent = "Resume";
+    } else {
+      startTimer();
+      pauseResumeButton.textContent = "Pause";
+    }
+  }
+
+  function restartTimer() {
+    clearInterval(timer);
+    hours = enteredTime.hours;
+    minutes = enteredTime.minutes;
+    seconds = enteredTime.seconds;
+    isPaused = false;
+    totalSeconds = getTotalSeconds(hours, minutes, seconds);
+    remainingSeconds = totalSeconds;
+    document.getElementById("timer").textContent = formatTime(hours, minutes, seconds);
+    document.getElementById("pauseResumeBtn").textContent = "Pause";
+    setProgressCircle(1);
+    // Do not start timer automatically
+  }
+
+  function setCustomTime(event) {
+    event.preventDefault();
+    const h = parseInt(document.getElementById("customHours").value);
+    const m = parseInt(document.getElementById("customMinutes").value);
+    const s = parseInt(document.getElementById("customSeconds").value);
+
+    if (
+      !isNaN(h) && h >= 0 && h <= 5 &&
+      !isNaN(m) && m >= 0 && m <= 59 &&
+      !isNaN(s) && s >= 0 && s <= 59 &&
+      (h > 0 || m > 0 || s > 0)
+    ) {
+      enteredTime = { hours: h, minutes: m, seconds: s };
+      hours = h;
+      minutes = m;
+      seconds = s;
+      isPaused = false;
+      totalSeconds = getTotalSeconds(hours, minutes, seconds);
+      remainingSeconds = totalSeconds;
+      document.getElementById("timer").textContent = formatTime(hours, minutes, seconds);
+      document.getElementById("pauseResumeBtn").textContent = "Pause";
+      setProgressCircle(1);
+      // Only start timer when Start is clicked
+      startTimer();
+    } else {
+      alert("Please select a valid time greater than 0.");
+    }
+  }
+
+  function updateTimeFromInputs() {
+    const h = parseInt(document.getElementById("customHours").value);
+    const m = parseInt(document.getElementById("customMinutes").value);
+    const s = parseInt(document.getElementById("customSeconds").value);
+
+    hours = h;
+    minutes = m;
+    seconds = s;
+    enteredTime = { hours: h, minutes: m, seconds: s };
+    totalSeconds = getTotalSeconds(hours, minutes, seconds);
+    remainingSeconds = totalSeconds;
+    document.getElementById("timer").textContent = formatTime(hours, minutes, seconds);
+    setProgressCircle(1);
+    isPaused = false;
+    clearInterval(timer);
+    document.getElementById("pauseResumeBtn").textContent = "Pause";
+  }
+
+  // Initialize timer on page load (do not start)
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("timer").textContent = formatTime(hours, minutes, seconds);
+    setProgressCircle(1);
+    // Do not call startTimer();
+  });
+</script>
+{% endblock %}

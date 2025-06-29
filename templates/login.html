@@ -1,77 +1,173 @@
 {% extends 'layoutsl.html' %} {% block content %}
-<div class="container mt-5">
-  <div class="row">
-    <h1 class="display-1"></h1>
-  </div>
-  <div
-    class="container mt-5 mb-5"
-    style="margin-top: 200px; margin-bottom: 150px"
-  >
-    <div class="row">
-      <div class="col-md-6">
-        <div class="text-container">
-          <h2>Welcome to MyHSC</h2>
-          <p>
-            This website allows HSC students to effiectively track their studies
-            through features that are directly linked to the Stage 6 Syllabus.
-          </p>
-          <p>
-            Log in or create an account today to get started and unlock your
-            potential with this helpful tool!
-          </p>
+<style>
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    min-height: 100vh;
+    background-image: url("/static/images/loginpage.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100vw;
+    padding-top: 90px; /* space for navbar */
+  }
+  .logo-img {
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .accordion {
+    width: 90vw;
+    max-width: 2000px;
+    margin-left: 40px; /* Margin from the left */
+    margin-right: auto; /* Prevent centering */
+    background: rgba(255, 255, 255, 0.15); /* white overlay for blending */
+    border-radius: 18px;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    padding: 8px 0;
+  }
+  .accordion-item,
+  .accordion-button,
+  .accordion-body {
+    background: transparent !important;
+    border: none;
+  }
+  .accordion-button {
+    color: #333;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .accordion-button:not(.collapsed) {
+    color: #556b2f !important;
+    background-color: rgba(164, 183, 146, 0.15) !important;
+    box-shadow: none;
+  }
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: #a4b792;
+  }
+  .section-divider {
+    border: none;
+    border-top: 2px solid #a4b792;
+    width: 100vw;
+    margin: 32px 0 32px 0;
+  }
+</style>
+<div class="center-container">
+  <h1 class="text-center mb-4" style="color: #333">
+    Get started with MyHSC today!
+  </h1>
+  <img src="/static/icons/logo.png" alt="MyHSC Logo" class="logo-img" />
+  <p class="text-center mt-3" style="max-width: 400px; color: #333">
+    MyHSC helps you track your HSC studies, set goals, and access resources
+    tailored to the Stage 6 Syllabus. Log in or sign up to get started and
+    unlock your study potential!
+  </p>
+  <div style="height: 300px"></div>
+
+  <hr class="section-divider" />
+  <h2 class="mb-4 w-100" style="text-align: left; margin-left: 100px">
+    What is MyHSC?
+  </h2>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          About MyHSC
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse show"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          MyHSC is a dedicated study companion designed specifically for HSC
+          students in New South Wales. It provides tools and features tailored
+          to the Stage 6 Syllabus, including syllabus- linked tracking, study
+          blogs, stopwatch, timer, flashcards. MyHSC aims to help you stay
+          organised, motivated, and on track throughout your HSC journey—all in
+          a distraction-free, ad-free environment.
         </div>
       </div>
-      <div class="col-md-6">
-        <!-- Display warning if login failed -->
-        {% if error %}
-          <div class="alert alert-danger" role="alert">
-            Incorrect username or password
-          </div>
-        {% endif %}
-        <form id="loginForm" method="POST" action="{{ url_for('login') }}">
-          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-          <div class="mb-3">
-            <label for="email" class="form-label">Email:</label>
-            <input
-              name="email"
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="password"
-              name="password"
-              required
-            />
-            <!-- Checkbox to toggle password visibility -->
-            <input type="checkbox" onclick="togglePasswordVisibility()" /> Show
-            Password
-          </div>
-          <div class="mb-3">
-            <a href="{{ url_for('signup') }}">Sign Up</a>
-          </div>
-          <button type="submit" class="btn btn-primary">Login</button>
-        </form>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+        >
+          How does MyHSC differ from other study apps?
+        </button>
+      </h2>
+      <div
+        id="collapseTwo"
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          MyHSC is designed specifically for HSC students, with features
+          tailored to the <stront></stront>NSW Stage 6 Syllabus<strong
+          ></strong>. Unlike generic study apps, MyHSC offers syllabus-linked
+          tracking with the "traffic light system", study stopwatches, timers
+          and flashcards to help with active recall. There are no ads or hidden
+          costs—just a focused, distraction-free environment to help you stay
+          organised and succeed in your HSC studies.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree"
+          aria-expanded="false"
+          aria-controls="collapseThree"
+        >
+          Is the app free to use?
+        </button>
+      </h2>
+      <div
+        id="collapseThree"
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          Yes! The app is completely <strong> free</strong> to use with full
+          access to all core features — including the study planner, syllabus
+          tracker, reminders, and progress stats. There are
+          <strong>no hidden costs</strong>, subscriptions, or ads. Just simple,
+          effective tools to help you stay organised and succeed in the HSC.
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<script>
-  function togglePasswordVisibility() {
-    var passwordInput = document.getElementById("password");
-    if (passwordInput.type === "password") {
-      passwordInput.type = "text";
-    } else {
-      passwordInput.type = "password";
-    }
-  }
-</script>
 {% endblock %}

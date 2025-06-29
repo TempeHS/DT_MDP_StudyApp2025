@@ -1,6 +1,12 @@
 {% extends 'layout.html' %} {% block content %} {% include
 "partials/svg_symbols.html" %}
 <style>
+  body {
+    background-image: url("/static/images/stopwatch1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
   .container {
     height: 100vh; /* Full viewport height */
     display: flex;
@@ -29,11 +35,9 @@
 <div class="container">
   <div class="centered-text">
     <h1>Stopwatch</h1>
-    <span id="seconds" style="font-size: 4rem">00</span>:<span
-      id="tens"
-      style="font-size: 4rem"
-      >00</span
-    >
+    <span id="seconds" style="font-size: 4rem">00</span
+    ><span style="font-size: 3rem; font-weight: bold">:</span
+    ><span id="tens" style="font-size: 4rem">00</span>
     <br />
     <button class="button" id="button-start">Start</button>
     <button class="button" id="button-stop">Stop</button>
