@@ -1,0 +1,29 @@
+{% extends 'layout.html' %} {% block content %}
+<main>
+  <div
+    class="d-flex justify-content-center align-items-center"
+    style="min-height: 100vh; width: 100vw"
+  >
+    <div>
+      <h1 class="text-center mb-4">Coming Soon</h1>
+      <div class="text-center">
+        <p class="lead">Get excited, this feature is under development.</p>
+        <p>Stay tuned for updates!</p>
+        <p>
+          <a class="btn btn-lg btn-secondary" href="/home.html">Back to Home</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
+<style>
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-image: url("/static/images/comingsoon.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+</style>

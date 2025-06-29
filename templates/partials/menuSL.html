@@ -1,5 +1,18 @@
 <nav class="navbar navbar-expand-lg" style="background-color: #a4b792">
   <div class="container-fluid">
+    <a
+      href="/"
+      class="navbar-brand text-white text-decoration-none d-flex align-items-center ms-3"
+    >
+      <img
+        src="{{ url_for('static', filename='icons/logo.png') }}"
+        alt="Logo"
+        width="40"
+        height="32"
+        class="me-2"
+      />
+      <span class="fs-4">MyHSC</span>
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -12,39 +25,194 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"></a>
-        </li>
-      </ul>
-      <!-- Centered Brand -->
-      <a
-        href="/"
-        class="navbar-brand mx-auto text-white text-decoration-none d-flex align-items-center"
-      >
-        <img
-          src="{{ url_for('static', filename='icons/logo.png') }}"
-          alt="Logo"
-          width="40"
-          height="32"
-          class="me-2"
-        />
-        <span class="fs-4">MyHSC</span>
-      </a>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a href="/profile" class="nav-link"></a>
+          <!-- Login Modal Trigger -->
+          <button
+            type="button"
+            class="nav-link btn btn-link text-dark text-center p-0"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            style="text-decoration: none"
+          >
+            Login
+          </button>
         </li>
-        <li class="nav-item">
-          <a href="/login" class="nav-link text-dark text-center"></a>
+        <li class="nav-item ms-3">
+          <!-- Signup Modal Trigger -->
+          <button
+            type="button"
+            class="nav-link btn btn-link text-dark text-center p-0"
+            data-bs-toggle="modal"
+            data-bs-target="#signupModal"
+            style="text-decoration: none"
+          >
+            Sign Up
+          </button>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<!-- Login Modal -->
+<div
+  class="modal fade {% if error %}show d-block{% endif %}"
+  id="loginModal"
+  tabindex="-1"
+  aria-labelledby="loginModalLabel"
+  aria-hidden="{{ 'false' if error else 'true' }}"
+  style="{% if error %}background: rgba(0,0,0,0.5);{% endif %}"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        {% if error %}
+        <div class="alert alert-danger" role="alert">
+          Incorrect username or password
+        </div>
+        {% endif %}
+        <form id="loginForm" method="POST" action="{{ url_for('login') }}">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <input type="checkbox" onclick="togglePasswordVisibility()" /> Show
+            Password
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary w-75">Login</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function togglePasswordVisibility() {
+    var passwordInput = document.getElementById("password");
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+    } else {
+      passwordInput.type = "password";
+    }
+  }
+  // Auto-open modal if login error
+  {% if error %}
+  var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+  loginModal.show();
+  {% endif %}
+</script>
+
+<!-- Signup Modal -->
+<div
+  class="modal fade"
+  id="signupModal"
+  tabindex="-1"
+  aria-labelledby="signupModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">
+          Sign Up to get started!
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="signupEmail" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="signupEmail"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="signupPassword" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="signupPassword"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="signupConfirmPassword" class="form-label"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="signupConfirmPassword"
+              required
+            />
+            <input type="checkbox" onclick="toggleSignupPasswordVisibility()" />
+            Show Password
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-success w-75">Sign Up</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function toggleSignupPasswordVisibility() {
+    var pwd = document.getElementById("signupPassword");
+    var cpwd = document.getElementById("signupConfirmPassword");
+    if (pwd.type === "password") {
+      pwd.type = "text";
+      cpwd.type = "text";
+    } else {
+      pwd.type = "password";
+      cpwd.type = "password";
+    }
+  }
+</script>

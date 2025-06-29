@@ -311,3 +311,17 @@ footer.custom-footer .footer-link:hover {
   border-color: #8fa382 !important;
   color: #fff !important;
 }
+
+.bg-bloghome {
+  background-image: url("/static/images/bloghome.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.short-card {
+  min-height: 180px; /* Adjust as needed */
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

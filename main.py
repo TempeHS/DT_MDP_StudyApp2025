@@ -27,43 +27,51 @@ blogpages = Blueprint('blogpages', __name__, template_folder='templates/blogpage
 
 @blogpages.route('/blogs')
 def blogs():
-    user = session.get('user')  # Retrieve user data from the session
+    user = session.get('user')  
     if user:
         return render_template('blogs.html', user=user)
     else:
-        return redirect("/login")  # Redirect to login if no user is logged in
+        return redirect("/login")  
 
 @blogpages.route('/decon_eq.html')
 def deconstruct():
-    user = session.get('user')  # Retrieve user data from the session
+    user = session.get('user') 
     if user:
         return render_template('decon_eq.html', user=user)
     else:
-        return redirect("/login")  # Redirect to login if no user is logged in
+        return redirect("/login")  
     
 @blogpages.route('/cube.html')
 def cube():
-    user = session.get('user')  # Retrieve user data from the session
+    user = session.get('user')  
     if user:
         return render_template('cube.html', user=user)
     else:
-        return redirect("/login")  # Redirect to login if no user is logged in
+        return redirect("/login") 
 
 @blogpages.route('/addressverb.html')
 def verb():
-    user = session.get('user')  # Retrieve user data from the session
+    user = session.get('user') 
     if user:
         return render_template('addressverb.html', user=user)
     else:
-        return redirect("/login")  # Redirect to login if no user is logged in
-
+        return redirect("/login") 
+    
 @blogpages.route('/wheredoistart.html')
 def wheredoistart():
-    user = session.get('user')  # Retrieve user data from the session
+    user = session.get('user')  
     if user:
         return render_template('wheredoistart.html', user=user)
     else:
-        return redirect("/login")  # Redirect to login if no user is logged in
+        return redirect("/login") 
+    
+@blogpages.route('/goals.html')
+def goals():
+    user = session.get('user')  
+    if user:
+        return render_template('goals.html', user=user)
+    else:
+        return redirect("/login") 
 
 # Register the blueprint
 app.register_blueprint(blogpages, url_prefix='/')
@@ -83,11 +91,11 @@ def index():
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
-    user = session.get('user')  # Retrieve user data from the session
+    user = session.get('user') 
     if user:
         return render_template("privacy.html", user=user)
     else:
-        return redirect("/login")  # Redirect to login if no user is logged in
+        return redirect("/login")  
 
 @app.route("/about.html", methods=["GET"])
 def about():
@@ -95,28 +103,26 @@ def about():
 
 @app.route("/home.html", methods=["GET"])
 def home():
-    user = session.get('user')  # Retrieve user data from the session
+    user = session.get('user')
     if user:
         return render_template("home.html", user=user)
     else:
-        return redirect("/login")  # Redirect to login if no user is logged in
+        return redirect("/login")  
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
-        
-        # Check if user exists in user_database and verify password
         user = dbHandler.check_credentials(email, password)
         if user:
             session['user'] = user
-            # Credentials are correct, redirect to profile or home page
             return redirect("/home.html")
         else:
-            # Credentials are incorrect, show error message
-            return render_template("login.html", error="Invalid email or password")
-    return render_template("login.html")
+            # Always pass user (None if not logged in)
+            return render_template("login.html", error=True, user=None)
+    # On GET, render login page
+    return render_template("login.html", user=session.get('user'))
 
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
@@ -161,9 +167,6 @@ def signup():
         return redirect('/home.html')
     return render_template("signup.html")
 
-@app.route("/calendar.html", methods=["GET", "POST"])
-def calendar():
-    return render_template("calendar.html")
 
 @app.route('/profile', methods=["GET"])
 def profile():
@@ -196,6 +199,36 @@ def syllabus():
         return render_template("syllabus.html", user=user)
     else:
         return redirect("/login")
+
+@app.route("/flashcardoption.html", methods=["GET"])
+def flashcardoption():
+    user = session.get('user')  # Retrieve user data from the session
+    if user:
+        return render_template("flashcardoption.html", user=user)
+    else:
+        return redirect("/login")  # Redirect to login if no user is logged in
+
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect("/login.html")
+
+@app.route("/timer.html", methods=["GET"])
+def timer():
+    user = session.get('user')
+    if user:
+        return render_template("timer.html", user=user)
+    else:
+        return redirect("/login")
+
+@app.route("/comingsoon.html", methods=["GET"])
+def comingsoon():
+    user = session.get('user')
+    if user:
+        return render_template("comingsoon.html", user=user)
+    else:
+        return redirect("/login")
+
 
 def get_db():
     return sqlite3.connect('./database/data_source.db')
