@@ -73,6 +73,14 @@ def goals():
     else:
         return redirect("/login") 
 
+@blogpages.route('/examstudyplan.html')
+def examstudyplan():
+    user = session.get('user')
+    if user:
+        return render_template('examstudyplan.html', user=user)
+    else:
+        return redirect("/login") 
+
 # Register the blueprint
 app.register_blueprint(blogpages, url_prefix='/')
 
@@ -119,54 +127,35 @@ def login():
             session['user'] = user
             return redirect("/home.html")
         else:
-            # Always pass user (None if not logged in)
             return render_template("login.html", error=True, user=None)
-    # On GET, render login page
     return render_template("login.html", user=session.get('user'))
 
-@app.route("/signup", methods=["GET", "POST"])
+
+@app.route("/signup", methods=["POST"])
 def signup():
-    if request.method == "POST":
-        email = request.form.get("email")
-        first_name = request.form.get("first_name")
-        last_name = request.form.get("last_name")
-        password = request.form.get("password")
-        subjects = [
-    request.form.get('subject1'),
-    request.form.get('subject2'),
-    request.form.get('subject3'),
-    request.form.get('subject4'),
-    request.form.get('subject5'),
-    request.form.get('subject6')
-]
-        # Pad the subjects list to always have 6 items (fill with None)
-        subjects += [None] * (6 - len(subjects))
+    email = request.form.get("email")
+    first_name = request.form.get("first_name")
+    last_name = request.form.get("last_name")
+    password = request.form.get("password")
+    confirm_password = request.form.get("confirm_password")
 
-        conn = get_db()
-        cur = conn.cursor()
-        cur.execute(
-            "INSERT INTO user_details (email, first_name, last_name, password, subject1, subject2, subject3, subject4, subject5, subject6) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-            (email, first_name, last_name, password, *subjects[:6])
-        )
-        user_id = cur.lastrowid  # Get the new user's id
-        conn.commit()
-        conn.close()
+    # Basic validation
+    if not all([email, first_name, last_name, password, confirm_password]):
+        return render_template("login.html", signup_error="All fields are required.", user=None)
+    if password != confirm_password:
+        return render_template("login.html", signup_error="Passwords do not match.", user=None)
 
-        session['user'] = {
-            'id': user_id,
-            'email': email,
-            'first_name': first_name,
-            'last_name': last_name,
-            'subject1': subjects[0],
-            'subject2': subjects[1],
-            'subject3': subjects[2],
-            'subject4': subjects[3],
-            'subject5': subjects[4],
-            'subject6': subjects[5]
-        }
-        return redirect('/home.html')
-    return render_template("signup.html")
+    # Check if user already exists
+    if dbHandler.check_credentials(email, password):
+        return render_template("login.html", signup_error="User already exists.", user=None)
 
+    # Insert new user
+    dbHandler.insertDetails(email, first_name, last_name, password)
+
+    # Fetch user and log in
+    user = dbHandler.check_credentials(email, password)
+    session['user'] = user
+    return redirect("/home.html")
 
 @app.route('/profile', methods=["GET"])
 def profile():
@@ -178,19 +167,19 @@ def profile():
     
 @app.route("/stopwatch.html", methods=["GET"])
 def stopwatch():
-    user = session.get('user')  # Retrieve user data from the session
+    user = session.get('user')  
     if user:
         return render_template('stopwatch.html', user=user)
     else:
-        return redirect("/login")  # Redirect to login if no user is logged in
+        return redirect("/login") 
 
-@app.route("/flashcards.html", methods=["GET"])
+@app.route("/bioflashcards.html", methods=["GET"])
 def flashcards():
-    user = session.get('user')  # Retrieve user data from the session
+    user = session.get('user')  
     if user:
-        return render_template("flashcards.html", user=user)
+        return render_template("bioflashcards.html", user=user)
     else:
-        return redirect("/login")  # Redirect to login if no user is logged in
+        return redirect("/login") 
 
 @app.route("/syllabus.html", methods=["GET"])
 def syllabus():
@@ -202,11 +191,11 @@ def syllabus():
 
 @app.route("/flashcardoption.html", methods=["GET"])
 def flashcardoption():
-    user = session.get('user')  # Retrieve user data from the session
+    user = session.get('user') 
     if user:
         return render_template("flashcardoption.html", user=user)
     else:
-        return redirect("/login")  # Redirect to login if no user is logged in
+        return redirect("/login") 
 
 @app.route("/logout")
 def logout():
@@ -229,6 +218,20 @@ def comingsoon():
     else:
         return redirect("/login")
 
+@app.route("/samplesyllabus.html", methods=["GET"])
+def samplesyllabus():
+    user = session.get('user')
+    return render_template(
+        "samplesyllabus.html",
+        user=user
+    )
+
+
+@app.route("/syllabusplaceholder.html", methods=["GET"])
+def syllabusplaceholder():
+    user = session.get('user')
+    return render_template("syllabusplaceholder.html", user=user)
+
 
 def get_db():
     return sqlite3.connect('./database/data_source.db')
@@ -239,6 +242,16 @@ def get_db():
 def csp_report():
     app.logger.critical(request.data.decode())
     return "done"
+
+@app.route("/privacySL.html", methods=["GET"])
+def privacySL():
+    user = session.get('user')
+    return render_template("privacySL.html", user=user)
+
+@app.route("/biology.html", methods=["GET"])
+def biology():
+    user = session.get('user')
+    return render_template("flashcards/biology.html", user=user)
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)

@@ -34,6 +34,13 @@
 
 --('Biology', '5', 'Heredity', '', '', ''),
 
+CREATE TABLE IF NOT EXISTS user_dropdown_colours (
+    user_id INTEGER,
+    dropdown_id TEXT,
+    value TEXT,
+    PRIMARY KEY (user_id, dropdown_id)
+);
+
 
 
 

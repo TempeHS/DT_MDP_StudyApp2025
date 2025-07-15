@@ -7,14 +7,19 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
-  .container {
-    height: 100vh; /* Full viewport height */
+  .stopwatch-absolute-center {
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
-    justify-content: center; /* Horizontally center the child element */
-    align-items: center; /* Vertically center the child element */
+    justify-content: center;
+    align-items: center;
+    /* Remove position: fixed and z-index so it flows with the page */
+    pointer-events: none; /* Prevents blocking footer/buttons if needed */
   }
   .centered-text {
-    text-align: center; /* Center the text within its container */
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    pointer-events: auto;
   }
   .button {
     border-radius: 8px;
@@ -32,7 +37,7 @@
     color: #fff;
   }
 </style>
-<div class="container">
+<div class="stopwatch-absolute-center">
   <div class="centered-text">
     <h1>Stopwatch</h1>
     <span id="seconds" style="font-size: 4rem">00</span

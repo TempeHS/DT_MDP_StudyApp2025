@@ -1,20 +1,7 @@
 {% extends 'layout.html' %} {% block content %} {% include
 "partials/svg_symbols.html" %}
 <div class="container-fluid custom-content m-0 p-0">
-  <header class="border-bottom lh-1 py-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-4 pt-1">
-        <a class="link-secondary" href="#"></a>
-      </div>
-      <div class="col-4 text-center">
-        <a class="blog-header-logo text-body-emphasis text-decoration-none">
-          Study Techniques, Tools and Exam Strategies
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
+  <main class="container" style="margin-top: 4.5rem;">
     <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-bloghome">
       <div class="col-lg-6 px-0">
         <h1 class="display-4 fst-italic">Where do I start?</h1>
@@ -33,19 +20,20 @@
     <div class="row mb-2">
       <div class="col-md-6">
         <div
-          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-180 position-relative"
+          style="min-height: 180px; height: 220px;"
         >
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-primary-emphasis"
               >Exam Strategies</strong
             >
             <h3 class="mb-0">Exam Study Plan</h3>
-            <div class="mb-1 text-body-secondary">May 08</div>
-            <p class="card-text mb-auto">
+            <div class="mb-1 text-body-secondary">July 04 2025</div>
+            <p class="card-text mb-auto" style="font-size: 1rem;">
               Struggling to plan your study before exams? Use this guide to get
               started!
             </p>
-            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            <a href="/examstudyplan.html" class="icon-link gap-1 icon-link-hover stretched-link">
               Continue reading...
               <svg class="bi" aria-hidden="true">
                 <use xlink:href="#chevron-right" />
@@ -57,8 +45,8 @@
               src="{{ url_for('static', filename='images/examstudyplan.png') }}"
               alt="Exam Study Plan"
               class="bd-placeholder-img"
-              width="200"
-              height="250"
+              width="170"
+              height="180"
               style="object-fit: cover;"
             />
           </div>
@@ -66,15 +54,16 @@
       </div>
       <div class="col-md-6">
         <div
-          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-180 position-relative"
+          style="min-height: 180px; height: 220px;"
         >
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-success-emphasis"
               >Goals</strong
             >
             <h3 class="mb-0">Goal Setting Tips</h3>
-            <div class="mb-1 text-body-secondary">Jun 19</div>
-            <p class="mb-auto">
+            <div class="mb-1 text-body-secondary">Jun 19 2025</div>
+            <p class="mb-auto" style="font-size: 1rem;">
               Discover practical tips for breaking down big ambitions into manageable milestones, staying motivated, and tracking your progress.
             </p>
             <a href="goals.html" class="icon-link gap-1 icon-link-hover stretched-link">
@@ -89,8 +78,8 @@
               src="{{ url_for('static', filename='images/goals.png') }}"
               alt="Goal Setting Tips"
               class="bd-placeholder-img"
-              width="200"
-              height="250"
+              width="150"
+              height="180"
               style="object-fit: cover;"
             />
           </div>
@@ -104,286 +93,90 @@
           <p class="blog-post-meta">May 12, 2025 by <a href="#">MyHSC</a></p>
 
           <p>
-            This blog post shows a few different types of content that’s
-            supported and styled with Bootstrap. Basic typography, lists,
-            tables, images, code, and more are all supported as expected.
+            Crack the Code to Effective Learning and Stay Ahead!
           </p>
           <hr />
           <p>
-            This is some additional paragraph placeholder content. It has been
-            written to fill the available space and show how a longer snippet of
-            text affects the surrounding content. We'll repeat it often to keep
-            the demonstration flowing, so be on the lookout for this exact same
-            string of text.
+            The HSC can feel overwhelming—but with the right strategies, it's not only manageable, 
+            it’s conquerable. Whether you're in Year 11 building habits or deep in Year 12 prepping 
+            for trials, smart study strategies can dramatically improve your focus, retention, and results. 
+            Here’s a breakdown of powerful, practical techniques that successful HSC students swear by.
           </p>
-          <h2>Blockquotes</h2>
-          <p>This is an example blockquote in action:</p>
-          <blockquote class="blockquote">
-            <p>Quoted text goes here.</p>
-          </blockquote>
-          <p>
-            This is some additional paragraph placeholder content. It has been
-            written to fill the available space and show how a longer snippet of
-            text affects the surrounding content. We'll repeat it often to keep
-            the demonstration flowing, so be on the lookout for this exact same
-            string of text.
-          </p>
-          <h3>Example lists</h3>
-          <p>
-            This is some additional paragraph placeholder content. It's a
-            slightly shorter version of the other highly repetitive body text
-            used throughout. This is an example unordered list:
-          </p>
+          <h2>🧠1. Set SMART Goals</h2>
+          <p><strong>Specific, Measurable, Achievable, Relevant, Time-bound</strong>. These aren’t just buzzwords—they’re 
+            the foundation of efficient HSC prep. Break down your syllabus into weekly goals 
+            (e.g. “Complete Module A Essay Plan by Friday”) and use trackers to stay accountable. Read more in our goal setting blog.</p>
+            <pre><code>Tip!: Use a digital planner or HSC study app to visualise your goals over time.</code></pre>
+          <h2>⏱️ 2. Use the Pomodoro Technique</h2>
+          <p>Stay focused using short bursts of concentration:</p>
           <ul>
-            <li>First list item</li>
-            <li>Second list item with a longer description</li>
-            <li>Third list item to close it out</li>
+            <li>Study for 25 minutes</li>
+            <li>Take a 5-minute break</li>
+            <li>After 4 cycles, take a longer break (15-30 minutes)</li>
           </ul>
-          <p>And this is an ordered list:</p>
-          <ol>
-            <li>First list item</li>
-            <li>Second list item with a longer description</li>
-            <li>Third list item to close it out</li>
-          </ol>
-          <p>And this is a definition list:</p>
-          <dl>
-            <dt>HyperText Markup Language (HTML)</dt>
-            <dd>
-              The language used to describe and define the content of a Web page
-            </dd>
-            <dt>Cascading Style Sheets (CSS)</dt>
-            <dd>Used to describe the appearance of Web content</dd>
-            <dt>JavaScript (JS)</dt>
-            <dd>
-              The programming language used to build advanced Web sites and
-              applications
-            </dd>
-          </dl>
-          <h2>Inline HTML elements</h2>
-          <p>
-            HTML defines a long list of available inline tags, a complete list
-            of which can be found on the
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-              >Mozilla Developer Network</a
-            >.
+          <p>This prevents burnout and makes study feel less draining. There is no stringent time frame, adjust the times to what suits your study habits best.</p>
+          <pre><code>Tip!: Try out our built in timer and stopwatch to track the timings of your studies.</code></pre>
+          <h2>🧩 3. Practice Active Recall</h2>
+          <p>Instead of just reading the content and highlighting key words hoping to memorise them by the time the exam comes around, try actively recalling these key words. 
+            Active recall forces your brain to retrieve information, a process neccessary in exams, so why not practice it now and get used to the process? 
+            <pre>Tip!: Check out our flashcards to help with active recall targeted to specific subjects and modules</pre>
           </p>
-          <ul>
-            <li>
-              <strong>To bold text</strong>, use
-              <code class="language-plaintext highlighter-rouge"
-                >&lt;strong&gt;</code
-              >.
-            </li>
-            <li>
-              <em>To italicize text</em>, use
-              <code class="language-plaintext highlighter-rouge"
-                >&lt;em&gt;</code
-              >.
-            </li>
-            <li>
-              Abbreviations, like
-              <abbr title="HyperText Markup Language">HTML</abbr> should use
-              <code class="language-plaintext highlighter-rouge"
-                >&lt;abbr&gt;</code
-              >, with an optional
-              <code class="language-plaintext highlighter-rouge">title</code>
-              attribute for the full phrase.
-            </li>
-            <li>
-              Citations, like <cite>— Mark Otto</cite>, should use
-              <code class="language-plaintext highlighter-rouge"
-                >&lt;cite&gt;</code
-              >.
-            </li>
-            <li>
-              <del>Deleted</del> text should use
-              <code class="language-plaintext highlighter-rouge"
-                >&lt;del&gt;</code
-              >
-              and <ins>inserted</ins> text should use
-              <code class="language-plaintext highlighter-rouge"
-                >&lt;ins&gt;</code
-              >.
-            </li>
-            <li>
-              Superscript <sup>text</sup> uses
-              <code class="language-plaintext highlighter-rouge"
-                >&lt;sup&gt;</code
-              >
-              and subscript <sub>text</sub> uses
-              <code class="language-plaintext highlighter-rouge"
-                >&lt;sub&gt;</code
-              >.
-            </li>
-          </ul>
-          <p>
-            Most of these elements are styled by browsers with few modifications
-            on our part.
-          </p>
-          <h2>Heading</h2>
-          <p>
-            This is some additional paragraph placeholder content. It has been
-            written to fill the available space and show how a longer snippet of
-            text affects the surrounding content. We'll repeat it often to keep
-            the demonstration flowing, so be on the lookout for this exact same
-            string of text.
-          </p>
-          <h3>Sub-heading</h3>
-          <p>
-            This is some additional paragraph placeholder content. It has been
-            written to fill the available space and show how a longer snippet of
-            text affects the surrounding content. We'll repeat it often to keep
-            the demonstration flowing, so be on the lookout for this exact same
-            string of text.
-          </p>
-          <pre><code>Example code block</code></pre>
-          <p>
-            This is some additional paragraph placeholder content. It's a
-            slightly shorter version of the other highly repetitive body text
-            used throughout.
-          </p>
-        </article>
+          <h2>📚 4. Study with the Syllabus in Mind</h2>
+          <p>Your subject syllabus is the key for what you can be examined on. Every exam question is within the scope of the syllabus, so by understanding 
+            it you can effectively allocate your time to what is actually being assessed and ensure all neccessary content is covered. It is useful to align your
+            notes and practice questions with the syllabus dot points as it is your exam blueprint. 
+            <pre>Tip!: We offer a syllabus tracker that allows you to track your confidence with each dot point in the 
+      syllabus to help you systematically identify gaps in your knowledge and identify areas for 
+      further revision.</pre>
 
-        <article class="blog-post">
-          <h2 class="display-5 link-body-emphasis mb-1">Another blog post</h2>
-          <p class="blog-post-meta">
-            December 23, 2020 by <a href="#">Jacob</a>
-          </p>
-
+          <h2> 🧊 5. Apply C.U.B.E. Method for Exam Questions</h2>
           <p>
-            This is some additional paragraph placeholder content. It has been
-            written to fill the available space and show how a longer snippet of
-            text affects the surrounding content. We'll repeat it often to keep
-            the demonstration flowing, so be on the lookout for this exact same
-            string of text.
-          </p>
-          <blockquote>
-            <p>
-              Longer quote goes here, maybe with some
-              <strong>emphasized text</strong> in the middle of it.
-            </p>
-          </blockquote>
-          <p>
-            This is some additional paragraph placeholder content. It has been
-            written to fill the available space and show how a longer snippet of
-            text affects the surrounding content. We'll repeat it often to keep
-            the demonstration flowing, so be on the lookout for this exact same
-            string of text.
-          </p>
-          <h3>Example table</h3>
-          <p>And don't forget about tables in these posts:</p>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Upvotes</th>
-                <th>Downvotes</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Alice</td>
-                <td>10</td>
-                <td>11</td>
-              </tr>
-              <tr>
-                <td>Bob</td>
-                <td>4</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>Charlie</td>
-                <td>7</td>
-                <td>9</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Totals</td>
-                <td>21</td>
-                <td>23</td>
-              </tr>
-            </tfoot>
-          </table>
-
-          <p>
-            This is some additional paragraph placeholder content. It's a
-            slightly shorter version of the other highly repetitive body text
-            used throughout.
-          </p>
-        </article>
-
-        <article class="blog-post">
-          <h2 class="display-5 link-body-emphasis mb-1">New feature</h2>
-          <p class="blog-post-meta">
-            December 14, 2020 by <a href="#">Chris</a>
-          </p>
-
-          <p>
-            This is some additional paragraph placeholder content. It has been
-            written to fill the available space and show how a longer snippet of
-            text affects the surrounding content. We'll repeat it often to keep
-            the demonstration flowing, so be on the lookout for this exact same
-            string of text.
-          </p>
-          <ul>
-            <li>First list item</li>
-            <li>Second list item with a longer description</li>
-            <li>Third list item to close it out</li>
-          </ul>
-          <p>
-            This is some additional paragraph placeholder content. It's a
-            slightly shorter version of the other highly repetitive body text
-            used throughout.
-          </p>
+            When tackling exam questions, use the C.U.B.E. method:
+            <ul>
+              <li><strong>C</strong>ircle the command verb</li>
+              <li><strong>U</strong>nderline key terms</li>
+              <li><strong>B</strong>reak down the question into parts</li>
+              <li><strong>E</strong>xplain your answer clearly</li>
+            </ul>
+            <p>Learn more about the C.U.B.E. method in our blog. </p>
+            <pre>Tip!: Practice C.U.B.E. with practice questions and past papers to get into the habit. </pre>
         </article>
       </div>
 
       <div class="col-md-4">
-        <div class="position-sticky" style="top: 2rem">
-          <div class="p-4 mb-3 rounded custom-light-blue">
-            <h4 class="fst-italic">MyHSC</h4><hr></hr>
-            <p class="mb-0">
-              MyHSC is a platform for Year 12 students to take control of their
-              HSC and learn more study strategies, exam techniques and tools to
-              help them succeed in their final year of highschool.
-            </p>
-          </div>
-
-          <div>
-            <h4 class="fst-italic">Recent posts</h4><hr></hr>
-            <ul class="list-unstyled">
-              <li>
+        <div class="position-sticky" style="top: 7rem">
+          <div class="p-4 mb-4 rounded shadow-sm" style="background: #ebded4">
+            <h4 class="fst-italic mb-3">Recent posts</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3">
                 <a
-                  class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                  class="d-flex align-items-center gap-3 text-decoration-none link-body-emphasis"
                   href="addressverb.html"
                 >
-                <img
-                src="{{ url_for('static', filename='images/addressverb.png') }}"
-                alt="address the verb"
-                class="bd-placeholder-img"
-                style="width: 96px; height: 96px; object-fit: cover"
-              />
-                  <div class="col-lg-8">
+                  <img
+                    src="{{ url_for('static', filename='images/addressverb.png') }}"
+                    alt="Addressing the Verb"
+                    class="rounded"
+                    style="width: 56px; height: 56px; object-fit: cover"
+                  />
+                  <div>
                     <h6 class="mb-0">Addressing the Verb</h6>
                     <small class="text-body-secondary">April 10, 2025</small>
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="mb-3">
                 <a
-                  class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                  class="d-flex align-items-center gap-3 text-decoration-none link-body-emphasis"
                   href="decon_eq.html"
                 >
-                <img
-                src="{{ url_for('static', filename='images/decon.png') }}"
-                alt="address the verb"
-                class="bd-placeholder-img"
-                style="width: 96px; height: 96px; object-fit: cover"
-              />
-                    <rect width="100%" height="100%" fill="#777" />
-                  </svg>
-                  <div class="col-lg-8">
+                  <img
+                    src="{{ url_for('static', filename='images/decon.png') }}"
+                    alt="Deconstructing Exam Questions"
+                    class="rounded"
+                    style="width: 56px; height: 56px; object-fit: cover"
+                  />
+                  <div>
                     <h6 class="mb-0">Deconstructing Exam Questions</h6>
                     <small class="text-body-secondary">January 14, 2024</small>
                   </div>
@@ -391,28 +184,34 @@
               </li>
               <li>
                 <a
-                  class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                  class="d-flex align-items-center gap-3 text-decoration-none link-body-emphasis"
                   href="cube.html"
                 >
-                <img
-                src="{{ url_for('static', filename='images/CUBE.png') }}"
-                alt="C.U.B.E."
-                class="bd-placeholder-img"
-                style="width: 96px; height: 96px; object-fit: cover"
-              />
-                    <rect width="100%" height="100%" fill="#777" />
-                  </svg>
-                  <div class="col-lg-8">
+                  <img
+                    src="{{ url_for('static', filename='images/CUBE.png') }}"
+                    alt="C.U.B.E."
+                    class="rounded"
+                    style="width: 56px; height: 56px; object-fit: cover"
+                  />
+                  <div>
                     <h6 class="mb-0">C.U.B.E.</h6>
-                    <small class="text-body-secondary"> May 06, 2025</small>
+                    <small class="text-body-secondary">May 06, 2025</small>
                   </div>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="p-4">
+          <div class="p-4 mb-4 rounded shadow-sm" style="background: #ebded4">
+            <h4 class="fst-italic">MyHSC</h4>
+            <p class="mb-0">
+              MyHSC is a platform for Year 12 students to take control of their
+              HSC and learn more study strategies, exam techniques and tools to
+              help them succeed in their final year of highschool.
+            </p>
+          </div>
+          <div class="p-4 rounded shadow-sm" style="background: #ebded4">
             <h4 class="fst-italic">Elsewhere</h4>
-            <ol class="list-unstyled">
+            <ol class="list-unstyled mb-0">
               <li>
                 <a
                   href="https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/Understanding-the-curriculum/syllabuses-a-z"

@@ -23,10 +23,24 @@
       </div>
       <div class="card-body p-0" style="height: 300px; position: relative">
         <div class="flip-card" id="flashcard" style="height: 100%">
-          <div class="flip-card-inner" style="height: 100%">
+          <div
+            class="flip-card-inner"
+            id="flip-card-inner"
+            style="height: 100%"
+          >
             <!-- Front -->
             <div
               class="flip-card-front d-flex flex-column justify-content-center align-items-center h-100"
+              style="
+                backface-visibility: hidden;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 1.25rem;
+                background: #ebded4;
+                padding: 28px 32px; /* Increased padding for margin from edges */
+                box-sizing: border-box;
+              "
             >
               <h5 class="card-title text-center w-100 m-0" id="card-question">
                 Q.1: What is homeostasis?
@@ -35,6 +49,17 @@
             <!-- Back -->
             <div
               class="flip-card-back d-flex flex-column justify-content-center align-items-center h-100"
+              style="
+                backface-visibility: hidden;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 1.25rem;
+                background: #ebded4;
+                transform: rotateY(180deg);
+                padding: 28px 32px; /* Increased padding for margin from edges */
+                box-sizing: border-box;
+              "
             >
               <h5 class="card-title text-center w-100 m-0" id="card-answer">
                 Homeostasis is the process by which living organisms maintain a
@@ -62,15 +87,17 @@
     background-color: transparent;
     width: 100%;
     height: 100%;
-    perspective: 1000px;
+    perspective: 1200px;
     cursor: pointer;
+    position: relative;
   }
   .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.6s cubic-bezier(0.4, 2, 0.6, 1);
+    transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
     transform-style: preserve-3d;
+    will-change: transform;
   }
   .flip-card.flipped .flip-card-inner {
     transform: rotateY(180deg);
@@ -80,9 +107,15 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    border-radius: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e3f2e1;
+    font-size: 1.2rem;
     backface-visibility: hidden;
-    top: 0;
-    left: 0;
+    transition: box-shadow 0.2s;
   }
   .flip-card-back {
     transform: rotateY(180deg);
@@ -123,71 +156,74 @@
       header: "Module 5: Heredity",
       question:
         "Q.2: Name three key components of a homeostatic feedback system.",
-      answer: "A: Receptor, control centre, effector.",
+      answer: "Receptor, control centre, effector.",
     },
     {
       header: "Module 5: Heredity",
       question: "Q.3: What role do receptors play in homeostasis?",
       answer:
-        "A: Receptors detect changes in the internal environment and send information to the control centre.",
+        "Receptors detect changes in the internal environment and send information to the control centre.",
     },
     {
       header: "Module 5: Heredity",
       question: "Q.4: What is negative feedback? ",
       answer:
-        "A: Negative feedback is a process that counteracts a change in a physiological variable, helping to restore it to its set point. ",
+        "Negative feedback is a process that counteracts a change in a physiological variable, helping to restore it to its set point. ",
     },
     {
       header: "Module 5: Heredity",
       question:
         "Q.5: Give an example of a negative feedback mechanism in the human body.",
       answer:
-        "A: Regulation of body temperature; when body temperature rises, mechanisms such as sweating are activated to cool down the body. ",
+        "Regulation of body temperature; when body temperature rises, mechanisms such as sweating are activated to cool down the body. ",
     },
     {
       header: "Module 5: Heredity",
       question:
         "Q.6: What is the role of the hypothalamus in thermoregulation?",
       answer:
-        "A: The hypothalamus acts as the control centre for temperature regulation, detecting body temperature changes and initiating responses to maintain homeostasis. ",
+        "The hypothalamus acts as the control centre for temperature regulation, detecting body temperature changes and initiating responses to maintain homeostasis. ",
     },
     {
       header: "Module 5: Heredity",
       question: "Q.7: What is osmoregulation?",
       answer:
-        "A: Osmoregulation is the process by which organisms regulate the balance of water and electrolytes in their bodies.",
+        "Osmoregulation is the process by which organisms regulate the balance of water and electrolytes in their bodies.",
     },
     {
       header: "Module 5: Heredity",
       question: "Q.8: How do kidneys contribute to homeostasis?",
       answer:
-        "A: Kidneys filter blood, removing waste and excess substances while regulating water and electrolyte balance.",
+        "Kidneys filter blood, removing waste and excess substances while regulating water and electrolyte balance.",
     },
     {
       header: "Module 5: Heredity",
       question:
         "Q.9: What is the difference between endotherms and ectotherms?",
       answer:
-        "A: Endotherms generate their own heat to maintain body temperature, while ectotherms rely on external sources for heat.",
+        "Endotherms generate their own heat to maintain body temperature, while ectotherms rely on external sources for heat.",
     },
     {
       header: "Module 5: Heredity",
       question: "Q.10: Explain the term 'metabolism.'",
       answer:
-        "A: Metabolism refers to all the chemical reactions that occur within an organism to maintain life, including energy production and consumption.",
+        "Metabolism refers to all the chemical reactions that occur within an organism to maintain life, including energy production and consumption.",
     },
   ];
 
   let currentIndex = 0;
   const card = document.getElementById("flashcard");
+  const cardInner = document.getElementById("flip-card-inner");
   const prevBtn = document.getElementById("prev-btn");
   const nextBtn = document.getElementById("next-btn");
   const cardHeader = document.getElementById("card-header");
   const cardQuestion = document.getElementById("card-question");
   const cardAnswer = document.getElementById("card-answer");
 
-  // Flip card on click
-  card.addEventListener("click", function () {
+  // Flip card on click (Quizlet-like physical flip)
+  card.addEventListener("click", function (e) {
+    // Prevent flip if nav button is clicked
+    if (e.target === prevBtn || e.target === nextBtn) return;
     card.classList.toggle("flipped");
   });
 
@@ -196,7 +232,7 @@
     e.stopPropagation(); // Prevent flip on button click
     card.classList.remove("flipped");
     currentIndex = (currentIndex + 1) % flashcards.length;
-    updateCard();
+    setTimeout(updateCard, 350); // Wait for half the flip animation
   });
 
   // Show previous card
@@ -204,7 +240,7 @@
     e.stopPropagation(); // Prevent flip on button click
     card.classList.remove("flipped");
     currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
-    updateCard();
+    setTimeout(updateCard, 350); // Wait for half the flip animation
   });
 
   function updateCard() {

@@ -1,0 +1,312 @@
+{% extends 'layout.html' %} {% block content %} {% include
+"partials/svg_symbols.html" %}
+<style>
+  table.table-hover th,
+  table.table-hover td,
+  table.table-hover thead th,
+  table.table-hover tbody td {
+    border-color: transparent !important; /* Remove all borders */
+    border-width: 0 !important;
+  }
+  table.table-hover thead tr th {
+    border-bottom: 2px solid #afafaf !important; /* Only bottom border for header row */
+  }
+</style>
+<div class="container-fluid custom-content m-0 p-0">
+  <main class="container" style="margin-top: 80px">
+    <div class="row g-5">
+      <div class="col-md-8">
+        <article class="blog-post">
+          <h1>Weekly Study Schedule Design Guide</h1>
+          <div class="border-bottom mt-0 custom-grey-border"></div>
+          <p class="blog-post-meta">July 15, 2025 by <a href="#">MyHSC</a></p>
+          <p>Build a routine with balance - one week at a time</p>
+          <p>
+            You don’t need to study 10 hours a day to do well in the HSC—you
+            just need a plan. A smart weekly study schedule turns your goals
+            into a <strong> realistic routine</strong> and helps you use time
+            efficiently across your subjects. This guide will walk you through
+            how to design a weekly study schedule that actually works—one that
+            adapts to your life, boosts your consistency, and helps you avoid
+            last-minute panic.
+          </p>
+          <img
+            src="{{ url_for('static', filename='images/routine.png') }}"
+            alt="Routine Illustration"
+            class="img-fluid my-3 d-block mx-auto"
+            style="max-width: 100%; height: auto"
+          />
+          <h2>🎯 Step 1: Set Out Your Weekly Priorities</h2>
+          <p>
+            Start by looking at your week as a whole. Identify your
+            <strong>non-negotiables</strong>. These non-negotiables are
+            activities that you should maintain even in busy periods of time
+            such as sport and a social life. Although the HSC is a critical
+            point in your schooling career, you do not have to overcompromise.
+            Here are some things to consider:
+          </p>
+          <ul>
+            <li>How many hours of free time you have outside school/work</li>
+            <li>
+              Which subjects need the most attention (based on recent
+              performance or upcoming assessments)
+            </li>
+            <li>What deadlines or exams are approaching</li>
+            <li>
+              What non-negotiables you have (e.g., sport, work, family events)
+            </li>
+          </ul>
+          <pre><i>
+✏️ Write this down. You’re planning around your life, not replacing it.</i></pre>
+          <h2>🧠 Step 2: Break Down Your To-Dos</h2>
+          <p>
+            Aim to touch each subject at least twice per week, but give more
+            time to ones you find harder or that have upcoming assessments.
+          </p>
+          <p>
+            Here is an <strong>example</strong> of your weekly subject
+            distribution:
+          </p>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Subject</th>
+                <th scope="col">Sessions/Week</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>English Advanced</td>
+                <td>3 (writing, feedback, revision)</td>
+              </tr>
+              <tr>
+                <td>Maths Advanced</td>
+                <td>2 (revision questions, notes)</td>
+              </tr>
+              <tr>
+                <td>Design and Technology</td>
+                <td>3 (practical, portfolio, theory)</td>
+              </tr>
+              <tr>
+                <td>Physics</td>
+                <td>3 (notes, questions, revision)</td>
+              </tr>
+              <tr>
+                <td>Biology</td>
+                <td>2 (summarise notes, practice questions)</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>🕒 Step 3: Use Time Blocks, Not Exact Times</h2>
+          <p>
+            Studying in flexible blocks (e.g., 1-hour sessions) is more
+            manageable than strict hour-by-hour rules.
+          </p>
+          <p>Have a look at our example to structure your timeblocks:</p>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Afternoon Block</th>
+                <th scope="col">Evening Block</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>Biology Notes</td>
+                <td>English Mod A Essay</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>Maths Summary Notes</td>
+                <td>Physics Past Paper</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>DT Practical</td>
+                <td>English Mod B Feedback</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>Maths Revision Question</td>
+                <td>DT Portfolio</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>Practice Paper (any subject)</td>
+                <td>Relax/Free Time</td>
+              </tr>
+            </tbody>
+          </table>
+          <pre><i>✏️ Use a digital calendar or planner to block out these sessions.Adjust the planner to suit your schedule</i></pre>
+          <h2>🔄 Step 4: Make It a Routine (But Stay Flexible)</h2>
+          Consistency beats perfection. Here’s how to make it stick:
+          <ul>
+            <li>
+              <strong>Study at the same time</strong> each day (e.g., 4–5pm
+              after school)
+            </li>
+            <li>Start with what’s hardest while your mind is fresh</li>
+            <li>
+              Use timers like<strong> Pomodoro</strong>- we have our own in
+              built timer, check it out in tools!
+            </li>
+            <li>
+              <strong>Leave space for life </strong>— buffer blocks help catch
+              up when things change
+            </li>
+          </ul>
+          <p>
+            Remember: your study plan should work <i>with</i> you, not against
+            you.
+          </p>
+          <h2>Weekly Study Planner Template</h2>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Morning Block</th>
+                <th scope="col">Afternoon Block</th>
+                <th scope="col">Evening Block</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 7rem">
+          <!-- Related posts card -->
+          <div class="p-4 mb-4 rounded shadow-sm" style="background: #ebded4">
+            <h4 class="fst-italic mb-3">Related posts</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3">
+                <a
+                  class="d-flex align-items-center gap-3 text-decoration-none link-body-emphasis"
+                  href="goals.html"
+                >
+                  <img
+                    src="{{ url_for('static', filename='images/goals.png') }}"
+                    alt="Goal Setting"
+                    class="rounded"
+                    style="width: 56px; height: 56px; object-fit: cover"
+                  />
+                  <div>
+                    <h6 class="mb-0">Goal Setting</h6>
+                    <small class="text-body-secondary">April 10, 2025</small>
+                  </div>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a
+                  class="d-flex align-items-center gap-3 text-decoration-none link-body-emphasis"
+                  href="decon_eq.html"
+                >
+                  <img
+                    src="{{ url_for('static', filename='images/decon.png') }}"
+                    alt="Deconstructing Exam Questions"
+                    class="rounded"
+                    style="width: 56px; height: 56px; object-fit: cover"
+                  />
+                  <div>
+                    <h6 class="mb-0">Deconstructing Exam Questions</h6>
+                    <small class="text-body-secondary">January 14, 2024</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="d-flex align-items-center gap-3 text-decoration-none link-body-emphasis"
+                  href="cube.html"
+                >
+                  <img
+                    src="{{ url_for('static', filename='images/CUBE.png') }}"
+                    alt="C.U.B.E."
+                    class="rounded"
+                    style="width: 56px; height: 56px; object-fit: cover"
+                  />
+                  <div>
+                    <h6 class="mb-0">C.U.B.E.</h6>
+                    <small class="text-body-secondary">May 06, 2025</small>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- About card -->
+          <div class="p-4 mb-4 rounded shadow-sm" style="background: #ebded4">
+            <h4 class="fst-italic">MyHSC</h4>
+            <p class="mb-0">
+              MyHSC is a platform for Year 12 students to take control of their
+              HSC and learn more study strategies, exam techniques and tools to
+              help them succeed in their final year of highschool.
+            </p>
+          </div>
+          <!-- Related pages card -->
+          <div class="p-4 rounded shadow-sm" style="background: #ebded4">
+            <h4 class="fst-italic">Related Pages</h4>
+            <ol class="list-unstyled mb-0">
+              <li>
+                <a
+                  href="https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/Understanding-the-curriculum/syllabuses-a-z"
+                  >NESA Stage 6 Syllabus</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/resources/hsc-exam-papers"
+                  >NESA Offical Past Papers</a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+{%endblock%}

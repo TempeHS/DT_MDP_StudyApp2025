@@ -1,0 +1,65 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container mt-5 pt-5">
+  <h1 class="text-center mb-4">Biology Flashcards</h1>
+  <div class="row justify-content-center">
+    <!-- Module 5 Card -->
+    <div class="col-md-5 col-lg-4 mb-4">
+      <a
+        href="{{ url_for('biology') }}"
+        style="text-decoration: none; color: inherit"
+      >
+        <div class="card h-100 border-success">
+          <div class="card-body">
+            <h5 class="card-title text-success">Module 5: Heredity</h5>
+            <p class="card-text">
+              Explore the mechanisms of inheritance, DNA structure and function,
+              patterns of inheritance, and how heredity ensures the continuity
+              of species.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- Module 6 Card -->
+    <div class="col-md-5 col-lg-4 mb-4">
+      <div class="card h-100 border-success">
+        <div class="card-body">
+          <h5 class="card-title text-success">Module 6: Genetic Change</h5>
+          <p class="card-text">
+            Learn about mutations, gene flow, genetic technologies, and the
+            processes that drive genetic variation and change in populations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Module 7 Card -->
+    <div class="col-md-5 col-lg-4 mb-4">
+      <div class="card h-100 border-success">
+        <div class="card-body">
+          <h5 class="card-title text-success">Module 7: Infectious Disease</h5>
+          <p class="card-text">
+            Understand the causes, transmission, and control of infectious
+            diseases, including the immune response and strategies for disease
+            prevention.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Module 8 Card -->
+    <div class="col-md-5 col-lg-4 mb-4">
+      <div class="card h-100 border-success">
+        <div class="card-body">
+          <h5 class="card-title text-success">
+            Module 8: Non-infectious Disease
+          </h5>
+          <p class="card-text">
+            Examine non-infectious diseases and disorders, their causes, effects
+            on the body, and the technologies used for their detection and
+            management.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

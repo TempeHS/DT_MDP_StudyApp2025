@@ -1,31 +1,200 @@
 {% extends 'layout.html' %} {% block content %}
 <div class="container mt-5 pt-5">
-  <h1>Syllabus tracking</h1>
-  <div id="entries-container">
-    {% for entry in syllabus_entries %}
-    <div class="card mb-3 entry-card">
-      <div class="card-body">
-        <h5 class="card-title">
-          <strong>Subject:</strong> {{ entry.subject }}
-        </h5>
-        <p class="card-text">
-          <strong>Module Number:</strong> {{ entry.module_number }}
-        </p>
-        <p class="card-text">
-          <strong>Module Name:</strong> {{ entry.module_name }}
-        </p>
-        <p class="card-text"><strong>Topic:</strong> {{ entry.topic }}</p>
-        <p class="card-text">
-          <strong>Inquiry Question:</strong> {{ entry.inquiry_question }}
-        </p>
-        <p class="card-text"><strong>Syllabus:</strong> {{ entry.syllabus }}</p>
+  <h1 class="text-center mb-4" style="white-space: nowrap">
+    Syllabus tracking
+  </h1>
+  <div class="d-flex flex-wrap justify-content-center mb-4 gap-2">
+    <a href="{{ url_for('samplesyllabus') }}">
+      <button
+        class="btn btn-outline-success mx-2 mb-2"
+        style="min-width: 120px"
+      >
+        Biology
+      </button>
+    </a>
+    <a href="{{ url_for('syllabusplaceholder') }}">
+      <button
+        class="btn btn-outline-primary mx-2 mb-2"
+        style="min-width: 120px"
+      >
+        Physics
+      </button>
+    </a>
+    <a href="{{ url_for('syllabusplaceholder') }}">
+      <button
+        class="btn btn-outline-warning mx-2 mb-2"
+        style="min-width: 120px"
+      >
+        Advanced English
+      </button>
+    </a>
+    <a href="{{ url_for('syllabusplaceholder') }}">
+      <button class="btn btn-outline-danger mx-2 mb-2" style="min-width: 120px">
+        Maths
+      </button>
+    </a>
+    <a href="{{ url_for('syllabusplaceholder') }}">
+      <button class="btn btn-outline-dark mx-2 mb-2" style="min-width: 120px">
+        Software Engineering
+      </button>
+    </a>
+    <a href="{{ url_for('syllabusplaceholder') }}">
+      <button
+        class="btn btn-outline-secondary mx-2 mb-2"
+        style="min-width: 120px"
+      >
+        Design and Technology
+      </button>
+    </a>
+  </div>
+
+  <!-- Syllabus Tracking Feature Sample & Explanation -->
+  <div class="row justify-content-center mt-5">
+    <div class="col-12 col-md-10 col-lg-8">
+      <div class="card shadow-lg border-0" style="background: #f4faef">
+        <div class="card-body">
+          <h3 class="mb-3 text-success">
+            <svg
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-clipboard-check"
+              viewBox="0 0 16 16"
+              style="vertical-align: middle"
+            >
+              <use xlink:href="#clipboard-check" />
+            </svg>
+            Try Syllabus Tracking!
+          </h3>
+          <p>
+            <strong>Stay on top of your studies</strong> by tracking your
+            progress for every syllabus dot point. Mark your confidence, see
+            your strengths, and focus on what needs work!
+          </p>
+          <div class="alert alert-info mb-4" style="font-size: 1rem">
+            <strong>How it works:</strong> For each syllabus outcome, select
+            your confidence level. The colour will update to show your progress.
+            Come back and update as you improve!
+          </div>
+          <!-- Interactive Sample Syllabus Table -->
+          <div class="table-responsive">
+            <table
+              class="table table-bordered align-middle text-center"
+              style="background: #fff"
+            >
+              <thead class="table-success">
+                <tr>
+                  <th style="width: 60%">Syllabus Outcome</th>
+                  <th style="width: 40%">Your Confidence</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-start">
+                    Explain the mechanisms of reproduction that ensure the
+                    continuity of a species.
+                  </td>
+                  <td>
+                    <select
+                      class="form-select confidence-select"
+                      style="min-width: 120px; max-width: 100%"
+                    >
+                      <option value="default" selected>Choose...</option>
+                      <option value="success">Confident</option>
+                      <option value="warning">Moderately confident</option>
+                      <option value="danger">Not confident</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-start">
+                    Analyse the features of fertilisation, implantation and
+                    hormonal control of pregnancy and birth in mammals.
+                  </td>
+                  <td>
+                    <select
+                      class="form-select confidence-select"
+                      style="min-width: 120px; max-width: 100%"
+                    >
+                      <option value="default" selected>Choose...</option>
+                      <option value="success">Confident</option>
+                      <option value="warning">Moderately confident</option>
+                      <option value="danger">Not confident</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-start">
+                    Evaluate the impact of scientific knowledge on the
+                    manipulation of plant and animal reproduction in
+                    agriculture.
+                  </td>
+                  <td>
+                    <select
+                      class="form-select confidence-select"
+                      style="min-width: 120px; max-width: 100%"
+                    >
+                      <option value="default" selected>Choose...</option>
+                      <option value="success">Confident</option>
+                      <option value="warning">Moderately confident</option>
+                      <option value="danger">Not confident</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mt-3 d-flex flex-wrap gap-2">
+            <span class="badge bg-success" style="font-size: 1em"
+              >Confident</span
+            >
+            <span class="badge bg-warning text-dark" style="font-size: 1em"
+              >Moderately confident</span
+            >
+            <span class="badge bg-danger" style="font-size: 1em"
+              >Not confident</span
+            >
+            <span class="ms-2 text-muted" style="font-size: 0.95em"
+              >Update these as you learn!</span
+            >
+          </div>
+        </div>
       </div>
     </div>
-    {% endfor %} {% if not syllabus_entries %}
-    <div class="alert alert-info mt-3">
-      No syllabus content found for this subject.
-    </div>
-    {% endif %}
   </div>
 </div>
+
+<!-- SVG symbol for clipboard-check if not already included -->
+<svg style="display: none">
+  <symbol id="clipboard-check" viewBox="0 0 16 16">
+    <path
+      d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+    />
+    <path
+      d="M4 1.5A1.5 1.5 0 0 1 5.5 0h5A1.5 1.5 0 0 1 12 1.5V2h1.5A1.5 1.5 0 0 1 15 3.5v11A1.5 1.5 0 0 1 13.5 16h-11A1.5 1.5 0 0 1 1 14.5v-11A1.5 1.5 0 0 1 2.5 2H4v-.5zm1 0V2h6v-.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0-.5.5zM2.5 3A.5.5 0 0 0 2 3.5v11a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5H13v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1H2.5z"
+    />
+  </symbol>
+</svg>
+
+<script>
+  // Interactive color change for confidence selects
+  document.querySelectorAll(".confidence-select").forEach(function (select) {
+    select.addEventListener("change", function () {
+      select.classList.remove(
+        "bg-success",
+        "bg-warning",
+        "bg-danger",
+        "text-dark",
+        "text-white"
+      );
+      if (select.value === "success") {
+        select.classList.add("bg-success", "text-white");
+      } else if (select.value === "warning") {
+        select.classList.add("bg-warning", "text-dark");
+      } else if (select.value === "danger") {
+        select.classList.add("bg-danger", "text-white");
+      }
+    });
+  });
+</script>
 {% endblock %}

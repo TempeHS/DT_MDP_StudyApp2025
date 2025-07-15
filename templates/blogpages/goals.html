@@ -1,15 +1,9 @@
-{% extends 'layout.html' %} {% block content %} {% include
-"partials/svg_symbols.html" %}
-<div class="container-fluid custom-content m-0 p-0">
-  <header class="border-bottom lh-1 py-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-4 d-flex justify-content-end align-items-center">
-        <a class="btn btn-sm btn-outline-secondary" href="/home.html">Home</a>
-      </div>
-    </div>
-  </header>
+{% extends 'layout.html' %} 
+{% block content %} 
+{% include "partials/svg_symbols.html" %}
 
-  <main class="container">
+<div class="container-fluid custom-content m-0 p-0">
+  <main class="container" style="margin-top: 80px;">
     <div class="row g-5">
       <div class="col-md-8">
         <article class="blog-post">
@@ -22,100 +16,100 @@
           <hr />
           <h2>Why Goal Setting Matters in the HSC</h2>
           <p> Without goals, your HSC journey can become unfocused. You might spend time on tasks that aren’t as important or feel unsure about where to start. Setting specific goals helps you prioritise what’s most critical, whether it’s improving your exam technique, lifting your internal marks, or completing study notes by a certain date. Goals create purpose, track your progress, and help you measure your success along the way.</p>
-
-            <p>In fact, goal setting is proven to improve performance because it gives you something to aim for. It can also increase motivation, help you manage stress, and boost your confidence as you achieve smaller milestones on the path to your bigger HSC outcomes.</p>
-        <h2>SMART Goals: The Key to Effective Goal Setting</h2>
-            <p>One of the best ways to set effective goals is to use the <strong>SMART goal </strong>framework:</p>
-            <p><ul>
+          <p>In fact, goal setting is proven to improve performance because it gives you something to aim for. It can also increase motivation, help you manage stress, and boost your confidence as you achieve smaller milestones on the path to your bigger HSC outcomes.</p>
+          <h2>SMART Goals: The Key to Effective Goal Setting</h2>
+          <p>One of the best ways to set effective goals is to use the <strong>SMART goal </strong>framework:</p>
+          <p>
+            <ul>
               <li><strong>S</strong>pecific: Your goal should be clear and specific, not vague. Instead of saying "I want to do well in English," say "I want to improve my essay writing skills by practicing one essay per week."</li>
               <li><strong>M</strong>easurable: You should be able to track your progress. For example, "I will complete 10 past paper questions by the end of the month."</li>
               <li><strong>A</strong>chievable: Your goal should be realistic and attainable. Don't set yourself up for failure with goals that are too ambitious.</li>
               <li><strong>R</strong>elevant: Make sure your goal aligns with your overall HSC objectives. It should contribute to your success in the subjects you care about.</li>
-              <li><strong>T</strong>ime-bound: Set a deadline for your goal. This creates urgency and helps you stay on track.</li></ul></p>
-        <h2>Short-term vs Long-term Goals</h2>
-        <p>Effective HSC goal setting should include a mix of both <strong>short-term</strong> and <strong>long-term</strong> goals.</p>
-        <ul><li><strong>Short-term goals:</strong> These might focus on daily or weekly targets, like finishing study notes for a module, completing a practice essay, or revising a particular topic.</li></ul>
-        <ul><li><strong>Long-term goals:</strong> These could focus on your trial exam performance, ATAR target, or the amount of consistent study you want to build over the year.</li></ul>
+              <li><strong>T</strong>ime-bound: Set a deadline for your goal. This creates urgency and helps you stay on track.</li>
+            </ul>
+          </p>
+          <h2>Short-term vs Long-term Goals</h2>
+          <p>Effective HSC goal setting should include a mix of both <strong>short-term</strong> and <strong>long-term</strong> goals.</p>
+          <ul>
+            <li><strong>Short-term goals:</strong> These might focus on daily or weekly targets, like finishing study notes for a module, completing a practice essay, or revising a particular topic.</li>
+          </ul>
+          <ul>
+            <li><strong>Long-term goals:</strong> These could focus on your trial exam performance, ATAR target, or the amount of consistent study you want to build over the year.</li>
+          </ul>
         </article>
       </div>
-
       <div class="col-md-4">
-        <div class="position-sticky" style="top: 2rem">
-          <div class="p-4 mb-3 rounded custom-light-blue">
-            <h4 class="fst-italic"></h4>
-          </div>
-
-          <div>
-            <h4 class="fst-italic">Recent posts</h4>
-            <ul class="list-unstyled">
-                <li>
-                    <a
-                      class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                      href="decon_eq.html"
-                    >
-                    <img
+        <div class="position-sticky" style="top: 7rem">
+          <!-- Related posts card -->
+          <div class="p-4 mb-4 rounded shadow-sm" style="background: #ebded4">
+            <h4 class="fst-italic mb-3">Related posts</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3">
+                <a
+                  class="d-flex align-items-center gap-3 text-decoration-none link-body-emphasis"
+                  href="decon_eq.html"
+                >
+                  <img
                     src="{{ url_for('static', filename='images/decon.png') }}"
-                    alt="address the verb"
-                    class="bd-placeholder-img"
-                    style="width: 96px; height: 96px; object-fit: cover"
+                    alt="Deconstructing Exam Questions"
+                    class="rounded"
+                    style="width: 56px; height: 56px; object-fit: cover"
                   />
-                        <rect width="100%" height="100%" fill="#777" />
-                      </svg>
-                      <div class="col-lg-8">
-                        <h6 class="mb-0">Deconstructing Exam Questions</h6>
-                        <small class="text-body-secondary">January 14, 2024</small>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
-                      href="cube.html"
-                    >
-                    <img
+                  <div>
+                    <h6 class="mb-0">Deconstructing Exam Questions</h6>
+                    <small class="text-body-secondary">January 14, 2024</small>
+                  </div>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a
+                  class="d-flex align-items-center gap-3 text-decoration-none link-body-emphasis"
+                  href="cube.html"
+                >
+                  <img
                     src="{{ url_for('static', filename='images/CUBE.png') }}"
                     alt="C.U.B.E."
-                    class="bd-placeholder-img"
-                    style="width: 96px; height: 96px; object-fit: cover"
+                    class="rounded"
+                    style="width: 56px; height: 56px; object-fit: cover"
                   />
-                        <rect width="100%" height="100%" fill="#777" />
-                      </svg>
-                      <div class="col-lg-8">
-                        <h6 class="mb-0">C.U.B.E.</h6>
-                        <small class="text-body-secondary">May 06 2025</small>
-                      </div>
-                    </a>
-                  </li>
+                  <div>
+                    <h6 class="mb-0">C.U.B.E.</h6>
+                    <small class="text-body-secondary">May 06, 2025</small>
+                  </div>
+                </a>
+              </li>
               <li>
                 <a
-                  class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                  class="d-flex align-items-center gap-3 text-decoration-none link-body-emphasis"
                   href="addressverb.html"
                 >
                   <img
                     src="{{ url_for('static', filename='images/addressverb.png') }}"
-                    alt="address the verb"
-                    class="bd-placeholder-img"
-                    style="width: 96px; height: 96px; object-fit: cover"
+                    alt="Addressing the Verb"
+                    class="rounded"
+                    style="width: 56px; height: 56px; object-fit: cover"
                   />
-                  <div class="col-lg-8">
+                  <div>
                     <h6 class="mb-0">Addressing the Verb</h6>
                     <small class="text-body-secondary">April 10, 2025</small>
                   </div>
                 </a>
               </li>
             </ul>
-            <div class="p-4 mb-3 rounded custom-light-blue">
-              <h4 class="fst-italic">MyHSC</h4>
-              <p class="mb-0">
-                MyHSC is a platform for Year 12 students to take control of
-                their HSC and learn more study strategies, exam techniques and
-                tools to help them succeed in their final year of highschool.
-              </p>
-            </div>
           </div>
-          <div class="p-4">
+          <!-- About card -->
+          <div class="p-4 mb-4 rounded shadow-sm" style="background: #ebded4">
+            <h4 class="fst-italic">MyHSC</h4>
+            <p class="mb-0">
+              MyHSC is a platform for Year 12 students to take control of their
+              HSC and learn more study strategies, exam techniques and tools to
+              help them succeed in their final year of highschool.
+            </p>
+          </div>
+          <!-- Related pages card -->
+          <div class="p-4 rounded shadow-sm" style="background: #ebded4">
             <h4 class="fst-italic">Related Pages</h4>
-            <ol class="list-unstyled">
+            <ol class="list-unstyled mb-0">
               <li>
                 <a
                   href="https://educationstandards.nsw.edu.au/wps/portal/nesa/11-12/Understanding-the-curriculum/syllabuses-a-z"
@@ -131,9 +125,8 @@
             </ol>
           </div>
         </div>
-
-        {% endblock %}
       </div>
     </div>
   </main>
 </div>
+{% endblock %}
