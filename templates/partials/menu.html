@@ -31,13 +31,38 @@
           <a href="/home.html" class="nav-link" title="Home">Home</a>
         </li>
         <!-- Blogs -->
-        <li class="nav-item">
-          <a class="nav-link" href="/blogs">Blogs</a>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="/blogs"
+            id="blogsDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Blogs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="blogsDropdown">
+            <li>
+              <a class="dropdown-item" href="/blogs">All Blogs</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/decon_eq.html">Exam Strategies</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/wheredoistart.html"
+                >Study + Preparation</a
+              >
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="syllabus.html">Syllabus Tracking</a>
         </li>
-        <!-- Dropdown for Study -->
+        <li class="nav-item">
+          <a class="nav-link" href="/flashcardoption.html">Flashcards</a>
+        </li>
+        <!-- Dropdown for tools -->
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -47,14 +72,9 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Study
+            Tools
           </a>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li>
-              <a class="dropdown-item" href="/flashcardoption.html"
-                >Flashcards</a
-              >
-            </li>
             <li>
               <a class="dropdown-item" href="/stopwatch.html">Stopwatch</a>
             </li>

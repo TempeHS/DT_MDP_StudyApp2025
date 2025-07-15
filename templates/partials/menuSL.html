@@ -57,12 +57,11 @@
 
 <!-- Login Modal -->
 <div
-  class="modal fade {% if error %}show d-block{% endif %}"
+  class="modal fade"
   id="loginModal"
   tabindex="-1"
   aria-labelledby="loginModalLabel"
-  aria-hidden="{{ 'false' if error else 'true' }}"
-  style="{% if error %}background: rgba(0,0,0,0.5);{% endif %}"
+  aria-hidden="true"
 >
   <div class="modal-dialog">
     <div class="modal-content">
@@ -147,9 +146,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="signupModalLabel">
-          Sign Up to get started!
-        </h5>
+        <h5 class="modal-title" id="signupModalLabel">Create an account</h5>
         <button
           type="button"
           class="btn-close"
@@ -158,13 +155,38 @@
         ></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form id="signupForm" method="POST" action="/signup">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
           <div class="mb-3">
             <label for="signupEmail" class="form-label">Email address</label>
             <input
               type="email"
               class="form-control"
               id="signupEmail"
+              name="email"
+              placeholder="example@email.com"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="signupFirstName" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="signupFirstName"
+              name="first_name"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="signupLastName" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="signupLastName"
+              name="last_name"
+              placeholder="Enter your last name"
               required
             />
           </div>
@@ -174,6 +196,8 @@
               type="password"
               class="form-control"
               id="signupPassword"
+              name="password"
+              placeholder="Password"
               required
             />
           </div>
@@ -185,21 +209,24 @@
               type="password"
               class="form-control"
               id="signupConfirmPassword"
+              name="confirm_password"
+              placeholder="Confirm Password"
               required
             />
-            <input type="checkbox" onclick="toggleSignupPasswordVisibility()" />
-            Show Password
+            <div class="mt-2">
+              <input
+                type="checkbox"
+                onclick="toggleSignupPasswordVisibility()"
+              />
+              Show Password
+            </div>
           </div>
           <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-success w-75">Sign Up</button>
           </div>
         </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Close
-        </button>
-      </div>
+      <div class="modal-footer"></div>
     </div>
   </div>
 </div>
