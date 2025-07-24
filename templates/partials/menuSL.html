@@ -107,14 +107,11 @@
             Password
           </div>
           <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary w-75">Login</button>
+            <button type="submit" class="btn btn-login-modal w-75">
+              Login
+            </button>
           </div>
         </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Close
-        </button>
       </div>
     </div>
   </div>
@@ -222,7 +219,9 @@
             </div>
           </div>
           <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-success w-75">Sign Up</button>
+            <button type="submit" class="btn btn-signup-modal w-75">
+              Sign Up
+            </button>
           </div>
         </form>
       </div>
@@ -243,3 +242,29 @@
     }
   }
 </script>
+
+<style>
+  /* Add this style block near the top or inside <head> if possible */
+  .btn-login-modal {
+    background-color: #a4b792 !important;
+    color: #fff !important;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn-login-modal:hover,
+  .btn-login-modal:focus {
+    background-color: #6b8e23 !important;
+    color: #fff !important;
+  }
+  .btn-signup-modal {
+    background-color: #a4b792 !important;
+    color: #fff !important;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn-signup-modal:hover,
+  .btn-signup-modal:focus {
+    background-color: #6b8e23 !important;
+    color: #fff !important;
+  }
+</style>

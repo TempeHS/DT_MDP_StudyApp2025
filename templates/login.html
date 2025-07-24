@@ -66,13 +66,24 @@
     width: 100vw;
     margin: 32px 0 32px 0;
   }
+  .fade-in-text {
+    opacity: 0;
+    transition: opacity 1.2s ease;
+  }
+  .fade-in-text.visible {
+    opacity: 1;
+  }
 </style>
 <div class="center-container">
-  <h1 class="text-center mb-4" style="color: #333">
+  <h1 class="text-center mb-4" style="color: #333; font-size: 2.7rem">
     Get started with MyHSC today!
   </h1>
   <img src="/static/icons/logo.png" alt="MyHSC Logo" class="logo-img" />
-  <p class="text-center mt-3" style="max-width: 400px; color: #333">
+  <p
+    class="text-center mt-3 fade-in-text"
+    id="introText"
+    style="max-width: 600px; color: #333; font-size: 1.35rem"
+  >
     MyHSC helps you track your HSC studies, set goals, and access resources
     tailored to the Stage 6 Syllabus. Log in or sign up to get started and
     unlock your study potential.
@@ -194,4 +205,11 @@
     </div>
   </div>
 </div>
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+      document.getElementById("introText").classList.add("visible");
+    }, 200); // slight delay for effect
+  });
+</script>
 {% endblock %}
