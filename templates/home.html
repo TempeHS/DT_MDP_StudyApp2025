@@ -147,6 +147,19 @@
     Welcome back, {{ user.first_name }}!
   </h2>
   {% endif %}
+  <style>
+    /* Add this style block near the top of your file or inside <head> */
+    .marketing .col-lg-4 {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .marketing .col-lg-4.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
   <div class="container marketing">
     <div class="row">
       <div class="col-lg-4">
@@ -203,4 +216,15 @@
     </div>
   </div>
 </main>
+<script>
+  // Fade in each .col-lg-4 in .marketing one after another
+  window.addEventListener("DOMContentLoaded", function () {
+    const cols = document.querySelectorAll(".marketing .col-lg-4");
+    cols.forEach((col, i) => {
+      setTimeout(() => {
+        col.classList.add("visible");
+      }, 350 * i); // 350ms stagger
+    });
+  });
+</script>
 {% endblock %}
