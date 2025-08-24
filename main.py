@@ -1,9 +1,7 @@
-from flask import Flask, redirect, render_template, request, session, Blueprint, jsonify
+from flask import Flask, redirect, render_template, request, session, Blueprint
 from flask_wtf import CSRFProtect
-from flask_csp.csp import csp_header
 import logging
 import database_manager as dbHandler
-import json
 import sqlite3
 
 # Code snippet for logging a message
@@ -25,6 +23,7 @@ csrf = CSRFProtect(app)
 # Define the blogpages blueprint
 blogpages = Blueprint('blogpages', __name__, template_folder='templates/blogpages')
 
+# Route for blog pages
 @blogpages.route('/blogs')
 def blogs():
     user = session.get('user')  
@@ -33,6 +32,7 @@ def blogs():
     else:
         return redirect("/login")  
 
+# Blog page for deconstructing exam questions
 @blogpages.route('/decon_eq.html')
 def deconstruct():
     user = session.get('user') 
@@ -40,7 +40,8 @@ def deconstruct():
         return render_template('decon_eq.html', user=user)
     else:
         return redirect("/login")  
-    
+
+# Blog page for CUBE exam deconstruction 
 @blogpages.route('/cube.html')
 def cube():
     user = session.get('user')  
@@ -49,6 +50,7 @@ def cube():
     else:
         return redirect("/login") 
 
+# Blog page for address verb
 @blogpages.route('/addressverb.html')
 def verb():
     user = session.get('user') 
@@ -57,6 +59,7 @@ def verb():
     else:
         return redirect("/login") 
     
+# Blog page for exam preparation
 @blogpages.route('/wheredoistart.html')
 def wheredoistart():
     user = session.get('user')  
@@ -64,7 +67,8 @@ def wheredoistart():
         return render_template('wheredoistart.html', user=user)
     else:
         return redirect("/login") 
-    
+
+# Blog page for setting goals effectively 
 @blogpages.route('/goals.html')
 def goals():
     user = session.get('user')  
@@ -73,6 +77,7 @@ def goals():
     else:
         return redirect("/login") 
 
+# Blog page for an exam study plan guide
 @blogpages.route('/examstudyplan.html')
 def examstudyplan():
     user = session.get('user')
@@ -116,6 +121,7 @@ def home():
         return render_template("home.html", user=user)
     else:
         return redirect("/login")  
+
 
 @app.route("/login", methods=["GET", "POST"])
 def login():

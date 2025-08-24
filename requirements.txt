@@ -1,4 +1,0 @@
-Flask
-bcrypt
-flask_wtf
-flask-csp
