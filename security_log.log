@@ -6220,3 +6220,198 @@
 2025-02-25 02:52:43,697 127.0.0.1 - - [25/Feb/2025 02:52:43] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
 2025-02-25 02:52:43,701 127.0.0.1 - - [25/Feb/2025 02:52:43] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
 2025-02-25 02:52:43,982 127.0.0.1 - - [25/Feb/2025 02:52:43] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-08-10 03:11:50,203 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.123:5000
+2025-08-10 03:11:50,203 [33mPress CTRL+C to quit[0m
+2025-08-10 03:11:50,204  * Restarting with stat
+2025-08-10 03:11:50,441  * Debugger is active!
+2025-08-10 03:11:50,442  * Debugger PIN: 232-490-687
+2025-08-10 03:11:54,263 127.0.0.1 - - [10/Aug/2025 03:11:54] "GET /?id=315b1517-a791-4721-a216-d75ae961f6d6&vscodeBrowserReqId=1754795512314 HTTP/1.1" 200 -
+2025-08-10 03:11:55,266 127.0.0.1 - - [10/Aug/2025 03:11:55] "GET / HTTP/1.1" 200 -
+2025-08-10 03:11:55,563 127.0.0.1 - - [10/Aug/2025 03:11:55] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-08-10 03:11:55,607 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-08-10 03:11:55,608 127.0.0.1 - - [10/Aug/2025 03:11:55] "POST /csp_report HTTP/1.1" 200 -
+2025-08-10 03:11:55,609 127.0.0.1 - - [10/Aug/2025 03:11:55] "GET /static/js/popper.min.js HTTP/1.1" 200 -
+2025-08-10 03:11:55,613 127.0.0.1 - - [10/Aug/2025 03:11:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-10 03:11:55,670 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-08-10 03:11:55,671 127.0.0.1 - - [10/Aug/2025 03:11:55] "POST /csp_report HTTP/1.1" 200 -
+2025-08-10 03:11:55,688 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-08-10 03:11:55,689 127.0.0.1 - - [10/Aug/2025 03:11:55] "POST /csp_report HTTP/1.1" 200 -
+2025-08-10 03:11:55,768 127.0.0.1 - - [10/Aug/2025 03:11:55] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-10 03:11:55,819 127.0.0.1 - - [10/Aug/2025 03:11:55] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-08-10 03:11:55,847 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-08-10 03:11:55,848 127.0.0.1 - - [10/Aug/2025 03:11:55] "POST /csp_report HTTP/1.1" 200 -
+2025-08-10 03:12:02,821 127.0.0.1 - - [10/Aug/2025 03:12:02] "GET /login HTTP/1.1" 200 -
+2025-08-10 03:12:02,916 127.0.0.1 - - [10/Aug/2025 03:12:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-10 03:12:02,918 127.0.0.1 - - [10/Aug/2025 03:12:02] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-10 03:12:02,921 127.0.0.1 - - [10/Aug/2025 03:12:02] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-10 03:12:02,925 127.0.0.1 - - [10/Aug/2025 03:12:02] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-10 03:12:16,364 127.0.0.1 - - [10/Aug/2025 03:12:16] "GET /signup HTTP/1.1" 200 -
+2025-08-10 03:12:16,448 127.0.0.1 - - [10/Aug/2025 03:12:16] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-10 03:12:16,450 127.0.0.1 - - [10/Aug/2025 03:12:16] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-10 03:12:16,453 127.0.0.1 - - [10/Aug/2025 03:12:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-10 03:12:16,455 127.0.0.1 - - [10/Aug/2025 03:12:16] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-10 03:14:21,859 127.0.0.1 - - [10/Aug/2025 03:14:21] "GET /login HTTP/1.1" 200 -
+2025-08-10 03:14:22,120 127.0.0.1 - - [10/Aug/2025 03:14:22] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-10 03:14:22,131 127.0.0.1 - - [10/Aug/2025 03:14:22] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-10 03:14:22,135 127.0.0.1 - - [10/Aug/2025 03:14:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-10 03:14:22,150 127.0.0.1 - - [10/Aug/2025 03:14:22] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-10 03:19:55,604 127.0.0.1 - - [10/Aug/2025 03:19:55] "GET /home.html HTTP/1.1" 200 -
+2025-08-10 03:19:55,872 127.0.0.1 - - [10/Aug/2025 03:19:55] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-10 03:19:55,893 127.0.0.1 - - [10/Aug/2025 03:19:55] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-10 03:19:55,914 127.0.0.1 - - [10/Aug/2025 03:19:55] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-10 03:19:55,924 127.0.0.1 - - [10/Aug/2025 03:19:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-10 03:19:55,938 127.0.0.1 - - [10/Aug/2025 03:19:55] "GET /static/icons/logo.png HTTP/1.1" 200 -
+2025-08-10 03:24:53,211 127.0.0.1 - - [10/Aug/2025 03:24:53] "GET / HTTP/1.1" 200 -
+2025-08-10 03:24:53,458 127.0.0.1 - - [10/Aug/2025 03:24:53] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-10 03:24:53,472 127.0.0.1 - - [10/Aug/2025 03:24:53] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-10 03:24:53,498 127.0.0.1 - - [10/Aug/2025 03:24:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-10 03:24:53,506 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-08-10 03:24:53,506 127.0.0.1 - - [10/Aug/2025 03:24:53] "POST /csp_report HTTP/1.1" 200 -
+2025-08-10 03:24:53,508 127.0.0.1 - - [10/Aug/2025 03:24:53] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-10 03:24:53,532 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-08-10 03:24:53,532 127.0.0.1 - - [10/Aug/2025 03:24:53] "POST /csp_report HTTP/1.1" 200 -
+2025-08-10 03:24:53,535 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-08-10 03:24:53,535 127.0.0.1 - - [10/Aug/2025 03:24:53] "POST /csp_report HTTP/1.1" 200 -
+2025-08-10 03:24:53,611 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-08-10 03:24:53,612 127.0.0.1 - - [10/Aug/2025 03:24:53] "POST /csp_report HTTP/1.1" 200 -
+2025-08-10 03:24:55,514 127.0.0.1 - - [10/Aug/2025 03:24:55] "GET /home.html HTTP/1.1" 200 -
+2025-08-10 03:24:55,594 127.0.0.1 - - [10/Aug/2025 03:24:55] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-10 03:24:55,597 127.0.0.1 - - [10/Aug/2025 03:24:55] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-10 03:24:55,599 127.0.0.1 - - [10/Aug/2025 03:24:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-10 03:24:55,603 127.0.0.1 - - [10/Aug/2025 03:24:55] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-10 03:24:55,605 127.0.0.1 - - [10/Aug/2025 03:24:55] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-19 10:26:31,163 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.87:5000
+2025-08-19 10:26:31,217 [33mPress CTRL+C to quit[0m
+2025-08-19 10:26:31,218  * Restarting with stat
+2025-08-19 10:26:31,481  * Debugger is active!
+2025-08-19 10:26:31,482  * Debugger PIN: 133-922-445
+2025-08-19 10:26:37,556 127.0.0.1 - - [19/Aug/2025 10:26:37] "GET /?id=f1f20dc0-6fec-427c-90dd-9987a79ed8a7&vscodeBrowserReqId=1755599191912 HTTP/1.1" 200 -
+2025-08-19 10:26:51,953 127.0.0.1 - - [19/Aug/2025 10:26:51] "GET / HTTP/1.1" 200 -
+2025-08-19 10:26:52,039 127.0.0.1 - - [19/Aug/2025 10:26:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-08-19 10:26:52,282 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-08-19 10:26:52,283 127.0.0.1 - - [19/Aug/2025 10:26:52] "POST /csp_report HTTP/1.1" 200 -
+2025-08-19 10:26:52,288 127.0.0.1 - - [19/Aug/2025 10:26:52] "GET /static/js/popper.min.js HTTP/1.1" 200 -
+2025-08-19 10:26:52,307 127.0.0.1 - - [19/Aug/2025 10:26:52] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-19 10:26:52,311 127.0.0.1 - - [19/Aug/2025 10:26:52] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-19 10:26:52,348 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-08-19 10:26:52,349 127.0.0.1 - - [19/Aug/2025 10:26:52] "POST /csp_report HTTP/1.1" 200 -
+2025-08-19 10:26:52,357 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-08-19 10:26:52,358 127.0.0.1 - - [19/Aug/2025 10:26:52] "POST /csp_report HTTP/1.1" 200 -
+2025-08-19 10:26:52,374 127.0.0.1 - - [19/Aug/2025 10:26:52] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-08-19 10:26:52,405 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-08-19 10:26:52,405 127.0.0.1 - - [19/Aug/2025 10:26:52] "POST /csp_report HTTP/1.1" 200 -
+2025-08-19 10:27:17,149 127.0.0.1 - - [19/Aug/2025 10:27:17] "GET /login HTTP/1.1" 200 -
+2025-08-19 10:27:17,271 127.0.0.1 - - [19/Aug/2025 10:27:17] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-19 10:27:17,273 127.0.0.1 - - [19/Aug/2025 10:27:17] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-19 10:27:17,275 127.0.0.1 - - [19/Aug/2025 10:27:17] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-19 10:27:17,277 127.0.0.1 - - [19/Aug/2025 10:27:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-19 10:28:39,388 127.0.0.1 - - [19/Aug/2025 10:28:39] "GET /signup HTTP/1.1" 200 -
+2025-08-19 10:28:39,652 127.0.0.1 - - [19/Aug/2025 10:28:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-19 10:28:39,654 127.0.0.1 - - [19/Aug/2025 10:28:39] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-19 10:28:39,655 127.0.0.1 - - [19/Aug/2025 10:28:39] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-19 10:28:39,655 127.0.0.1 - - [19/Aug/2025 10:28:39] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-19 10:38:13,344 127.0.0.1 - - [19/Aug/2025 10:38:13] "GET /login HTTP/1.1" 200 -
+2025-08-19 10:38:13,566 127.0.0.1 - - [19/Aug/2025 10:38:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-19 10:38:13,600 127.0.0.1 - - [19/Aug/2025 10:38:13] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-19 10:38:13,606 127.0.0.1 - - [19/Aug/2025 10:38:13] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-19 10:38:13,614 127.0.0.1 - - [19/Aug/2025 10:38:13] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-19 10:41:38,713 127.0.0.1 - - [19/Aug/2025 10:41:38] "GET /home.html HTTP/1.1" 200 -
+2025-08-19 10:41:38,966 127.0.0.1 - - [19/Aug/2025 10:41:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-19 10:41:38,978 127.0.0.1 - - [19/Aug/2025 10:41:38] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-19 10:41:39,028 127.0.0.1 - - [19/Aug/2025 10:41:39] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-19 10:41:39,034 127.0.0.1 - - [19/Aug/2025 10:41:39] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-19 10:41:39,037 127.0.0.1 - - [19/Aug/2025 10:41:39] "GET /static/icons/logo.png HTTP/1.1" 200 -
+2025-08-19 10:55:06,388 127.0.0.1 - - [19/Aug/2025 10:55:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-19 10:55:06,392 127.0.0.1 - - [19/Aug/2025 10:55:06] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-19 10:55:06,393 127.0.0.1 - - [19/Aug/2025 10:55:06] "[33mGET /static/js/popper.min.js.map HTTP/1.1[0m" 404 -
+2025-08-19 10:55:06,694 127.0.0.1 - - [19/Aug/2025 10:55:06] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2025-08-19 10:55:17,897 127.0.0.1 - - [19/Aug/2025 10:55:17] "[33mGET /static/js/popper.min.js.map HTTP/1.1[0m" 404 -
+2025-08-19 10:55:17,975 127.0.0.1 - - [19/Aug/2025 10:55:17] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2025-08-19 10:55:58,309 127.0.0.1 - - [19/Aug/2025 10:55:58] "GET /privacy.html HTTP/1.1" 200 -
+2025-08-19 10:55:58,431 127.0.0.1 - - [19/Aug/2025 10:55:58] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-08-19 10:55:58,436 127.0.0.1 - - [19/Aug/2025 10:55:58] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-19 10:55:58,442 127.0.0.1 - - [19/Aug/2025 10:55:58] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-19 10:55:58,525 127.0.0.1 - - [19/Aug/2025 10:55:58] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-19 10:55:58,615 127.0.0.1 - - [19/Aug/2025 10:55:58] "[33mGET /static/js/popper.min.js.map HTTP/1.1[0m" 404 -
+2025-08-19 10:55:58,627 127.0.0.1 - - [19/Aug/2025 10:55:58] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2025-08-19 10:56:44,727 127.0.0.1 - - [19/Aug/2025 10:56:44] "GET /home.html HTTP/1.1" 200 -
+2025-08-19 10:56:44,980 127.0.0.1 - - [19/Aug/2025 10:56:44] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2025-08-19 10:56:44,985 127.0.0.1 - - [19/Aug/2025 10:56:44] "[33mGET /static/js/popper.min.js.map HTTP/1.1[0m" 404 -
+2025-08-19 10:56:45,086 127.0.0.1 - - [19/Aug/2025 10:56:45] "GET /login HTTP/1.1" 200 -
+2025-08-19 10:56:45,216 127.0.0.1 - - [19/Aug/2025 10:56:45] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2025-08-19 10:56:45,237 127.0.0.1 - - [19/Aug/2025 10:56:45] "[33mGET /static/js/popper.min.js.map HTTP/1.1[0m" 404 -
+2025-08-19 10:57:37,196 127.0.0.1 - - [19/Aug/2025 10:57:37] "GET /signup HTTP/1.1" 200 -
+2025-08-19 10:57:37,312 127.0.0.1 - - [19/Aug/2025 10:57:37] "[33mGET /static/js/popper.min.js.map HTTP/1.1[0m" 404 -
+2025-08-19 10:57:37,314 127.0.0.1 - - [19/Aug/2025 10:57:37] "[33mGET /static/css/bootstrap.min.css.map HTTP/1.1[0m" 404 -
+2025-08-24 13:23:00,751 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.254:5000
+2025-08-24 13:23:00,751 [33mPress CTRL+C to quit[0m
+2025-08-24 13:23:00,752  * Restarting with stat
+2025-08-24 13:23:00,980  * Debugger is active!
+2025-08-24 13:23:00,981  * Debugger PIN: 426-005-985
+2025-08-24 13:23:06,719 127.0.0.1 - - [24/Aug/2025 13:23:06] "GET /?id=df0c5d8a-02c7-4fd8-909a-bfc8fd473fa4&vscodeBrowserReqId=1756041781775 HTTP/1.1" 200 -
+2025-08-24 13:23:18,911 127.0.0.1 - - [24/Aug/2025 13:23:18] "GET / HTTP/1.1" 200 -
+2025-08-24 13:23:19,052 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":29,"source-file":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2025-08-24 13:23:19,052 127.0.0.1 - - [24/Aug/2025 13:23:19] "POST /csp_report HTTP/1.1" 200 -
+2025-08-24 13:23:19,191 127.0.0.1 - - [24/Aug/2025 13:23:19] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-24 13:23:19,214 127.0.0.1 - - [24/Aug/2025 13:23:19] "GET /static/js/popper.min.js HTTP/1.1" 200 -
+2025-08-24 13:23:19,222 127.0.0.1 - - [24/Aug/2025 13:23:19] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-08-24 13:23:19,229 127.0.0.1 - - [24/Aug/2025 13:23:19] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-24 13:23:19,258 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css","status-code":200,"script-sample":""}}
+2025-08-24 13:23:19,258 127.0.0.1 - - [24/Aug/2025 13:23:19] "POST /csp_report HTTP/1.1" 200 -
+2025-08-24 13:23:19,269 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"style-src-elem","effective-directive":"style-src-elem","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap","status-code":200,"script-sample":""}}
+2025-08-24 13:23:19,270 127.0.0.1 - - [24/Aug/2025 13:23:19] "POST /csp_report HTTP/1.1" 200 -
+2025-08-24 13:23:19,622 {"csp-report":{"document-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/","referrer":"https://zany-computing-machine-x6gq699rpqg25gp.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://zany-computing-machine-x6gq699rpqg25gp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-08-24 13:23:19,622 127.0.0.1 - - [24/Aug/2025 13:23:19] "POST /csp_report HTTP/1.1" 200 -
+2025-08-24 13:23:21,827 127.0.0.1 - - [24/Aug/2025 13:23:21] "GET /home.html HTTP/1.1" 200 -
+2025-08-24 13:23:21,926 127.0.0.1 - - [24/Aug/2025 13:23:21] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-24 13:23:21,929 127.0.0.1 - - [24/Aug/2025 13:23:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-24 13:23:21,931 127.0.0.1 - - [24/Aug/2025 13:23:21] "GET /static/icons/logo.png HTTP/1.1" 200 -
+2025-08-24 13:23:21,933 127.0.0.1 - - [24/Aug/2025 13:23:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-24 13:23:21,935 127.0.0.1 - - [24/Aug/2025 13:23:21] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-24 13:23:47,302 127.0.0.1 - - [24/Aug/2025 13:23:47] "GET /home.html HTTP/1.1" 200 -
+2025-08-24 13:23:47,384 127.0.0.1 - - [24/Aug/2025 13:23:47] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-24 13:23:47,389 127.0.0.1 - - [24/Aug/2025 13:23:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-24 13:23:47,394 127.0.0.1 - - [24/Aug/2025 13:23:47] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-24 13:23:47,397 127.0.0.1 - - [24/Aug/2025 13:23:47] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-24 13:23:47,406 127.0.0.1 - - [24/Aug/2025 13:23:47] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-24 13:23:50,007 127.0.0.1 - - [24/Aug/2025 13:23:50] "GET /login HTTP/1.1" 200 -
+2025-08-24 13:23:50,096 127.0.0.1 - - [24/Aug/2025 13:23:50] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-24 13:23:50,099 127.0.0.1 - - [24/Aug/2025 13:23:50] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-24 13:23:50,102 127.0.0.1 - - [24/Aug/2025 13:23:50] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-24 13:23:50,104 127.0.0.1 - - [24/Aug/2025 13:23:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-24 13:23:50,809 127.0.0.1 - - [24/Aug/2025 13:23:50] "GET /signup HTTP/1.1" 200 -
+2025-08-24 13:23:50,890 127.0.0.1 - - [24/Aug/2025 13:23:50] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-24 13:23:50,893 127.0.0.1 - - [24/Aug/2025 13:23:50] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-24 13:23:50,896 127.0.0.1 - - [24/Aug/2025 13:23:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-24 13:23:50,899 127.0.0.1 - - [24/Aug/2025 13:23:50] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-24 13:23:51,694 127.0.0.1 - - [24/Aug/2025 13:23:51] "GET /home.html HTTP/1.1" 200 -
+2025-08-24 13:23:51,762 127.0.0.1 - - [24/Aug/2025 13:23:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-24 13:23:51,768 127.0.0.1 - - [24/Aug/2025 13:23:51] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-24 13:23:51,771 127.0.0.1 - - [24/Aug/2025 13:23:51] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-24 13:23:51,773 127.0.0.1 - - [24/Aug/2025 13:23:51] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-24 13:23:51,776 127.0.0.1 - - [24/Aug/2025 13:23:51] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-24 13:23:52,345 127.0.0.1 - - [24/Aug/2025 13:23:52] "GET /login HTTP/1.1" 200 -
+2025-08-24 13:23:52,425 127.0.0.1 - - [24/Aug/2025 13:23:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-24 13:23:52,427 127.0.0.1 - - [24/Aug/2025 13:23:52] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-24 13:23:52,430 127.0.0.1 - - [24/Aug/2025 13:23:52] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-24 13:23:52,432 127.0.0.1 - - [24/Aug/2025 13:23:52] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-24 13:24:41,312 127.0.0.1 - - [24/Aug/2025 13:24:41] "GET /signup HTTP/1.1" 200 -
+2025-08-24 13:24:41,396 127.0.0.1 - - [24/Aug/2025 13:24:41] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-24 13:24:41,399 127.0.0.1 - - [24/Aug/2025 13:24:41] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-24 13:24:41,404 127.0.0.1 - - [24/Aug/2025 13:24:41] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-24 13:24:41,407 127.0.0.1 - - [24/Aug/2025 13:24:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-24 13:25:00,000 127.0.0.1 - - [24/Aug/2025 13:25:00] "GET /home.html HTTP/1.1" 200 -
+2025-08-24 13:25:00,084 127.0.0.1 - - [24/Aug/2025 13:25:00] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-24 13:25:00,086 127.0.0.1 - - [24/Aug/2025 13:25:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-24 13:25:00,088 127.0.0.1 - - [24/Aug/2025 13:25:00] "[33mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 404 -
+2025-08-24 13:25:00,091 127.0.0.1 - - [24/Aug/2025 13:25:00] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-24 13:25:00,093 127.0.0.1 - - [24/Aug/2025 13:25:00] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
