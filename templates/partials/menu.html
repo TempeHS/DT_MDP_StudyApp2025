@@ -114,7 +114,7 @@
     <div class="modal-content custom-modal-bg">
       <div class="modal-header">
         <h5 class="modal-title" id="profileModalLabel">My Profile</h5>
-        <button
+        <buttonr
           type="button"
           class="btn-close"
           data-bs-dismiss="modal"
@@ -130,7 +130,7 @@
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Close
         </button>
-        <a href="/logout" class="btn btn-primary">Logout</a>
+        <a href="/" class="btn btn-primary">Logout</a>
       </div>
     </div>
   </div>
@@ -146,5 +146,11 @@
     margin: 2px 4px 2px 0;
     font-size: 0.95em;
     border: 1px solid #b6e1c2;
+  }
+  /* Add this to make the Logout button the same green as the Close button */
+  .btn-primary {
+    background-color: #6c757d !important; /* Bootstrap's btn-secondary default */
+    border-color: #6c757d !important;
+    color: #fff !important;
   }
 </style>
