@@ -25,7 +25,8 @@ blogpages = Blueprint('blogpages', __name__, template_folder='templates/blogpage
 
 @blogpages.route('/blogs')
 def blogs():
-    return render_template('blogs.html')
+    user = session.get('user')  # Retrieve user data from the session
+    return render_template('blogs.html', user=user)
 
 @blogpages.route('/study')
 def study():
