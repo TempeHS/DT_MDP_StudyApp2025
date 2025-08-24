@@ -18680,3 +18680,581 @@
 2025-06-29 06:12:04,146 127.0.0.1 - - [29/Jun/2025 06:12:04] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
 2025-06-29 06:12:04,148 127.0.0.1 - - [29/Jun/2025 06:12:04] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
 2025-06-29 06:12:04,151 127.0.0.1 - - [29/Jun/2025 06:12:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-12 03:15:43,256 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.83:5000
+2025-08-12 03:15:43,256 [33mPress CTRL+C to quit[0m
+2025-08-12 03:15:43,256  * Restarting with stat
+2025-08-12 03:15:43,451  * Debugger is active!
+2025-08-12 03:15:43,452  * Debugger PIN: 569-851-689
+2025-08-12 03:15:48,365 127.0.0.1 - - [12/Aug/2025 03:15:48] "GET /?id=43f80d95-5fc6-4e20-b02f-7015be8999c0&vscodeBrowserReqId=1754968544479 HTTP/1.1" 200 -
+2025-08-12 03:15:48,580 127.0.0.1 - - [12/Aug/2025 03:15:48] "GET /static/icons/logo.png HTTP/1.1" 200 -
+2025-08-12 03:15:48,580 127.0.0.1 - - [12/Aug/2025 03:15:48] "GET /static/js/popper.min.js HTTP/1.1" 200 -
+2025-08-12 03:15:48,581 127.0.0.1 - - [12/Aug/2025 03:15:48] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-12 03:15:48,733 127.0.0.1 - - [12/Aug/2025 03:15:48] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-08-12 03:15:48,798 127.0.0.1 - - [12/Aug/2025 03:15:48] "GET /static/images/loginpage.svg HTTP/1.1" 200 -
+2025-08-12 03:15:48,902 127.0.0.1 - - [12/Aug/2025 03:15:48] "GET / HTTP/1.1" 200 -
+2025-08-12 03:15:49,132 127.0.0.1 - - [12/Aug/2025 03:15:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-12 03:15:49,143 127.0.0.1 - - [12/Aug/2025 03:15:49] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-12 03:15:49,149 127.0.0.1 - - [12/Aug/2025 03:15:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-12 03:15:49,155 127.0.0.1 - - [12/Aug/2025 03:15:49] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-12 03:15:49,276 127.0.0.1 - - [12/Aug/2025 03:15:49] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-12 03:15:49,323 127.0.0.1 - - [12/Aug/2025 03:15:49] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-08-13 02:45:41,182 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.24:5000
+2025-08-13 02:45:41,212 [33mPress CTRL+C to quit[0m
+2025-08-13 02:45:41,213  * Restarting with stat
+2025-08-13 02:45:41,407  * Debugger is active!
+2025-08-13 02:45:41,408  * Debugger PIN: 119-423-461
+2025-08-13 02:45:46,012 127.0.0.1 - - [13/Aug/2025 02:45:46] "GET /?id=c8659bbd-b6b3-4a75-a363-21964ccbe2b0&vscodeBrowserReqId=1755053142704 HTTP/1.1" 200 -
+2025-08-13 02:45:46,359 127.0.0.1 - - [13/Aug/2025 02:45:46] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-13 02:45:46,361 127.0.0.1 - - [13/Aug/2025 02:45:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-13 02:45:46,362 127.0.0.1 - - [13/Aug/2025 02:45:46] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-13 02:45:46,364 127.0.0.1 - - [13/Aug/2025 02:45:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-13 02:45:46,508 127.0.0.1 - - [13/Aug/2025 02:45:46] "GET / HTTP/1.1" 200 -
+2025-08-13 02:45:46,528 127.0.0.1 - - [13/Aug/2025 02:45:46] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-13 02:45:46,631 127.0.0.1 - - [13/Aug/2025 02:45:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-13 02:45:46,633 127.0.0.1 - - [13/Aug/2025 02:45:46] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-13 02:45:46,637 127.0.0.1 - - [13/Aug/2025 02:45:46] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-13 02:45:46,640 127.0.0.1 - - [13/Aug/2025 02:45:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-13 02:45:46,726 127.0.0.1 - - [13/Aug/2025 02:45:46] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-13 02:51:52,265 127.0.0.1 - - [13/Aug/2025 02:51:52] "GET /?id=c8659bbd-b6b3-4a75-a363-21964ccbe2b0&vscodeBrowserReqId=1755053142704 HTTP/1.1" 200 -
+2025-08-13 02:51:52,493 127.0.0.1 - - [13/Aug/2025 02:51:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-13 02:51:52,560 127.0.0.1 - - [13/Aug/2025 02:51:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-13 02:51:52,572 127.0.0.1 - - [13/Aug/2025 02:51:52] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-13 02:51:52,580 127.0.0.1 - - [13/Aug/2025 02:51:52] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-13 02:51:52,692 127.0.0.1 - - [13/Aug/2025 02:51:52] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-15 04:49:50,006 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.202:5000
+2025-08-15 04:49:50,039 [33mPress CTRL+C to quit[0m
+2025-08-15 04:49:50,040  * Restarting with stat
+2025-08-15 04:49:50,237  * Debugger is active!
+2025-08-15 04:49:50,238  * Debugger PIN: 127-065-723
+2025-08-15 04:49:51,502 127.0.0.1 - - [15/Aug/2025 04:49:51] "GET /?id=87814754-5522-44a5-8487-aad1bb99fb9c&vscodeBrowserReqId=1755233391286 HTTP/1.1" 200 -
+2025-08-15 04:49:51,731 127.0.0.1 - - [15/Aug/2025 04:49:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-15 04:49:51,746 127.0.0.1 - - [15/Aug/2025 04:49:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-15 04:49:51,768 127.0.0.1 - - [15/Aug/2025 04:49:51] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-15 04:49:51,771 127.0.0.1 - - [15/Aug/2025 04:49:51] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-15 04:49:51,923 127.0.0.1 - - [15/Aug/2025 04:49:51] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-15 04:49:53,133 127.0.0.1 - - [15/Aug/2025 04:49:53] "GET / HTTP/1.1" 200 -
+2025-08-15 04:49:53,200 127.0.0.1 - - [15/Aug/2025 04:49:53] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-15 04:49:53,204 127.0.0.1 - - [15/Aug/2025 04:49:53] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-15 04:49:53,206 127.0.0.1 - - [15/Aug/2025 04:49:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-15 04:49:53,208 127.0.0.1 - - [15/Aug/2025 04:49:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-15 04:49:53,302 127.0.0.1 - - [15/Aug/2025 04:49:53] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-15 04:50:02,124 127.0.0.1 - - [15/Aug/2025 04:50:02] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-08-15 04:50:02,165 127.0.0.1 - - [15/Aug/2025 04:50:02] "GET /home.html HTTP/1.1" 200 -
+2025-08-15 04:50:02,279 127.0.0.1 - - [15/Aug/2025 04:50:02] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-15 04:50:02,289 127.0.0.1 - - [15/Aug/2025 04:50:02] "GET /static/images/CUBE.png HTTP/1.1" 200 -
+2025-08-15 04:50:02,292 127.0.0.1 - - [15/Aug/2025 04:50:02] "GET /static/images/goals.png HTTP/1.1" 200 -
+2025-08-15 04:50:02,297 127.0.0.1 - - [15/Aug/2025 04:50:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-15 04:50:02,303 127.0.0.1 - - [15/Aug/2025 04:50:02] "GET /static/images/addressverb.png HTTP/1.1" 200 -
+2025-08-15 04:50:02,307 127.0.0.1 - - [15/Aug/2025 04:50:02] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2025-08-15 04:50:02,313 127.0.0.1 - - [15/Aug/2025 04:50:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-15 04:50:02,318 127.0.0.1 - - [15/Aug/2025 04:50:02] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-15 04:50:10,673 127.0.0.1 - - [15/Aug/2025 04:50:10] "GET /syllabus.html HTTP/1.1" 200 -
+2025-08-15 04:50:10,770 127.0.0.1 - - [15/Aug/2025 04:50:10] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-15 04:50:10,776 127.0.0.1 - - [15/Aug/2025 04:50:10] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-15 04:50:10,780 127.0.0.1 - - [15/Aug/2025 04:50:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-15 04:50:10,784 127.0.0.1 - - [15/Aug/2025 04:50:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-15 04:50:11,947 127.0.0.1 - - [15/Aug/2025 04:50:11] "GET /blogs HTTP/1.1" 200 -
+2025-08-15 04:50:12,066 127.0.0.1 - - [15/Aug/2025 04:50:12] "GET /static/images/decon.png HTTP/1.1" 200 -
+2025-08-15 04:50:12,068 127.0.0.1 - - [15/Aug/2025 04:50:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-15 04:50:12,068 127.0.0.1 - - [15/Aug/2025 04:50:12] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-15 04:50:12,070 127.0.0.1 - - [15/Aug/2025 04:50:12] "GET /static/images/examstudyplan.png HTTP/1.1" 200 -
+2025-08-15 04:50:12,072 127.0.0.1 - - [15/Aug/2025 04:50:12] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-15 04:50:12,074 127.0.0.1 - - [15/Aug/2025 04:50:12] "[36mGET /static/images/goals.png HTTP/1.1[0m" 304 -
+2025-08-15 04:50:12,077 127.0.0.1 - - [15/Aug/2025 04:50:12] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-15 04:50:12,080 127.0.0.1 - - [15/Aug/2025 04:50:12] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-15 04:50:12,096 127.0.0.1 - - [15/Aug/2025 04:50:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-15 04:50:12,179 127.0.0.1 - - [15/Aug/2025 04:50:12] "GET /static/images/bloghome.svg HTTP/1.1" 200 -
+2025-08-15 04:50:13,715 127.0.0.1 - - [15/Aug/2025 04:50:13] "GET /flashcardoption.html HTTP/1.1" 200 -
+2025-08-15 04:50:13,807 127.0.0.1 - - [15/Aug/2025 04:50:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-15 04:50:13,810 127.0.0.1 - - [15/Aug/2025 04:50:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-15 04:50:13,813 127.0.0.1 - - [15/Aug/2025 04:50:13] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-15 04:50:13,816 127.0.0.1 - - [15/Aug/2025 04:50:13] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-15 04:50:14,944 127.0.0.1 - - [15/Aug/2025 04:50:14] "GET /flashcards.html HTTP/1.1" 200 -
+2025-08-15 04:50:15,107 127.0.0.1 - - [15/Aug/2025 04:50:15] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-15 04:50:15,112 127.0.0.1 - - [15/Aug/2025 04:50:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-15 04:50:15,116 127.0.0.1 - - [15/Aug/2025 04:50:15] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-15 04:50:15,119 127.0.0.1 - - [15/Aug/2025 04:50:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-15 04:56:25,705 127.0.0.1 - - [15/Aug/2025 04:56:25] "GET /flashcards.html HTTP/1.1" 200 -
+2025-08-15 04:56:26,010 127.0.0.1 - - [15/Aug/2025 04:56:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-15 04:56:26,018 127.0.0.1 - - [15/Aug/2025 04:56:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-15 04:56:26,024 127.0.0.1 - - [15/Aug/2025 04:56:26] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-15 04:56:26,029 127.0.0.1 - - [15/Aug/2025 04:56:26] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-15 04:57:08,966 127.0.0.1 - - [15/Aug/2025 04:57:08] "GET /flashcards.html HTTP/1.1" 200 -
+2025-08-15 04:57:09,058 127.0.0.1 - - [15/Aug/2025 04:57:09] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-15 04:57:09,062 127.0.0.1 - - [15/Aug/2025 04:57:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-15 04:57:09,065 127.0.0.1 - - [15/Aug/2025 04:57:09] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-15 04:57:09,125 127.0.0.1 - - [15/Aug/2025 04:57:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-15 04:58:03,221 127.0.0.1 - - [15/Aug/2025 04:58:03] "GET /comingsoon.html HTTP/1.1" 200 -
+2025-08-15 04:58:03,318 127.0.0.1 - - [15/Aug/2025 04:58:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-15 04:58:03,321 127.0.0.1 - - [15/Aug/2025 04:58:03] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-15 04:58:03,324 127.0.0.1 - - [15/Aug/2025 04:58:03] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-15 04:58:03,327 127.0.0.1 - - [15/Aug/2025 04:58:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-15 04:59:19,043 127.0.0.1 - - [15/Aug/2025 04:59:19] "GET /flashcardoption.html HTTP/1.1" 200 -
+2025-08-15 04:59:19,136 127.0.0.1 - - [15/Aug/2025 04:59:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-15 04:59:19,138 127.0.0.1 - - [15/Aug/2025 04:59:19] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-15 04:59:19,141 127.0.0.1 - - [15/Aug/2025 04:59:19] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-15 04:59:19,220 127.0.0.1 - - [15/Aug/2025 04:59:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-15 04:59:20,224 127.0.0.1 - - [15/Aug/2025 04:59:20] "GET /flashcards.html HTTP/1.1" 200 -
+2025-08-15 04:59:20,303 127.0.0.1 - - [15/Aug/2025 04:59:20] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-15 04:59:20,305 127.0.0.1 - - [15/Aug/2025 04:59:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-15 04:59:20,309 127.0.0.1 - - [15/Aug/2025 04:59:20] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-15 04:59:20,310 127.0.0.1 - - [15/Aug/2025 04:59:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-16 09:37:08,341 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.196:5000
+2025-08-16 09:37:08,341 [33mPress CTRL+C to quit[0m
+2025-08-16 09:37:08,342  * Restarting with stat
+2025-08-16 09:37:08,535  * Debugger is active!
+2025-08-16 09:37:08,536  * Debugger PIN: 135-218-793
+2025-08-16 09:37:11,930 127.0.0.1 - - [16/Aug/2025 09:37:11] "GET /?id=9bac332d-0053-4b9d-83b5-a3eb8a48f9b2&vscodeBrowserReqId=1755337031628 HTTP/1.1" 200 -
+2025-08-16 09:37:12,227 127.0.0.1 - - [16/Aug/2025 09:37:12] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-16 09:37:12,235 127.0.0.1 - - [16/Aug/2025 09:37:12] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-16 09:37:12,246 127.0.0.1 - - [16/Aug/2025 09:37:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-16 09:37:12,371 127.0.0.1 - - [16/Aug/2025 09:37:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-16 09:37:12,504 127.0.0.1 - - [16/Aug/2025 09:37:12] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-16 09:37:13,393 127.0.0.1 - - [16/Aug/2025 09:37:13] "GET / HTTP/1.1" 200 -
+2025-08-16 09:37:13,665 127.0.0.1 - - [16/Aug/2025 09:37:13] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-16 09:37:13,669 127.0.0.1 - - [16/Aug/2025 09:37:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-16 09:37:13,677 127.0.0.1 - - [16/Aug/2025 09:37:13] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-16 09:37:13,798 127.0.0.1 - - [16/Aug/2025 09:37:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-16 09:37:13,928 127.0.0.1 - - [16/Aug/2025 09:37:13] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-16 09:37:20,136 127.0.0.1 - - [16/Aug/2025 09:37:20] "POST /login HTTP/1.1" 200 -
+2025-08-16 09:37:20,240 127.0.0.1 - - [16/Aug/2025 09:37:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-16 09:37:20,242 127.0.0.1 - - [16/Aug/2025 09:37:20] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-16 09:37:20,245 127.0.0.1 - - [16/Aug/2025 09:37:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-16 09:37:20,246 127.0.0.1 - - [16/Aug/2025 09:37:20] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-16 09:37:20,341 127.0.0.1 - - [16/Aug/2025 09:37:20] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-16 09:37:31,232 127.0.0.1 - - [16/Aug/2025 09:37:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-08-16 09:37:31,270 127.0.0.1 - - [16/Aug/2025 09:37:31] "GET /home.html HTTP/1.1" 200 -
+2025-08-16 09:37:31,353 127.0.0.1 - - [16/Aug/2025 09:37:31] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-16 09:37:31,363 127.0.0.1 - - [16/Aug/2025 09:37:31] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-16 09:37:31,365 127.0.0.1 - - [16/Aug/2025 09:37:31] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2025-08-16 09:37:31,366 127.0.0.1 - - [16/Aug/2025 09:37:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-16 09:37:31,369 127.0.0.1 - - [16/Aug/2025 09:37:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-16 09:37:31,373 127.0.0.1 - - [16/Aug/2025 09:37:31] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-16 09:37:31,380 127.0.0.1 - - [16/Aug/2025 09:37:31] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-16 09:37:31,392 127.0.0.1 - - [16/Aug/2025 09:37:31] "[36mGET /static/images/goals.png HTTP/1.1[0m" 304 -
+2025-08-16 09:37:36,846 127.0.0.1 - - [16/Aug/2025 09:37:36] "GET /timer.html HTTP/1.1" 200 -
+2025-08-16 09:37:36,931 127.0.0.1 - - [16/Aug/2025 09:37:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-16 09:37:36,934 127.0.0.1 - - [16/Aug/2025 09:37:36] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-16 09:37:36,938 127.0.0.1 - - [16/Aug/2025 09:37:36] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-16 09:37:36,941 127.0.0.1 - - [16/Aug/2025 09:37:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-16 09:37:36,943 127.0.0.1 - - [16/Aug/2025 09:37:36] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-16 09:59:33,254 127.0.0.1 - - [16/Aug/2025 09:59:33] "GET /syllabus.html HTTP/1.1" 200 -
+2025-08-16 09:59:33,562 127.0.0.1 - - [16/Aug/2025 09:59:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-16 09:59:33,562 127.0.0.1 - - [16/Aug/2025 09:59:33] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-16 09:59:33,567 127.0.0.1 - - [16/Aug/2025 09:59:33] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-16 09:59:33,569 127.0.0.1 - - [16/Aug/2025 09:59:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-17 23:18:53,115 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.138:5000
+2025-08-17 23:18:53,116 [33mPress CTRL+C to quit[0m
+2025-08-17 23:18:53,116  * Restarting with stat
+2025-08-17 23:18:53,309  * Debugger is active!
+2025-08-17 23:18:53,310  * Debugger PIN: 105-364-356
+2025-08-17 23:18:57,002 127.0.0.1 - - [17/Aug/2025 23:18:57] "GET /?id=4b9e94c5-7542-4342-b4cd-afcc0821ddd1&vscodeBrowserReqId=1755472733350 HTTP/1.1" 200 -
+2025-08-17 23:18:57,193 127.0.0.1 - - [17/Aug/2025 23:18:57] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-17 23:18:57,210 127.0.0.1 - - [17/Aug/2025 23:18:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-17 23:18:57,227 127.0.0.1 - - [17/Aug/2025 23:18:57] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-17 23:18:57,331 127.0.0.1 - - [17/Aug/2025 23:18:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-17 23:18:57,447 127.0.0.1 - - [17/Aug/2025 23:18:57] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-17 23:18:58,100 127.0.0.1 - - [17/Aug/2025 23:18:58] "GET / HTTP/1.1" 200 -
+2025-08-17 23:18:58,355 127.0.0.1 - - [17/Aug/2025 23:18:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-17 23:18:58,431 127.0.0.1 - - [17/Aug/2025 23:18:58] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-17 23:18:58,433 127.0.0.1 - - [17/Aug/2025 23:18:58] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-17 23:18:58,436 127.0.0.1 - - [17/Aug/2025 23:18:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-17 23:18:58,539 127.0.0.1 - - [17/Aug/2025 23:18:58] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-17 23:19:04,630 127.0.0.1 - - [17/Aug/2025 23:19:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-08-17 23:19:04,667 127.0.0.1 - - [17/Aug/2025 23:19:04] "GET /home.html HTTP/1.1" 200 -
+2025-08-17 23:19:04,770 127.0.0.1 - - [17/Aug/2025 23:19:04] "[36mGET /static/css/carousel.css HTTP/1.1[0m" 304 -
+2025-08-17 23:19:04,772 127.0.0.1 - - [17/Aug/2025 23:19:04] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-17 23:19:04,775 127.0.0.1 - - [17/Aug/2025 23:19:04] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-17 23:19:04,777 127.0.0.1 - - [17/Aug/2025 23:19:04] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-17 23:19:04,779 127.0.0.1 - - [17/Aug/2025 23:19:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-17 23:19:04,782 127.0.0.1 - - [17/Aug/2025 23:19:04] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-17 23:19:04,784 127.0.0.1 - - [17/Aug/2025 23:19:04] "[36mGET /static/images/goals.png HTTP/1.1[0m" 304 -
+2025-08-17 23:19:04,806 127.0.0.1 - - [17/Aug/2025 23:19:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-17 23:19:07,280 127.0.0.1 - - [17/Aug/2025 23:19:07] "GET /blogs HTTP/1.1" 200 -
+2025-08-17 23:19:07,399 127.0.0.1 - - [17/Aug/2025 23:19:07] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-17 23:19:07,401 127.0.0.1 - - [17/Aug/2025 23:19:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-17 23:19:07,402 127.0.0.1 - - [17/Aug/2025 23:19:07] "[36mGET /static/images/goals.png HTTP/1.1[0m" 304 -
+2025-08-17 23:19:07,404 127.0.0.1 - - [17/Aug/2025 23:19:07] "GET /static/images/examstudyplan.png HTTP/1.1" 200 -
+2025-08-17 23:19:07,405 127.0.0.1 - - [17/Aug/2025 23:19:07] "GET /static/images/decon.png HTTP/1.1" 200 -
+2025-08-17 23:19:07,406 127.0.0.1 - - [17/Aug/2025 23:19:07] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-17 23:19:07,412 127.0.0.1 - - [17/Aug/2025 23:19:07] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-17 23:19:07,417 127.0.0.1 - - [17/Aug/2025 23:19:07] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-17 23:19:07,437 127.0.0.1 - - [17/Aug/2025 23:19:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-17 23:19:07,476 127.0.0.1 - - [17/Aug/2025 23:19:07] "GET /static/images/bloghome.svg HTTP/1.1" 200 -
+2025-08-17 23:19:11,406 127.0.0.1 - - [17/Aug/2025 23:19:11] "GET /goals.html HTTP/1.1" 200 -
+2025-08-17 23:19:11,495 127.0.0.1 - - [17/Aug/2025 23:19:11] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-17 23:19:11,497 127.0.0.1 - - [17/Aug/2025 23:19:11] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-17 23:19:11,499 127.0.0.1 - - [17/Aug/2025 23:19:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-17 23:19:11,501 127.0.0.1 - - [17/Aug/2025 23:19:11] "[36mGET /static/images/decon.png HTTP/1.1[0m" 304 -
+2025-08-17 23:19:11,503 127.0.0.1 - - [17/Aug/2025 23:19:11] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-17 23:19:11,505 127.0.0.1 - - [17/Aug/2025 23:19:11] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-17 23:19:11,508 127.0.0.1 - - [17/Aug/2025 23:19:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-17 23:24:24,100 127.0.0.1 - - [17/Aug/2025 23:24:24] "GET /cube.html HTTP/1.1" 200 -
+2025-08-17 23:24:24,182 127.0.0.1 - - [17/Aug/2025 23:24:24] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-17 23:24:24,529 127.0.0.1 - - [17/Aug/2025 23:24:24] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-17 23:24:24,535 127.0.0.1 - - [17/Aug/2025 23:24:24] "[36mGET /static/images/decon.png HTTP/1.1[0m" 304 -
+2025-08-17 23:24:24,539 127.0.0.1 - - [17/Aug/2025 23:24:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-17 23:24:24,542 127.0.0.1 - - [17/Aug/2025 23:24:24] "GET /static/images/procrastination_logo.png HTTP/1.1" 200 -
+2025-08-17 23:24:24,546 127.0.0.1 - - [17/Aug/2025 23:24:24] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-17 23:24:24,558 127.0.0.1 - - [17/Aug/2025 23:24:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-22 07:44:27,914 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.141:5000
+2025-08-22 07:44:27,915 [33mPress CTRL+C to quit[0m
+2025-08-22 07:44:27,916  * Restarting with stat
+2025-08-22 07:44:28,115  * Debugger is active!
+2025-08-22 07:44:28,115  * Debugger PIN: 487-921-083
+2025-08-22 07:44:32,466 127.0.0.1 - - [22/Aug/2025 07:44:32] "GET /?id=786a2f0f-ee2d-41ab-97aa-76ee1e01019b&vscodeBrowserReqId=1755848668738 HTTP/1.1" 200 -
+2025-08-22 07:44:32,797 127.0.0.1 - - [22/Aug/2025 07:44:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-22 07:44:32,803 127.0.0.1 - - [22/Aug/2025 07:44:32] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-22 07:44:32,816 127.0.0.1 - - [22/Aug/2025 07:44:32] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-22 07:44:32,825 127.0.0.1 - - [22/Aug/2025 07:44:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-22 07:44:33,058 127.0.0.1 - - [22/Aug/2025 07:44:33] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-22 07:44:45,106 127.0.0.1 - - [22/Aug/2025 07:44:45] "GET / HTTP/1.1" 200 -
+2025-08-22 07:44:45,178 127.0.0.1 - - [22/Aug/2025 07:44:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-22 07:44:45,180 127.0.0.1 - - [22/Aug/2025 07:44:45] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-22 07:44:45,182 127.0.0.1 - - [22/Aug/2025 07:44:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-22 07:44:45,185 127.0.0.1 - - [22/Aug/2025 07:44:45] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-22 07:44:45,271 127.0.0.1 - - [22/Aug/2025 07:44:45] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-22 07:44:45,330 127.0.0.1 - - [22/Aug/2025 07:44:45] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-08-22 07:44:50,465 127.0.0.1 - - [22/Aug/2025 07:44:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-22 07:44:50,478 127.0.0.1 - - [22/Aug/2025 07:44:50] "[33mGET /static/js/popper.min.js.map HTTP/1.1[0m" 404 -
+2025-08-22 07:45:12,877 127.0.0.1 - - [22/Aug/2025 07:45:12] "GET / HTTP/1.1" 200 -
+2025-08-22 07:45:12,964 127.0.0.1 - - [22/Aug/2025 07:45:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-22 07:45:12,966 127.0.0.1 - - [22/Aug/2025 07:45:12] "GET /static/icons/logo.png HTTP/1.1" 200 -
+2025-08-22 07:45:12,968 127.0.0.1 - - [22/Aug/2025 07:45:12] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-08-22 07:45:12,971 127.0.0.1 - - [22/Aug/2025 07:45:12] "GET /static/js/popper.min.js HTTP/1.1" 200 -
+2025-08-22 07:45:13,166 127.0.0.1 - - [22/Aug/2025 07:45:13] "GET /static/images/loginpage.svg HTTP/1.1" 200 -
+2025-08-22 07:45:13,294 127.0.0.1 - - [22/Aug/2025 07:45:13] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-08-22 08:23:39,569 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.3.124:5000
+2025-08-22 08:23:39,608 [33mPress CTRL+C to quit[0m
+2025-08-22 08:23:39,609  * Restarting with stat
+2025-08-22 08:23:39,968  * Debugger is active!
+2025-08-22 08:23:39,994  * Debugger PIN: 518-699-758
+2025-08-22 08:23:50,135 127.0.0.1 - - [22/Aug/2025 08:23:50] "GET / HTTP/1.1" 200 -
+2025-08-22 08:23:50,139 127.0.0.1 - - [22/Aug/2025 08:23:50] "GET /?id=80f82005-6ec2-4314-9087-d2c4c0abe41d&vscodeBrowserReqId=1755851020517 HTTP/1.1" 200 -
+2025-08-22 08:23:50,297 127.0.0.1 - - [22/Aug/2025 08:23:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-22 08:23:50,452 127.0.0.1 - - [22/Aug/2025 08:23:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-22 08:23:50,744 127.0.0.1 - - [22/Aug/2025 08:23:50] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-22 08:23:50,750 127.0.0.1 - - [22/Aug/2025 08:23:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-22 08:23:50,755 127.0.0.1 - - [22/Aug/2025 08:23:50] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-22 08:23:50,810 127.0.0.1 - - [22/Aug/2025 08:23:50] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-22 08:23:50,823 127.0.0.1 - - [22/Aug/2025 08:23:50] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-22 08:23:50,873 127.0.0.1 - - [22/Aug/2025 08:23:50] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-22 08:23:50,893 127.0.0.1 - - [22/Aug/2025 08:23:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-22 08:23:50,934 127.0.0.1 - - [22/Aug/2025 08:23:50] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-08-22 08:23:50,960 127.0.0.1 - - [22/Aug/2025 08:23:50] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-22 08:24:41,071 127.0.0.1 - - [22/Aug/2025 08:24:41] "POST /login HTTP/1.1" 200 -
+2025-08-22 08:24:41,176 127.0.0.1 - - [22/Aug/2025 08:24:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-22 08:24:41,179 127.0.0.1 - - [22/Aug/2025 08:24:41] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-22 08:24:41,190 127.0.0.1 - - [22/Aug/2025 08:24:41] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-22 08:24:41,193 127.0.0.1 - - [22/Aug/2025 08:24:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-22 08:24:41,353 127.0.0.1 - - [22/Aug/2025 08:24:41] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-22 08:24:45,554 127.0.0.1 - - [22/Aug/2025 08:24:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-08-22 08:24:45,605 127.0.0.1 - - [22/Aug/2025 08:24:45] "GET /home.html HTTP/1.1" 200 -
+2025-08-22 08:24:45,711 127.0.0.1 - - [22/Aug/2025 08:24:45] "GET /static/images/addressverb.png HTTP/1.1" 200 -
+2025-08-22 08:24:45,715 127.0.0.1 - - [22/Aug/2025 08:24:45] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-22 08:24:45,716 127.0.0.1 - - [22/Aug/2025 08:24:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-22 08:24:45,720 127.0.0.1 - - [22/Aug/2025 08:24:45] "GET /static/images/goals.png HTTP/1.1" 200 -
+2025-08-22 08:24:45,721 127.0.0.1 - - [22/Aug/2025 08:24:45] "GET /static/css/carousel.css HTTP/1.1" 200 -
+2025-08-22 08:24:45,723 127.0.0.1 - - [22/Aug/2025 08:24:45] "GET /static/images/CUBE.png HTTP/1.1" 200 -
+2025-08-22 08:24:45,729 127.0.0.1 - - [22/Aug/2025 08:24:45] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-22 08:24:45,735 127.0.0.1 - - [22/Aug/2025 08:24:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-22 08:24:48,581 127.0.0.1 - - [22/Aug/2025 08:24:48] "GET /blogs HTTP/1.1" 200 -
+2025-08-22 08:24:48,709 127.0.0.1 - - [22/Aug/2025 08:24:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-22 08:24:48,710 127.0.0.1 - - [22/Aug/2025 08:24:48] "GET /static/images/decon.png HTTP/1.1" 200 -
+2025-08-22 08:24:48,715 127.0.0.1 - - [22/Aug/2025 08:24:48] "GET /static/images/examstudyplan.png HTTP/1.1" 200 -
+2025-08-22 08:24:48,717 127.0.0.1 - - [22/Aug/2025 08:24:48] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-22 08:24:48,719 127.0.0.1 - - [22/Aug/2025 08:24:48] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-22 08:24:48,722 127.0.0.1 - - [22/Aug/2025 08:24:48] "[36mGET /static/images/goals.png HTTP/1.1[0m" 304 -
+2025-08-22 08:24:48,736 127.0.0.1 - - [22/Aug/2025 08:24:48] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-22 08:24:48,737 127.0.0.1 - - [22/Aug/2025 08:24:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-22 08:24:48,738 127.0.0.1 - - [22/Aug/2025 08:24:48] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-22 08:24:48,793 127.0.0.1 - - [22/Aug/2025 08:24:48] "GET /static/images/bloghome.svg HTTP/1.1" 200 -
+2025-08-22 08:25:15,465 127.0.0.1 - - [22/Aug/2025 08:25:15] "GET /blogs HTTP/1.1" 200 -
+2025-08-22 08:25:15,610 127.0.0.1 - - [22/Aug/2025 08:25:15] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-22 08:25:15,612 127.0.0.1 - - [22/Aug/2025 08:25:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-22 08:25:15,612 127.0.0.1 - - [22/Aug/2025 08:25:15] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-22 08:25:15,615 127.0.0.1 - - [22/Aug/2025 08:25:15] "[36mGET /static/images/goals.png HTTP/1.1[0m" 304 -
+2025-08-22 08:25:15,616 127.0.0.1 - - [22/Aug/2025 08:25:15] "[36mGET /static/images/decon.png HTTP/1.1[0m" 304 -
+2025-08-22 08:25:15,619 127.0.0.1 - - [22/Aug/2025 08:25:15] "[36mGET /static/images/examstudyplan.png HTTP/1.1[0m" 304 -
+2025-08-22 08:25:15,623 127.0.0.1 - - [22/Aug/2025 08:25:15] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-22 08:25:15,624 127.0.0.1 - - [22/Aug/2025 08:25:15] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-22 08:25:15,627 127.0.0.1 - - [22/Aug/2025 08:25:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-22 08:25:15,725 127.0.0.1 - - [22/Aug/2025 08:25:15] "[36mGET /static/images/bloghome.svg HTTP/1.1[0m" 304 -
+2025-08-22 08:25:17,965 127.0.0.1 - - [22/Aug/2025 08:25:17] "GET /syllabus.html HTTP/1.1" 200 -
+2025-08-22 08:25:18,061 127.0.0.1 - - [22/Aug/2025 08:25:18] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-22 08:25:18,065 127.0.0.1 - - [22/Aug/2025 08:25:18] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-22 08:25:18,068 127.0.0.1 - - [22/Aug/2025 08:25:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-22 08:25:18,070 127.0.0.1 - - [22/Aug/2025 08:25:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-22 08:25:20,299 127.0.0.1 - - [22/Aug/2025 08:25:20] "GET /flashcardoption.html HTTP/1.1" 200 -
+2025-08-22 08:25:20,372 127.0.0.1 - - [22/Aug/2025 08:25:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-22 08:25:20,379 127.0.0.1 - - [22/Aug/2025 08:25:20] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-22 08:25:20,384 127.0.0.1 - - [22/Aug/2025 08:25:20] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-22 08:25:20,387 127.0.0.1 - - [22/Aug/2025 08:25:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:09:58,148 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.131:5000
+2025-08-23 04:09:58,181 [33mPress CTRL+C to quit[0m
+2025-08-23 04:09:58,182  * Restarting with stat
+2025-08-23 04:09:58,441  * Debugger is active!
+2025-08-23 04:09:58,442  * Debugger PIN: 917-205-042
+2025-08-23 04:09:59,100 127.0.0.1 - - [23/Aug/2025 04:09:59] "GET /?id=d389e3f8-0fdd-4d6f-b8e8-8a108e6d3a38&vscodeBrowserReqId=1755922198695 HTTP/1.1" 200 -
+2025-08-23 04:09:59,510 127.0.0.1 - - [23/Aug/2025 04:09:59] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:09:59,511 127.0.0.1 - - [23/Aug/2025 04:09:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:09:59,511 127.0.0.1 - - [23/Aug/2025 04:09:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:09:59,519 127.0.0.1 - - [23/Aug/2025 04:09:59] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:09:59,768 127.0.0.1 - - [23/Aug/2025 04:09:59] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-23 04:10:44,089 127.0.0.1 - - [23/Aug/2025 04:10:44] "GET / HTTP/1.1" 200 -
+2025-08-23 04:10:44,166 127.0.0.1 - - [23/Aug/2025 04:10:44] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:10:44,168 127.0.0.1 - - [23/Aug/2025 04:10:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:10:44,171 127.0.0.1 - - [23/Aug/2025 04:10:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:10:44,173 127.0.0.1 - - [23/Aug/2025 04:10:44] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:10:44,267 127.0.0.1 - - [23/Aug/2025 04:10:44] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-23 04:10:44,331 127.0.0.1 - - [23/Aug/2025 04:10:44] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-08-23 04:12:29,481 127.0.0.1 - - [23/Aug/2025 04:12:29] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-08-23 04:12:29,618 127.0.0.1 - - [23/Aug/2025 04:12:29] "GET /home.html HTTP/1.1" 200 -
+2025-08-23 04:12:29,755 127.0.0.1 - - [23/Aug/2025 04:12:29] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-23 04:12:29,764 127.0.0.1 - - [23/Aug/2025 04:12:29] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-23 04:12:30,067 127.0.0.1 - - [23/Aug/2025 04:12:30] "[36mGET /static/images/goals.png HTTP/1.1[0m" 304 -
+2025-08-23 04:12:30,071 127.0.0.1 - - [23/Aug/2025 04:12:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:12:30,081 127.0.0.1 - - [23/Aug/2025 04:12:30] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:12:30,090 127.0.0.1 - - [23/Aug/2025 04:12:30] "[36mGET /static/css/carousel.css HTTP/1.1[0m" 304 -
+2025-08-23 04:12:30,098 127.0.0.1 - - [23/Aug/2025 04:12:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:12:30,102 127.0.0.1 - - [23/Aug/2025 04:12:30] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:12:45,911 127.0.0.1 - - [23/Aug/2025 04:12:45] "GET /syllabus.html HTTP/1.1" 200 -
+2025-08-23 04:12:45,986 127.0.0.1 - - [23/Aug/2025 04:12:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:12:45,990 127.0.0.1 - - [23/Aug/2025 04:12:45] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:12:45,992 127.0.0.1 - - [23/Aug/2025 04:12:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:12:45,996 127.0.0.1 - - [23/Aug/2025 04:12:45] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:12:49,428 127.0.0.1 - - [23/Aug/2025 04:12:49] "GET /privacy.html HTTP/1.1" 200 -
+2025-08-23 04:12:49,504 127.0.0.1 - - [23/Aug/2025 04:12:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:12:49,510 127.0.0.1 - - [23/Aug/2025 04:12:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:12:49,512 127.0.0.1 - - [23/Aug/2025 04:12:49] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:12:49,514 127.0.0.1 - - [23/Aug/2025 04:12:49] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,170 127.0.0.1 - - [23/Aug/2025 04:13:01] "GET /blogs HTTP/1.1" 200 -
+2025-08-23 04:13:01,277 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,282 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/images/examstudyplan.png HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,292 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/images/goals.png HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,299 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,300 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,305 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,306 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,322 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/images/decon.png HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,328 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,400 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/images/bloghome.svg HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,730 127.0.0.1 - - [23/Aug/2025 04:13:01] "GET /syllabus.html HTTP/1.1" 200 -
+2025-08-23 04:13:01,823 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,827 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,831 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:13:01,833 127.0.0.1 - - [23/Aug/2025 04:13:01] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:13:03,550 127.0.0.1 - - [23/Aug/2025 04:13:03] "GET /flashcardoption.html HTTP/1.1" 200 -
+2025-08-23 04:13:03,635 127.0.0.1 - - [23/Aug/2025 04:13:03] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:13:03,640 127.0.0.1 - - [23/Aug/2025 04:13:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:13:03,643 127.0.0.1 - - [23/Aug/2025 04:13:03] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:13:03,646 127.0.0.1 - - [23/Aug/2025 04:13:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:13:06,969 127.0.0.1 - - [23/Aug/2025 04:13:06] "GET /flashcards.html HTTP/1.1" 200 -
+2025-08-23 04:13:07,063 127.0.0.1 - - [23/Aug/2025 04:13:07] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:13:07,066 127.0.0.1 - - [23/Aug/2025 04:13:07] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:13:07,068 127.0.0.1 - - [23/Aug/2025 04:13:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:13:07,071 127.0.0.1 - - [23/Aug/2025 04:13:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:28:41,929 127.0.0.1 - - [23/Aug/2025 04:28:41] "GET /stopwatch.html HTTP/1.1" 200 -
+2025-08-23 04:28:42,023 127.0.0.1 - - [23/Aug/2025 04:28:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:28:42,238 127.0.0.1 - - [23/Aug/2025 04:28:42] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:28:42,255 127.0.0.1 - - [23/Aug/2025 04:28:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:28:42,256 127.0.0.1 - - [23/Aug/2025 04:28:42] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:28:42,257 127.0.0.1 - - [23/Aug/2025 04:28:42] "GET /static/images/stopwatch1.png HTTP/1.1" 200 -
+2025-08-23 04:28:44,457 127.0.0.1 - - [23/Aug/2025 04:28:44] "GET /timer.html HTTP/1.1" 200 -
+2025-08-23 04:28:44,532 127.0.0.1 - - [23/Aug/2025 04:28:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:28:44,536 127.0.0.1 - - [23/Aug/2025 04:28:44] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-23 04:28:44,538 127.0.0.1 - - [23/Aug/2025 04:28:44] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:28:44,540 127.0.0.1 - - [23/Aug/2025 04:28:44] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:28:44,543 127.0.0.1 - - [23/Aug/2025 04:28:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:28:46,359 127.0.0.1 - - [23/Aug/2025 04:28:46] "GET /stopwatch.html HTTP/1.1" 200 -
+2025-08-23 04:28:46,437 127.0.0.1 - - [23/Aug/2025 04:28:46] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:28:46,441 127.0.0.1 - - [23/Aug/2025 04:28:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:28:46,443 127.0.0.1 - - [23/Aug/2025 04:28:46] "[36mGET /static/images/stopwatch1.png HTTP/1.1[0m" 304 -
+2025-08-23 04:28:46,446 127.0.0.1 - - [23/Aug/2025 04:28:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:28:46,448 127.0.0.1 - - [23/Aug/2025 04:28:46] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:29:29,041 127.0.0.1 - - [23/Aug/2025 04:29:29] "GET /timer.html HTTP/1.1" 200 -
+2025-08-23 04:29:29,140 127.0.0.1 - - [23/Aug/2025 04:29:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:29:29,142 127.0.0.1 - - [23/Aug/2025 04:29:29] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:29:29,146 127.0.0.1 - - [23/Aug/2025 04:29:29] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-23 04:29:29,155 127.0.0.1 - - [23/Aug/2025 04:29:29] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:29:29,159 127.0.0.1 - - [23/Aug/2025 04:29:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:34:41,504 127.0.0.1 - - [23/Aug/2025 04:34:41] "GET /stopwatch.html HTTP/1.1" 200 -
+2025-08-23 04:34:41,832 127.0.0.1 - - [23/Aug/2025 04:34:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:34:41,866 127.0.0.1 - - [23/Aug/2025 04:34:41] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:34:41,889 127.0.0.1 - - [23/Aug/2025 04:34:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:34:41,899 127.0.0.1 - - [23/Aug/2025 04:34:41] "[36mGET /static/images/stopwatch1.png HTTP/1.1[0m" 304 -
+2025-08-23 04:34:41,902 127.0.0.1 - - [23/Aug/2025 04:34:41] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:36:23,278 127.0.0.1 - - [23/Aug/2025 04:36:23] "GET /home.html HTTP/1.1" 200 -
+2025-08-23 04:36:23,409 127.0.0.1 - - [23/Aug/2025 04:36:23] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:36:23,493 127.0.0.1 - - [23/Aug/2025 04:36:23] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-23 04:36:23,763 127.0.0.1 - - [23/Aug/2025 04:36:23] "[36mGET /static/css/carousel.css HTTP/1.1[0m" 304 -
+2025-08-23 04:36:23,803 127.0.0.1 - - [23/Aug/2025 04:36:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:36:23,864 127.0.0.1 - - [23/Aug/2025 04:36:23] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:36:23,890 127.0.0.1 - - [23/Aug/2025 04:36:23] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-23 04:36:23,895 127.0.0.1 - - [23/Aug/2025 04:36:23] "[36mGET /static/images/goals.png HTTP/1.1[0m" 304 -
+2025-08-23 04:36:23,899 127.0.0.1 - - [23/Aug/2025 04:36:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:41:38,566 127.0.0.1 - - [23/Aug/2025 04:41:38] "GET /cube.html HTTP/1.1" 200 -
+2025-08-23 04:41:38,680 127.0.0.1 - - [23/Aug/2025 04:41:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:41:38,688 127.0.0.1 - - [23/Aug/2025 04:41:38] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:41:38,690 127.0.0.1 - - [23/Aug/2025 04:41:38] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:41:38,902 127.0.0.1 - - [23/Aug/2025 04:41:38] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-23 04:41:38,910 127.0.0.1 - - [23/Aug/2025 04:41:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:41:38,920 127.0.0.1 - - [23/Aug/2025 04:41:38] "[36mGET /static/images/decon.png HTTP/1.1[0m" 304 -
+2025-08-23 04:41:38,925 127.0.0.1 - - [23/Aug/2025 04:41:38] "GET /static/images/procrastination_logo.png HTTP/1.1" 200 -
+2025-08-23 04:42:09,181 127.0.0.1 - - [23/Aug/2025 04:42:09] "GET /decon_eq.html HTTP/1.1" 200 -
+2025-08-23 04:42:09,279 127.0.0.1 - - [23/Aug/2025 04:42:09] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:09,287 127.0.0.1 - - [23/Aug/2025 04:42:09] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:09,293 127.0.0.1 - - [23/Aug/2025 04:42:09] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:42:09,297 127.0.0.1 - - [23/Aug/2025 04:42:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:42:09,297 127.0.0.1 - - [23/Aug/2025 04:42:09] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:09,299 127.0.0.1 - - [23/Aug/2025 04:42:09] "[36mGET /static/images/procrastination_logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:09,325 127.0.0.1 - - [23/Aug/2025 04:42:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:42:11,316 127.0.0.1 - - [23/Aug/2025 04:42:11] "GET /addressverb.html HTTP/1.1" 200 -
+2025-08-23 04:42:11,415 127.0.0.1 - - [23/Aug/2025 04:42:11] "[36mGET /static/images/procrastination_logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:11,416 127.0.0.1 - - [23/Aug/2025 04:42:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:42:11,418 127.0.0.1 - - [23/Aug/2025 04:42:11] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:11,420 127.0.0.1 - - [23/Aug/2025 04:42:11] "[36mGET /static/images/decon.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:11,423 127.0.0.1 - - [23/Aug/2025 04:42:11] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:11,425 127.0.0.1 - - [23/Aug/2025 04:42:11] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:42:11,427 127.0.0.1 - - [23/Aug/2025 04:42:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:42:12,688 127.0.0.1 - - [23/Aug/2025 04:42:12] "GET /wheredoistart.html HTTP/1.1" 200 -
+2025-08-23 04:42:12,784 127.0.0.1 - - [23/Aug/2025 04:42:12] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:12,790 127.0.0.1 - - [23/Aug/2025 04:42:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:42:12,790 127.0.0.1 - - [23/Aug/2025 04:42:12] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:12,792 127.0.0.1 - - [23/Aug/2025 04:42:12] "[36mGET /static/images/decon.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:12,797 127.0.0.1 - - [23/Aug/2025 04:42:12] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:12,800 127.0.0.1 - - [23/Aug/2025 04:42:12] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:42:12,801 127.0.0.1 - - [23/Aug/2025 04:42:12] "GET /static/images/procrastination.png HTTP/1.1" 200 -
+2025-08-23 04:42:12,817 127.0.0.1 - - [23/Aug/2025 04:42:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:42:13,989 127.0.0.1 - - [23/Aug/2025 04:42:13] "GET /decon_eq.html HTTP/1.1" 200 -
+2025-08-23 04:42:14,079 127.0.0.1 - - [23/Aug/2025 04:42:14] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:42:14,080 127.0.0.1 - - [23/Aug/2025 04:42:14] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:14,090 127.0.0.1 - - [23/Aug/2025 04:42:14] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:14,094 127.0.0.1 - - [23/Aug/2025 04:42:14] "[36mGET /static/images/procrastination_logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:14,096 127.0.0.1 - - [23/Aug/2025 04:42:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:42:14,099 127.0.0.1 - - [23/Aug/2025 04:42:14] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:14,108 127.0.0.1 - - [23/Aug/2025 04:42:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:42:16,433 127.0.0.1 - - [23/Aug/2025 04:42:16] "GET /addressverb.html HTTP/1.1" 200 -
+2025-08-23 04:42:16,536 127.0.0.1 - - [23/Aug/2025 04:42:16] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:16,543 127.0.0.1 - - [23/Aug/2025 04:42:16] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:42:16,547 127.0.0.1 - - [23/Aug/2025 04:42:16] "[36mGET /static/images/procrastination_logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:16,555 127.0.0.1 - - [23/Aug/2025 04:42:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:42:16,555 127.0.0.1 - - [23/Aug/2025 04:42:16] "[36mGET /static/images/decon.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:16,559 127.0.0.1 - - [23/Aug/2025 04:42:16] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:16,578 127.0.0.1 - - [23/Aug/2025 04:42:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 04:42:18,090 127.0.0.1 - - [23/Aug/2025 04:42:18] "GET /decon_eq.html HTTP/1.1" 200 -
+2025-08-23 04:42:18,184 127.0.0.1 - - [23/Aug/2025 04:42:18] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:18,194 127.0.0.1 - - [23/Aug/2025 04:42:18] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:18,195 127.0.0.1 - - [23/Aug/2025 04:42:18] "[36mGET /static/images/procrastination_logo.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:18,200 127.0.0.1 - - [23/Aug/2025 04:42:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 04:42:18,202 127.0.0.1 - - [23/Aug/2025 04:42:18] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-23 04:42:18,205 127.0.0.1 - - [23/Aug/2025 04:42:18] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 04:42:18,213 127.0.0.1 - - [23/Aug/2025 04:42:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:15,283 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.1:5000
+2025-08-23 12:12:15,314 [33mPress CTRL+C to quit[0m
+2025-08-23 12:12:15,315  * Restarting with stat
+2025-08-23 12:12:15,508  * Debugger is active!
+2025-08-23 12:12:15,509  * Debugger PIN: 909-038-073
+2025-08-23 12:12:19,638 127.0.0.1 - - [23/Aug/2025 12:12:19] "GET /?id=75d813e9-ba54-4fa7-aea1-b73d44981fa5&vscodeBrowserReqId=1755951136588 HTTP/1.1" 200 -
+2025-08-23 12:12:19,876 127.0.0.1 - - [23/Aug/2025 12:12:19] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 12:12:19,923 127.0.0.1 - - [23/Aug/2025 12:12:19] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:19,943 127.0.0.1 - - [23/Aug/2025 12:12:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 12:12:19,966 127.0.0.1 - - [23/Aug/2025 12:12:19] "GET /decon_eq.html HTTP/1.1" 200 -
+2025-08-23 12:12:20,042 127.0.0.1 - - [23/Aug/2025 12:12:20] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:20,069 127.0.0.1 - - [23/Aug/2025 12:12:20] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-23 12:12:20,206 127.0.0.1 - - [23/Aug/2025 12:12:20] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 12:12:20,233 127.0.0.1 - - [23/Aug/2025 12:12:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:20,422 127.0.0.1 - - [23/Aug/2025 12:12:20] "[36mGET /static/images/procrastination_logo.png HTTP/1.1[0m" 304 -
+2025-08-23 12:12:20,427 127.0.0.1 - - [23/Aug/2025 12:12:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:20,436 127.0.0.1 - - [23/Aug/2025 12:12:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 12:12:20,437 127.0.0.1 - - [23/Aug/2025 12:12:20] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-23 12:12:20,446 127.0.0.1 - - [23/Aug/2025 12:12:20] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-23 12:12:20,521 127.0.0.1 - - [23/Aug/2025 12:12:20] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-08-23 12:12:26,126 127.0.0.1 - - [23/Aug/2025 12:12:26] "GET /privacy.html HTTP/1.1" 200 -
+2025-08-23 12:12:26,213 127.0.0.1 - - [23/Aug/2025 12:12:26] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 12:12:26,222 127.0.0.1 - - [23/Aug/2025 12:12:26] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:26,224 127.0.0.1 - - [23/Aug/2025 12:12:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:26,225 127.0.0.1 - - [23/Aug/2025 12:12:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 12:12:29,617 127.0.0.1 - - [23/Aug/2025 12:12:29] "GET /syllabus.html HTTP/1.1" 200 -
+2025-08-23 12:12:29,683 127.0.0.1 - - [23/Aug/2025 12:12:29] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 12:12:29,685 127.0.0.1 - - [23/Aug/2025 12:12:29] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:29,687 127.0.0.1 - - [23/Aug/2025 12:12:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 12:12:29,689 127.0.0.1 - - [23/Aug/2025 12:12:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:41,736 127.0.0.1 - - [23/Aug/2025 12:12:41] "GET /flashcardoption.html HTTP/1.1" 200 -
+2025-08-23 12:12:41,826 127.0.0.1 - - [23/Aug/2025 12:12:41] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 12:12:41,830 127.0.0.1 - - [23/Aug/2025 12:12:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 12:12:41,833 127.0.0.1 - - [23/Aug/2025 12:12:41] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:41,836 127.0.0.1 - - [23/Aug/2025 12:12:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:42,713 127.0.0.1 - - [23/Aug/2025 12:12:42] "GET /flashcards.html HTTP/1.1" 200 -
+2025-08-23 12:12:42,783 127.0.0.1 - - [23/Aug/2025 12:12:42] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 12:12:42,788 127.0.0.1 - - [23/Aug/2025 12:12:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:42,792 127.0.0.1 - - [23/Aug/2025 12:12:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 12:12:42,794 127.0.0.1 - - [23/Aug/2025 12:12:42] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:46,367 127.0.0.1 - - [23/Aug/2025 12:12:46] "GET /comingsoon.html HTTP/1.1" 200 -
+2025-08-23 12:12:46,432 127.0.0.1 - - [23/Aug/2025 12:12:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 12:12:46,435 127.0.0.1 - - [23/Aug/2025 12:12:46] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 12:12:46,440 127.0.0.1 - - [23/Aug/2025 12:12:46] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 12:12:46,444 127.0.0.1 - - [23/Aug/2025 12:12:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 12:18:58,900 127.0.0.1 - - [23/Aug/2025 12:18:58] "GET /?id=75d813e9-ba54-4fa7-aea1-b73d44981fa5&vscodeBrowserReqId=1755951136588 HTTP/1.1" 200 -
+2025-08-23 12:18:59,195 127.0.0.1 - - [23/Aug/2025 12:18:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-23 12:18:59,198 127.0.0.1 - - [23/Aug/2025 12:18:59] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-23 12:18:59,223 127.0.0.1 - - [23/Aug/2025 12:18:59] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-23 12:18:59,227 127.0.0.1 - - [23/Aug/2025 12:18:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-23 12:18:59,435 127.0.0.1 - - [23/Aug/2025 12:18:59] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-24 13:59:18,375 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.109:5000
+2025-08-24 13:59:18,414 [33mPress CTRL+C to quit[0m
+2025-08-24 13:59:18,415  * Restarting with stat
+2025-08-24 13:59:18,613  * Debugger is active!
+2025-08-24 13:59:18,614  * Debugger PIN: 261-894-487
+2025-08-24 13:59:19,441 127.0.0.1 - - [24/Aug/2025 13:59:19] "GET /?id=0700ae4f-52d3-4868-a288-6bf307804e59&vscodeBrowserReqId=1756043958449 HTTP/1.1" 200 -
+2025-08-24 13:59:19,749 127.0.0.1 - - [24/Aug/2025 13:59:19] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-24 13:59:19,750 127.0.0.1 - - [24/Aug/2025 13:59:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-24 13:59:19,751 127.0.0.1 - - [24/Aug/2025 13:59:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-24 13:59:20,041 127.0.0.1 - - [24/Aug/2025 13:59:20] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-24 13:59:20,042 127.0.0.1 - - [24/Aug/2025 13:59:20] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-24 13:59:21,073 127.0.0.1 - - [24/Aug/2025 13:59:21] "GET / HTTP/1.1" 200 -
+2025-08-24 13:59:21,167 127.0.0.1 - - [24/Aug/2025 13:59:21] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-24 13:59:21,169 127.0.0.1 - - [24/Aug/2025 13:59:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-24 13:59:21,172 127.0.0.1 - - [24/Aug/2025 13:59:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-24 13:59:21,174 127.0.0.1 - - [24/Aug/2025 13:59:21] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-24 13:59:21,237 127.0.0.1 - - [24/Aug/2025 13:59:21] "[36mGET /static/images/loginpage.svg HTTP/1.1[0m" 304 -
+2025-08-24 13:59:31,791 127.0.0.1 - - [24/Aug/2025 13:59:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-08-24 13:59:31,827 127.0.0.1 - - [24/Aug/2025 13:59:31] "GET /home.html HTTP/1.1" 200 -
+2025-08-24 13:59:31,934 127.0.0.1 - - [24/Aug/2025 13:59:31] "[36mGET /static/images/CUBE.png HTTP/1.1[0m" 304 -
+2025-08-24 13:59:31,941 127.0.0.1 - - [24/Aug/2025 13:59:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-24 13:59:31,944 127.0.0.1 - - [24/Aug/2025 13:59:31] "[36mGET /static/css/carousel.css HTTP/1.1[0m" 304 -
+2025-08-24 13:59:31,950 127.0.0.1 - - [24/Aug/2025 13:59:31] "[36mGET /static/icons/logo.png HTTP/1.1[0m" 304 -
+2025-08-24 13:59:31,952 127.0.0.1 - - [24/Aug/2025 13:59:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-08-24 13:59:31,956 127.0.0.1 - - [24/Aug/2025 13:59:31] "[36mGET /static/images/addressverb.png HTTP/1.1[0m" 304 -
+2025-08-24 13:59:31,966 127.0.0.1 - - [24/Aug/2025 13:59:31] "[36mGET /static/js/popper.min.js HTTP/1.1[0m" 304 -
+2025-08-24 13:59:31,984 127.0.0.1 - - [24/Aug/2025 13:59:31] "[36mGET /static/images/goals.png HTTP/1.1[0m" 304 -
